@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Name That Artist 🎵</title>
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+  <!-- Open Graph / link preview -->
+  <meta property="og:title" content="Name That Artist 🎵" />
+  <meta property="og:description" content="Can you guess the artist from their biggest hits? Pick a decade or genre and test your music knowledge!" />
+  <meta property="og:type" content="website" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Name That Artist 🎵" />
+  <meta name="twitter:description" content="Can you guess the artist from their biggest hits? Pick a decade or genre and test your music knowledge!" />
+  <meta name="description" content="Can you guess the artist from their biggest hits? Pick a decade or genre and test your music knowledge — 304 artists across every decade and genre." />
+  <style>
+/* ============================================================
+   Name That Artist — Neon Vinyl Theme
+   ============================================================ */
+
+/* ---------- Fonts & Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #080810;
+  --bg2:       #0e0e1a;
+  --card:      #12121f;
+  --border:    rgba(255,255,255,.08);
+  --pink:      #ff2d78;
+  --cyan:      #00f5ff;
+  --amber:     #ffb800;
+  --green:     #00ff87;
+  --text:      #e8e8f0;
+  --text-muted:#8080a0;
+  --font-head: 'Righteous', 'Arial Black', Impact, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --shadow:    0 0 30px rgba(0,245,255,.15);
+  --glow-pink: 0 0 12px rgba(255,45,120,.6);
+  --glow-cyan: 0 0 12px rgba(0,245,255,.6);
+  --glow-amber:0 0 12px rgba(255,184,0,.5);
+  --radius:    14px;
+  --radius-sm: 8px;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* ---------- App Shell ---------- */
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+/* ---------- Screens ---------- */
+.screen {
+  display: none;
+  width: 100%;
+  max-width: 700px;
+  animation: fadeIn .25s ease;
+}
+.screen.active { display: flex; flex-direction: column; gap: 16px; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* ---------- MENU SCREEN ---------- */
+.vinyl-bg {
+  position: fixed; inset: 0; z-index: -1;
+  background: radial-gradient(ellipse at 20% 50%, rgba(255,45,120,.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 20%, rgba(0,245,255,.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 20px;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-note {
+  font-size: 2.5rem;
+  color: var(--cyan);
+  filter: drop-shadow(0 0 12px var(--cyan));
+  animation: notePulse 2s ease-in-out infinite alternate;
+}
+.logo-note:last-child {
+  color: var(--pink);
+  filter: drop-shadow(0 0 12px var(--pink));
+  animation-delay: 1s;
+}
+
+@keyframes notePulse { from { opacity: .6; transform: scale(1); } to { opacity: 1; transform: scale(1.15); } }
+
+.logo-title {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 8vw, 3.2rem);
+  line-height: 1.1;
+  text-align: center;
+  background: linear-gradient(135deg, var(--cyan), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  filter: drop-shadow(0 0 20px rgba(0,245,255,.3));
+}
+
+.tagline {
+  color: var(--text-muted);
+  font-size: .95rem;
+  text-align: center;
+  max-width: 320px;
+}
+
+.score-display {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: .85rem;
+  color: var(--text-muted);
+}
+
+.difficulty-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.diff-label { color: var(--text-muted); font-size: .85rem; }
+
+.diff-btn {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-family: var(--font-body);
+  font-size: .8rem;
+  cursor: pointer;
+  transition: all .2s;
+}
+.diff-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+.diff-btn.active {
+  background: rgba(0,245,255,.12);
+  border-color: var(--cyan);
+  color: var(--cyan);
+  box-shadow: var(--glow-cyan);
+}
+
+.diff-info {
+  color: var(--text-muted);
+  font-size: .8rem;
+}
+
+/* ---------- CATEGORY SCREEN ---------- */
+.screen-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.screen-title {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  color: var(--cyan);
+}
+
+.category-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-label {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 8px;
+}
+
+.category-btn {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  cursor: pointer;
+  padding: 10px 12px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: all .2s;
+  font-family: var(--font-body);
+}
+.category-btn:hover {
+  border-color: var(--pink);
+  background: rgba(255,45,120,.08);
+  box-shadow: var(--glow-pink);
+  transform: translateY(-1px);
+}
+.cat-name { font-size: .9rem; font-weight: 600; }
+.cat-count { font-size: .7rem; color: var(--text-muted); }
+
+/* ---------- GAME SCREEN ---------- */
+#game-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .2s;
+}
+
+#game-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--pink), var(--cyan), var(--amber));
+}
+
+/* Shake animation on wrong guess */
+@keyframes shake {
+  0%, 100% { transform: none; }
+  20%       { transform: translateX(-8px); }
+  40%       { transform: translateX(8px); }
+  60%       { transform: translateX(-5px); }
+  80%       { transform: translateX(5px); }
+}
+#game-card.shake { animation: shake .45s ease; }
+
+@keyframes flashWrong {
+  0%, 100% { background: var(--card); }
+  40%      { background: rgba(255,45,120,.12); }
+}
+#game-card.flash-wrong { animation: flashWrong .35s ease; }
+
+@keyframes flashWin {
+  0%, 100% { background: var(--card); }
+  40%      { background: rgba(0,255,135,.10); }
+}
+#game-card.flash-win { animation: flashWin .5s ease; }
+
+/* Top bar */
+.game-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.game-category-tag {
+  font-size: .75rem;
+  color: var(--amber);
+  background: rgba(255,184,0,.1);
+  border: 1px solid rgba(255,184,0,.3);
+  border-radius: 999px;
+  padding: 3px 12px;
+  letter-spacing: .05em;
+}
+
+.guess-icons {
+  display: flex;
+  gap: 4px;
+}
+
+.guess-icon {
+  font-size: 1.1rem;
+  transition: all .3s;
+}
+.guess-icon.active { color: var(--amber); filter: drop-shadow(0 0 6px var(--amber)); }
+.guess-icon.used   { color: var(--text-muted); opacity: .35; }
+
+/* Game sections */
+.game-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-subtitle {
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Artist name blank */
+.name-blank {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 8px 0;
+  min-height: 48px;
+}
+
+/* Songs area */
+.songs-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.song-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.song-num {
+  color: var(--text-muted);
+  font-size: .8rem;
+  min-width: 18px;
+  padding-top: 6px;
+  flex-shrink: 0;
+}
+
+.song-blank {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 3px 6px;
+  flex: 1;
+  min-height: 36px;
+  padding: 2px 0;
+  transition: all .3s;
+}
+
+.song-blank.fully-revealed {
+  background: rgba(0,255,135,.05);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+}
+
+/* Word groups */
+.word-group {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.word-gap { width: 14px; }
+
+/* Character elements */
+.char {
+  display: inline-block;
+  font-family: 'Courier New', 'Courier', monospace;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+
+/* In artist name blank — bigger */
+.name-blank .char.letter {
+  font-size: 1.4rem;
+  width: 20px;
+  padding-bottom: 3px;
+}
+
+/* In song blanks */
+.song-blank .char.letter {
+  font-size: 1.05rem;
+  width: 14px;
+  padding-bottom: 2px;
+}
+
+.char.letter.unrevealed {
+  color: var(--cyan);
+  border-bottom: 2px solid rgba(0,245,255,.5);
+}
+
+.char.letter.revealed {
+  color: #fff;
+  border-bottom: 2px solid rgba(255,255,255,.3);
+  text-shadow: 0 0 10px rgba(0,245,255,.5);
+}
+
+@keyframes letterPop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.5); color: var(--green); text-shadow: 0 0 20px var(--green); }
+  100% { transform: scale(1); }
+}
+.char.letter.newly-revealed { animation: letterPop .4s ease forwards; }
+
+.char.punct {
+  color: var(--amber);
+  font-size: 1rem;
+}
+
+.name-blank .char.punct { font-size: 1.3rem; }
+
+/* Song reveal animation */
+@keyframes songReveal {
+  0%   { background: rgba(0,255,135,.2); }
+  100% { background: transparent; }
+}
+.song-blank.song-revealed-anim { animation: songReveal .6s ease; }
+
+/* Fully revealed song — show actual letters styled differently */
+.song-blank.fully-revealed .char.letter {
+  color: var(--green);
+  border-bottom-color: var(--green);
+  text-shadow: 0 0 8px rgba(0,255,135,.4);
+}
+
+/* Feedback toast */
+.feedback {
+  position: absolute;
+  top: 60px; left: 50%; transform: translateX(-50%) translateY(-4px);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 20px;
+  font-size: .85rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s, transform .2s;
+  z-index: 10;
+}
+.feedback.visible { opacity: 1; transform: translateX(-50%) translateY(0); }
+.feedback.correct { border-color: var(--green); color: var(--green); }
+.feedback.wrong   { border-color: var(--pink);  color: var(--pink);  }
+.feedback.info    { border-color: var(--cyan);  color: var(--cyan);  }
+
+/* Guess inputs */
+.guess-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+}
+
+.guess-input {
+  flex: 1;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: .9rem;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.guess-input:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 3px rgba(0,245,255,.12);
+}
+.guess-input.song-input:focus {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 3px rgba(255,45,120,.12);
+}
+.guess-input::placeholder { color: var(--text-muted); }
+
+/* Hints panel */
+.hints-panel {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.hints-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.hints-title {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: var(--text-muted);
+}
+
+.hints-count {
+  font-size: .75rem;
+  color: var(--text-muted);
+}
+
+.hints-list {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 40px;
+}
+
+.no-hints {
+  color: var(--text-muted);
+  font-size: .8rem;
+  font-style: italic;
+}
+
+.hint-item {
+  font-size: .85rem;
+  line-height: 1.5;
+  padding: 6px 10px;
+  background: rgba(255,184,0,.06);
+  border-left: 2px solid var(--amber);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: none; }
+}
+.hint-item.animate-in { animation: slideIn .3s ease; }
+
+/* Give up row */
+.give-up-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guesses-text {
+  font-size: .8rem;
+  color: var(--text-muted);
+}
+
+/* ---------- RESULT SCREEN ---------- */
+.result-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.result-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--pink), var(--cyan), var(--amber));
+}
+
+@keyframes bounceIn {
+  0%   { transform: scale(0.5); opacity: 0; }
+  70%  { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.result-icon {
+  font-size: 3.5rem;
+  animation: bounceIn .5s cubic-bezier(.175,.885,.32,1.275);
+}
+
+.result-title {
+  font-family: var(--font-head);
+  font-size: 1.8rem;
+  background: linear-gradient(135deg, var(--cyan), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.result-artist {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  color: var(--amber);
+  text-shadow: var(--glow-amber);
+  letter-spacing: .04em;
+}
+
+.result-songs-label {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  align-self: stretch;
+  text-align: left;
+  margin-top: 4px;
+}
+
+.result-songs {
+  align-self: stretch;
+  text-align: left;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.result-songs li {
+  font-size: .9rem;
+  color: var(--green);
+}
+
+.result-stat {
+  font-size: .9rem;
+  color: var(--text-muted);
+}
+
+.result-score {
+  font-size: .85rem;
+  color: var(--text-muted);
+  padding: 8px 20px;
+  background: var(--bg2);
+  border-radius: 999px;
+}
+
+.result-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: none;
+  transition: all .2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--pink);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: .9rem;
+  box-shadow: 0 0 20px rgba(255,45,120,.3);
+}
+.btn-primary:hover { background: #ff4d8f; box-shadow: 0 0 28px rgba(255,45,120,.5); transform: translateY(-1px); }
+.btn-primary:active { transform: none; }
+
+.btn-secondary {
+  background: rgba(0,245,255,.12);
+  color: var(--cyan);
+  border: 1px solid rgba(0,245,255,.3);
+  padding: 10px 20px;
+  font-size: .9rem;
+}
+.btn-secondary:hover { background: rgba(0,245,255,.2); box-shadow: var(--glow-cyan); transform: translateY(-1px); }
+
+.btn-accent {
+  background: rgba(255,184,0,.12);
+  color: var(--amber);
+  border: 1px solid rgba(255,184,0,.3);
+  padding: 12px 24px;
+  font-size: .95rem;
+}
+.btn-accent:hover { background: rgba(255,184,0,.22); box-shadow: var(--glow-amber); transform: translateY(-1px); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  font-size: .85rem;
+}
+.btn-ghost:hover { border-color: var(--text-muted); color: var(--text); }
+
+.btn-xl { font-size: 1.1rem; padding: 14px 40px; }
+.btn-wide { width: 100%; max-width: 300px; padding: 12px; }
+.btn-back { padding: 6px 14px; font-size: .85rem; }
+.btn-sm { padding: 6px 12px; font-size: .8rem; }
+.btn-danger:hover { border-color: var(--pink); color: var(--pink); }
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,.15); }
+
+/* ---------- Give-up row ---------- */
+.give-up-buttons { display: flex; gap: 6px; }
+
+/* ---------- Pack Progress Bar ---------- */
+.pack-progress {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pack-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .8rem;
+}
+
+.pack-progress-header span:first-child { color: var(--cyan); font-weight: 600; }
+.pack-progress-header span:last-child  { color: var(--text-muted); }
+
+.pack-progress-track {
+  height: 4px;
+  background: rgba(255,255,255,.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.pack-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--cyan), var(--pink));
+  border-radius: 2px;
+  transition: width .4s ease;
+}
+
+/* ---------- Pack Result Badge ---------- */
+.pack-result-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,245,255,.06);
+  border: 1px solid rgba(0,245,255,.2);
+  border-radius: 999px;
+  padding: 5px 16px;
+  font-size: .78rem;
+  width: 100%;
+}
+
+#pack-result-progress { color: var(--cyan); font-weight: 600; }
+#pack-result-score    { color: var(--text-muted); }
+
+/* ---------- Countdown Bar ---------- */
+.countdown-bar {
+  width: 100%;
+  height: 3px;
+  background: rgba(255,255,255,.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+@keyframes countdown {
+  from { width: 100%; }
+  to   { width: 0%; }
+}
+
+.countdown-fill {
+  height: 100%;
+  background: var(--cyan);
+  border-radius: 2px;
+}
+
+.countdown-label {
+  font-size: .8rem;
+  opacity: .7;
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+/* ---------- Pack Summary Screen ---------- */
+.pack-summary-card {
+  gap: 20px !important;
+}
+
+.pack-complete-header {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, var(--cyan), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pack-category-label {
+  font-size: .8rem;
+  color: var(--text-muted);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.grade-circle {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 3px solid var(--amber);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-size: 2.2rem;
+  color: var(--amber);
+  box-shadow: 0 0 24px rgba(255,184,0,.25), inset 0 0 24px rgba(255,184,0,.05);
+  animation: bounceIn .5s cubic-bezier(.175,.885,.32,1.275);
+}
+
+.summary-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+.summary-stat {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  text-align: center;
+}
+
+.stat-value {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  color: var(--cyan);
+}
+
+.stat-label {
+  font-size: .7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-top: 2px;
+}
+
+/* ---------- Footer ---------- */
+.footer-note {
+  font-size: .72rem;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: 300px;
+  opacity: .6;
+  margin-top: 8px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 500px) {
+  .input-group { flex-direction: column; }
+  .btn-primary, .btn-secondary { width: 100%; }
+  .logo-title { font-size: 2rem; }
+  #game-card { padding: 14px; }
+  .result-card { padding: 24px 16px; }
+  .name-blank .char.letter { font-size: 1.1rem; width: 16px; }
+  .summary-stats-grid { grid-template-columns: 1fr 1fr; }
+}
+
+</style>
+</head>
+<body>
+  <div id="app">
+
+    <!-- ===== SCREEN: MENU ===== -->
+    <div id="screen-menu" class="screen active">
+      <div class="vinyl-bg"></div>
+      <div class="menu-content">
+        <div class="logo">
+          <span class="logo-note">♪</span>
+          <h1 class="logo-title">Name That<br/>Artist</h1>
+          <span class="logo-note">♫</span>
+        </div>
+        <p class="tagline">Can you guess the artist from their biggest hits?</p>
+
+        <div class="score-display" id="menu-score" style="display:none">
+          <span id="menu-wins">0</span> wins &nbsp;·&nbsp;
+          <span id="menu-losses">0</span> losses &nbsp;·&nbsp;
+          🔥 <span id="menu-streak">0</span> streak
+        </div>
+
+        <button class="btn btn-primary btn-xl" id="btn-start">Play Now</button>
+
+        <div class="difficulty-row">
+          <span class="diff-label">Difficulty:</span>
+          <button class="diff-btn active" data-difficulty="normal">Normal</button>
+          <button class="diff-btn" data-difficulty="easy">Easy</button>
+          <button class="diff-btn" data-difficulty="hard">Hard</button>
+        </div>
+
+        <div class="diff-info" id="diff-info">5 guesses · 3 songs shown</div>
+
+        <footer class="footer-note">
+          This game runs entirely in your browser. No data is collected or sent anywhere.
+        </footer>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: CATEGORY ===== -->
+    <div id="screen-category" class="screen">
+      <div class="screen-header">
+        <button class="btn btn-ghost btn-back" id="btn-category-back">← Back</button>
+        <h2 class="screen-title">Choose a Category</h2>
+      </div>
+
+      <div class="category-section">
+        <h3 class="section-label">By Decade</h3>
+        <div class="category-grid" id="decade-grid"></div>
+      </div>
+
+      <div class="category-section">
+        <h3 class="section-label">By Genre</h3>
+        <div class="category-grid" id="genre-grid"></div>
+      </div>
+
+      <div class="category-section">
+        <button class="btn btn-accent btn-wide" id="btn-random">🎲 Random (20 artists)</button>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: GAME ===== -->
+    <div id="screen-game" class="screen">
+
+      <!-- Pack progress bar (hidden in single-play mode) -->
+      <div id="pack-progress" class="pack-progress" style="display:none">
+        <div class="pack-progress-header">
+          <span id="pack-progress-text">Artist 1 / 10</span>
+          <span id="pack-score-display">✓ 0 &nbsp;✗ 0</span>
+        </div>
+        <div class="pack-progress-track">
+          <div class="pack-progress-fill" id="pack-progress-fill"></div>
+        </div>
+      </div>
+
+      <div id="game-card">
+        <!-- Top bar -->
+        <div class="game-topbar">
+          <button class="btn btn-ghost btn-sm" id="btn-game-menu">≡ Menu</button>
+          <div class="game-category-tag" id="game-category-tag"></div>
+          <div class="guess-icons" id="guess-counter"></div>
+        </div>
+
+        <!-- Artist blank -->
+        <div class="game-section">
+          <div class="section-subtitle">ARTIST</div>
+          <div class="name-blank" id="artist-name-blank"></div>
+        </div>
+
+        <!-- Songs -->
+        <div class="game-section">
+          <div class="section-subtitle">TOP SONGS</div>
+          <div class="songs-area">
+            <div class="song-row">
+              <span class="song-num">1.</span>
+              <div class="song-blank" id="song-0"></div>
+            </div>
+            <div class="song-row">
+              <span class="song-num">2.</span>
+              <div class="song-blank" id="song-1"></div>
+            </div>
+            <div class="song-row" id="song-row-2">
+              <span class="song-num">3.</span>
+              <div class="song-blank" id="song-2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback toast -->
+        <div class="feedback" id="feedback"></div>
+
+        <!-- Guess inputs -->
+        <div class="guess-area">
+          <div class="input-group">
+            <input type="text" id="guess-input" class="guess-input" placeholder="Type artist name…" autocomplete="off" spellcheck="false" />
+            <button class="btn btn-primary" id="btn-guess-artist">Guess Artist</button>
+          </div>
+          <div class="input-group">
+            <input type="text" id="song-guess-input" class="guess-input song-input" placeholder="Guess a song (free — no penalty)…" autocomplete="off" spellcheck="false" />
+            <button class="btn btn-secondary" id="btn-guess-song">Guess Song</button>
+          </div>
+        </div>
+
+        <!-- Hints panel -->
+        <div class="hints-panel">
+          <div class="hints-header">
+            <span class="hints-title">💡 Hints</span>
+            <span class="hints-count" id="hints-count">0 / 4</span>
+          </div>
+          <div class="hints-list" id="hints-list">
+            <p class="no-hints">Make a wrong artist guess to unlock hints…</p>
+          </div>
+        </div>
+
+        <!-- Bottom row -->
+        <div class="give-up-row">
+          <span class="guesses-text" id="guess-count-text">5 guesses remaining</span>
+          <div class="give-up-buttons">
+            <button class="btn btn-ghost btn-sm btn-danger" id="btn-quit-pack" style="display:none">Quit Pack</button>
+            <button class="btn btn-ghost btn-sm btn-danger" id="btn-give-up">I Give Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: RESULT (single round or mid-pack) ===== -->
+    <div id="screen-result" class="screen">
+      <div class="result-card">
+        <!-- Pack progress badge (hidden in single-play) -->
+        <div class="pack-result-badge" id="pack-result-badge" style="display:none">
+          <span id="pack-result-progress"></span>
+          <span id="pack-result-score"></span>
+        </div>
+
+        <div class="result-icon" id="result-icon">🎉</div>
+        <h2 class="result-title" id="result-title">You Got It!</h2>
+        <div class="result-artist" id="result-artist"></div>
+        <div class="result-songs-label">Top Songs:</div>
+        <ol class="result-songs" id="result-songs"></ol>
+        <div class="result-stat" id="result-stat"></div>
+        <div class="result-score" id="result-score"></div>
+
+        <!-- Countdown bar (shown during pack auto-advance) -->
+        <div class="countdown-bar" id="countdown-bar" style="display:none">
+          <div class="countdown-fill" id="countdown-fill"></div>
+        </div>
+
+        <div class="result-buttons">
+          <!-- Pack primary action -->
+          <button class="btn btn-primary btn-wide" id="btn-next-artist" style="display:none">
+            Next Artist → <span class="countdown-label" id="countdown-label"></span>
+          </button>
+          <!-- Single-play / pack-last primary -->
+          <button class="btn btn-primary btn-wide" id="btn-pack-summary" style="display:none">View Pack Results</button>
+          <button class="btn btn-primary btn-wide" id="btn-play-again" style="display:none">Play Again</button>
+          <button class="btn btn-secondary btn-wide" id="btn-change-category">Change Category</button>
+          <button class="btn btn-ghost btn-wide" id="btn-main-menu">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: PACK SUMMARY ===== -->
+    <div id="screen-pack-summary" class="screen">
+      <div class="result-card pack-summary-card">
+        <div class="pack-complete-header">Pack Complete! 🎵</div>
+        <div class="pack-category-label" id="summary-category"></div>
+
+        <div class="grade-circle" id="summary-grade">A+</div>
+
+        <div class="summary-stats-grid">
+          <div class="summary-stat">
+            <div class="stat-value" id="summary-correct"></div>
+            <div class="stat-label">Correct</div>
+          </div>
+          <div class="summary-stat">
+            <div class="stat-value" id="summary-pct"></div>
+            <div class="stat-label">Score</div>
+          </div>
+          <div class="summary-stat">
+            <div class="stat-value" id="summary-avg"></div>
+            <div class="stat-label">Avg Guesses</div>
+          </div>
+          <div class="summary-stat">
+            <div class="stat-value" id="summary-streak"></div>
+            <div class="stat-label">Best Streak</div>
+          </div>
+        </div>
+
+        <div class="result-buttons">
+          <button class="btn btn-primary btn-wide" id="btn-replay-pack">Play Pack Again</button>
+          <button class="btn btn-secondary btn-wide" id="btn-summary-new-category">New Category</button>
+          <button class="btn btn-ghost btn-wide" id="btn-summary-menu">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- #app -->
+
+  <script>
+/* ============================================================
+   Name That Artist — Game Logic
+   ============================================================ */
+
+/* ---------- Difficulty config ---------- */
+const DIFFICULTY_CONFIG = {
+  easy:   { guesses: 7, songs: 3, label: '7 guesses · 3 songs shown' },
+  normal: { guesses: 5, songs: 3, label: '5 guesses · 3 songs shown' },
+  hard:   { guesses: 3, songs: 2, label: '3 guesses · 2 songs shown' },
+};
+
+/* ---------- State ---------- */
+const state = {
+  allArtists:        [],
+  currentArtist:     null,
+  categoryType:      null,  // 'decade' | 'genre' | 'random'
+  currentCategory:   null,
+  difficulty:        'normal',
+  maxGuesses:        5,
+  guessesRemaining:  5,
+  songsShown:        3,
+  hintsRevealed:     0,
+  revealedSongs:     new Set(),
+  songRevealedPos:   [new Set(), new Set(), new Set()],
+  gameOver:          false,
+  won:               false,
+  score:             { wins: 0, losses: 0 },
+  streak:            0,
+};
+
+/* ---------- Pack State ---------- */
+const pack = {
+  artists:    [],   // shuffled list for this run
+  index:      0,    // current position (0-based)
+  active:     false,
+  stats: {
+    correct:       0,
+    guessesOnWins: 0,
+    longestStreak: 0,
+    currentStreak: 0,
+  },
+};
+
+/* ---------- Embedded artist data (avoids fetch() restrictions on file://) ---------- */
+/* To update: edit artists.json then paste the array value here via:
+   node -e "const d=require('./artists.json');process.stdout.write(JSON.stringify(d.artists))" */
+const ARTISTS_DATA = [{"name":"The Beatles","songs":["Come Together","Hey Jude","Let It Be"],"debut_year":1960,"genre":["Rock"],"decades":["60s","70s"],"country":"United Kingdom","aliases":["Beatles"]},{"name":"The Rolling Stones","songs":["Paint It Black","(I Can't Get No) Satisfaction","Sympathy for the Devil"],"debut_year":1962,"genre":["Rock"],"decades":["60s","70s","80s","90s","2000s","2010s"],"country":"United Kingdom","aliases":["Rolling Stones"]},{"name":"Led Zeppelin","songs":["Stairway to Heaven","Whole Lotta Love","Kashmir"],"debut_year":1968,"genre":["Rock","Metal"],"decades":["70s"],"country":"United Kingdom"},{"name":"Jimi Hendrix","songs":["Purple Haze","All Along the Watchtower","Voodoo Child (Slight Return)"],"debut_year":1966,"genre":["Rock"],"decades":["60s"],"country":"United States","aliases":["Hendrix"]},{"name":"The Doors","songs":["Light My Fire","Riders on the Storm","People Are Strange"],"debut_year":1965,"genre":["Rock"],"decades":["60s","70s"],"country":"United States","aliases":["Doors"]},{"name":"Pink Floyd","songs":["Comfortably Numb","Wish You Were Here","Another Brick in the Wall, Pt. 2"],"debut_year":1965,"genre":["Rock"],"decades":["70s","80s"],"country":"United Kingdom"},{"name":"Queen","songs":["Bohemian Rhapsody","Don't Stop Me Now","Somebody to Love"],"debut_year":1970,"genre":["Rock"],"decades":["70s","80s"],"country":"United Kingdom"},{"name":"David Bowie","songs":["Heroes","Space Oddity","Let's Dance"],"debut_year":1964,"genre":["Rock","Pop"],"decades":["70s","80s","90s","2000s"],"country":"United Kingdom","aliases":["Ziggy Stardust"]},{"name":"Fleetwood Mac","songs":["Dreams","Go Your Own Way","The Chain"],"debut_year":1967,"genre":["Rock"],"decades":["70s","80s"],"country":"United Kingdom"},{"name":"Eagles","songs":["Hotel California","Take It Easy","Desperado"],"debut_year":1971,"genre":["Rock","Country"],"decades":["70s","80s","90s"],"country":"United States","aliases":["The Eagles"]},{"name":"Elton John","songs":["Rocket Man","Tiny Dancer","Crocodile Rock"],"debut_year":1964,"genre":["Pop","Rock"],"decades":["70s","80s","90s","2000s"],"country":"United Kingdom"},{"name":"Bruce Springsteen","songs":["Born to Run","Born in the U.S.A.","Dancing in the Dark"],"debut_year":1972,"genre":["Rock"],"decades":["80s","90s"],"country":"United States","aliases":["The Boss"]},{"name":"Tom Petty","songs":["Free Fallin'","I Won't Back Down","American Girl"],"debut_year":1976,"genre":["Rock"],"decades":["80s","90s"],"country":"United States"},{"name":"The Police","songs":["Every Breath You Take","Roxanne","Don't Stand So Close to Me"],"debut_year":1977,"genre":["Rock"],"decades":["80s"],"country":"United Kingdom","aliases":["Police"]},{"name":"Bon Jovi","songs":["Livin' on a Prayer","It's My Life","Wanted Dead or Alive"],"debut_year":1983,"genre":["Rock"],"decades":["80s","90s","2000s"],"country":"United States"},{"name":"U2","songs":["With or Without You","One","Where the Streets Have No Name"],"debut_year":1976,"genre":["Rock"],"decades":["80s","90s","2000s","2010s"],"country":"Ireland"},{"name":"AC/DC","songs":["Back in Black","Highway to Hell","Thunderstruck"],"debut_year":1973,"genre":["Rock","Metal"],"decades":["80s","90s"],"country":"Australia"},{"name":"Bob Dylan","songs":["Blowin' in the Wind","Like a Rolling Stone","The Times They Are a-Changin'"],"debut_year":1962,"genre":["Rock"],"decades":["60s","70s","80s","90s"],"country":"United States"},{"name":"Simon & Garfunkel","songs":["The Sound of Silence","Mrs. Robinson","Bridge Over Troubled Water"],"debut_year":1964,"genre":["Rock"],"decades":["60s","70s"],"country":"United States","aliases":["Simon and Garfunkel"]},{"name":"The Beach Boys","songs":["Good Vibrations","Surfin' USA","God Only Knows"],"debut_year":1961,"genre":["Rock","Pop"],"decades":["60s","70s"],"country":"United States","aliases":["Beach Boys"]},{"name":"Nirvana","songs":["Smells Like Teen Spirit","Come as You Are","Heart-Shaped Box"],"debut_year":1987,"genre":["Rock"],"decades":["90s"],"country":"United States"},{"name":"Oasis","songs":["Wonderwall","Don't Look Back in Anger","Champagne Supernova"],"debut_year":1991,"genre":["Rock"],"decades":["90s","2000s"],"country":"United Kingdom"},{"name":"Radiohead","songs":["Creep","Karma Police","No Surprises"],"debut_year":1985,"genre":["Indie/Alternative"],"decades":["90s","2000s","2010s"],"country":"United Kingdom"},{"name":"Green Day","songs":["Basket Case","American Idiot","Good Riddance (Time of Your Life)"],"debut_year":1987,"genre":["Rock"],"decades":["90s","2000s","2010s"],"country":"United States"},{"name":"Foo Fighters","songs":["Everlong","Learn to Fly","Best of You"],"debut_year":1994,"genre":["Rock"],"decades":["90s","2000s","2010s","2020s"],"country":"United States"},{"name":"Red Hot Chili Peppers","songs":["Under the Bridge","Californication","Give It Away"],"debut_year":1983,"genre":["Rock"],"decades":["90s","2000s"],"country":"United States","aliases":["RHCP"]},{"name":"Alanis Morissette","songs":["You Oughta Know","Ironic","Hand in My Pocket"],"debut_year":1991,"genre":["Rock","Indie/Alternative"],"decades":["90s","2000s"],"country":"Canada"},{"name":"Arctic Monkeys","songs":["Do I Wanna Know?","R U Mine?","505"],"debut_year":2002,"genre":["Indie/Alternative","Rock"],"decades":["2000s","2010s","2020s"],"country":"United Kingdom"},{"name":"Coldplay","songs":["Yellow","The Scientist","Fix You"],"debut_year":1996,"genre":["Indie/Alternative"],"decades":["2000s","2010s","2020s"],"country":"United Kingdom"},{"name":"Gorillaz","songs":["Feel Good Inc.","Clint Eastwood","DARE"],"debut_year":1998,"genre":["Indie/Alternative","Electronic"],"decades":["2000s","2010s","2020s"],"country":"United Kingdom"},{"name":"Tame Impala","songs":["The Less I Know the Better","Let It Happen","Feels Like We Only Go Backwards"],"debut_year":2007,"genre":["Indie/Alternative"],"decades":["2010s","2020s"],"country":"Australia"},{"name":"Lorde","songs":["Royals","Green Light","Tennis Court"],"debut_year":2013,"genre":["Indie/Alternative","Pop"],"decades":["2010s","2020s"],"country":"New Zealand","aliases":["Ella Yelich-O'Connor"]},{"name":"Twenty One Pilots","songs":["Stressed Out","Ride","Heathens"],"debut_year":2009,"genre":["Indie/Alternative"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Imagine Dragons","songs":["Radioactive","Demons","Thunder"],"debut_year":2008,"genre":["Indie/Alternative","Rock"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Lana Del Rey","songs":["Summertime Sadness","Video Games","Young and Beautiful"],"debut_year":2012,"genre":["Indie/Alternative","Pop"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Metallica","songs":["Enter Sandman","Master of Puppets","One"],"debut_year":1981,"genre":["Metal"],"decades":["80s","90s","2000s","2010s"],"country":"United States"},{"name":"Guns N' Roses","songs":["Sweet Child O' Mine","Welcome to the Jungle","November Rain"],"debut_year":1985,"genre":["Metal","Rock"],"decades":["80s","90s"],"country":"United States","aliases":["GNR","Guns and Roses"]},{"name":"Def Leppard","songs":["Pour Some Sugar on Me","Photograph","Love Bites"],"debut_year":1977,"genre":["Metal","Rock"],"decades":["80s","90s"],"country":"United Kingdom"},{"name":"Linkin Park","songs":["In the End","Numb","Crawling"],"debut_year":1996,"genre":["Metal","Rock"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Black Sabbath","songs":["Iron Man","War Pigs","Paranoid"],"debut_year":1968,"genre":["Metal","Rock"],"decades":["70s","80s"],"country":"United Kingdom"},{"name":"Michael Jackson","songs":["Thriller","Billie Jean","Beat It"],"debut_year":1964,"genre":["Pop","R&B/Soul"],"decades":["80s","90s"],"country":"United States","aliases":["MJ","King of Pop"]},{"name":"Madonna","songs":["Like a Virgin","Material Girl","Papa Don't Preach"],"debut_year":1979,"genre":["Pop"],"decades":["80s","90s","2000s"],"country":"United States","aliases":["Queen of Pop"]},{"name":"Prince","songs":["Purple Rain","When Doves Cry","Kiss"],"debut_year":1978,"genre":["Pop","R&B/Soul"],"decades":["80s","90s"],"country":"United States"},{"name":"Whitney Houston","songs":["I Will Always Love You","Greatest Love of All","I Wanna Dance with Somebody (Who Loves Me)"],"debut_year":1983,"genre":["Pop","R&B/Soul"],"decades":["80s","90s"],"country":"United States"},{"name":"Mariah Carey","songs":["All I Want for Christmas Is You","We Belong Together","Fantasy"],"debut_year":1990,"genre":["Pop","R&B/Soul"],"decades":["90s","2000s","2010s"],"country":"United States"},{"name":"Cyndi Lauper","songs":["Girls Just Want to Have Fun","Time After Time","True Colors"],"debut_year":1978,"genre":["Pop"],"decades":["80s"],"country":"United States"},{"name":"George Michael","songs":["Careless Whisper","Faith","Father Figure"],"debut_year":1981,"genre":["Pop","R&B/Soul"],"decades":["80s","90s"],"country":"United Kingdom"},{"name":"ABBA","songs":["Dancing Queen","Mamma Mia","Waterloo"],"debut_year":1972,"genre":["Pop"],"decades":["70s"],"country":"Sweden"},{"name":"Duran Duran","songs":["Hungry Like the Wolf","Rio","Girls on Film"],"debut_year":1978,"genre":["Pop","Rock"],"decades":["80s","90s"],"country":"United Kingdom"},{"name":"Taylor Swift","songs":["Shake It Off","Blank Space","Anti-Hero"],"debut_year":2006,"genre":["Pop","Country"],"decades":["2000s","2010s","2020s"],"country":"United States"},{"name":"Katy Perry","songs":["Roar","Firework","Teenage Dream"],"debut_year":2001,"genre":["Pop"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Lady Gaga","songs":["Bad Romance","Poker Face","Just Dance"],"debut_year":2008,"genre":["Pop","Electronic"],"decades":["2000s","2010s","2020s"],"country":"United States"},{"name":"Rihanna","songs":["Umbrella","We Found Love","Diamonds"],"debut_year":2003,"genre":["Pop","R&B/Soul"],"decades":["2000s","2010s","2020s"],"country":"Barbados"},{"name":"Justin Timberlake","songs":["SexyBack","Can't Stop the Feeling!","Mirrors"],"debut_year":2003,"genre":["Pop","R&B/Soul"],"decades":["2000s","2010s","2020s"],"country":"United States","aliases":["JT"]},{"name":"Beyoncé","songs":["Crazy in Love","Irreplaceable","Single Ladies (Put a Ring on It)"],"debut_year":2003,"genre":["Pop","R&B/Soul"],"decades":["2000s","2010s","2020s"],"country":"United States","aliases":["Bey","Queen Bey"]},{"name":"Adele","songs":["Rolling in the Deep","Someone Like You","Hello"],"debut_year":2006,"genre":["Pop","R&B/Soul"],"decades":["2000s","2010s","2020s"],"country":"United Kingdom"},{"name":"Ed Sheeran","songs":["Shape of You","Perfect","Thinking Out Loud"],"debut_year":2011,"genre":["Pop"],"decades":["2010s","2020s"],"country":"United Kingdom"},{"name":"Bruno Mars","songs":["Uptown Funk","Just the Way You Are","Locked Out of Heaven"],"debut_year":2009,"genre":["Pop","R&B/Soul"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Ariana Grande","songs":["Thank U, Next","7 Rings","Problem"],"debut_year":2011,"genre":["Pop","R&B/Soul"],"decades":["2010s","2020s"],"country":"United States","aliases":["Ari"]},{"name":"Dua Lipa","songs":["Levitating","Don't Start Now","New Rules"],"debut_year":2015,"genre":["Pop","Electronic"],"decades":["2010s","2020s"],"country":"United Kingdom"},{"name":"Harry Styles","songs":["As It Was","Watermelon Sugar","Adore You"],"debut_year":2017,"genre":["Pop","Rock"],"decades":["2010s","2020s"],"country":"United Kingdom"},{"name":"Billie Eilish","songs":["bad guy","Happier Than Ever","Ocean Eyes"],"debut_year":2016,"genre":["Pop","Indie/Alternative"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Olivia Rodrigo","songs":["drivers license","good 4 u","Vampire"],"debut_year":2021,"genre":["Pop","Indie/Alternative"],"decades":["2020s"],"country":"United States"},{"name":"Sabrina Carpenter","songs":["Espresso","Please Please Please","Nonsense"],"debut_year":2014,"genre":["Pop"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Selena Gomez","songs":["Come & Get It","Lose You to Love Me","Wolves"],"debut_year":2009,"genre":["Pop"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Justin Bieber","songs":["Baby","Sorry","Love Yourself"],"debut_year":2009,"genre":["Pop"],"decades":["2010s","2020s"],"country":"Canada","aliases":["Biebs"]},{"name":"Eminem","songs":["Lose Yourself","The Real Slim Shady","Without Me"],"debut_year":1996,"genre":["Hip-Hop/Rap"],"decades":["90s","2000s","2010s"],"country":"United States","aliases":["Slim Shady","Marshall Mathers"]},{"name":"2Pac","songs":["California Love","Changes","Dear Mama"],"debut_year":1991,"genre":["Hip-Hop/Rap"],"decades":["90s"],"country":"United States","aliases":["Tupac","Tupac Shakur","Makaveli"]},{"name":"The Notorious B.I.G.","songs":["Hypnotize","Big Poppa","Mo Money Mo Problems"],"debut_year":1994,"genre":["Hip-Hop/Rap"],"decades":["90s"],"country":"United States","aliases":["Biggie","Biggie Smalls","Notorious BIG","Christopher Wallace"]},{"name":"Jay-Z","songs":["Empire State of Mind","99 Problems","Hard Knock Life (Ghetto Anthem)"],"debut_year":1996,"genre":["Hip-Hop/Rap"],"decades":["90s","2000s","2010s"],"country":"United States","aliases":["Hov","Shawn Carter"]},{"name":"Kanye West","songs":["Gold Digger","Stronger","Heartless"],"debut_year":2004,"genre":["Hip-Hop/Rap","Pop"],"decades":["2000s","2010s","2020s"],"country":"United States","aliases":["Ye","Yeezy"]},{"name":"Nicki Minaj","songs":["Super Bass","Starships","Anaconda"],"debut_year":2007,"genre":["Hip-Hop/Rap","Pop"],"decades":["2010s","2020s"],"country":"Trinidad and Tobago","aliases":["Nicki"]},{"name":"Drake","songs":["One Dance","God's Plan","Hotline Bling"],"debut_year":2006,"genre":["Hip-Hop/Rap","R&B/Soul"],"decades":["2000s","2010s","2020s"],"country":"Canada","aliases":["Drizzy","Champagne Papi"]},{"name":"Kendrick Lamar","songs":["HUMBLE.","Swimming Pools (Drank)","DNA."],"debut_year":2009,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States","aliases":["K-Dot","Kdot"]},{"name":"Post Malone","songs":["Rockstar","Congratulations","Circles"],"debut_year":2015,"genre":["Hip-Hop/Rap","Pop"],"decades":["2010s","2020s"],"country":"United States","aliases":["Posty"]},{"name":"Cardi B","songs":["Bodak Yellow","I Like It","WAP"],"debut_year":2015,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Tyler the Creator","songs":["EARFQUAKE","See You Again","WUSYANAME"],"debut_year":2009,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States","aliases":["Tyler"]},{"name":"Lil Nas X","songs":["Old Town Road","MONTERO (Call Me by Your Name)","INDUSTRY BABY"],"debut_year":2018,"genre":["Pop","Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States"},{"name":"50 Cent","songs":["In da Club","Candy Shop","21 Questions"],"debut_year":2002,"genre":["Hip-Hop/Rap"],"decades":["2000s"],"country":"United States","aliases":["Fifty Cent","Curtis Jackson"]},{"name":"The Black Eyed Peas","songs":["I Gotta Feeling","Where Is the Love?","Boom Boom Pow"],"debut_year":1995,"genre":["Hip-Hop/Rap","Pop"],"decades":["2000s","2010s"],"country":"United States","aliases":["Black Eyed Peas"]},{"name":"Childish Gambino","songs":["Redbone","This Is America","3005"],"debut_year":2011,"genre":["Hip-Hop/Rap","R&B/Soul"],"decades":["2010s","2020s"],"country":"United States","aliases":["Donald Glover"]},{"name":"Doja Cat","songs":["Say So","Kiss Me More","Planet Her"],"debut_year":2014,"genre":["Pop","Hip-Hop/Rap","R&B/Soul"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Lauryn Hill","songs":["Doo Wop (That Thing)","Ex-Factor","Everything Is Everything"],"debut_year":1993,"genre":["R&B/Soul","Hip-Hop/Rap"],"decades":["90s"],"country":"United States"},{"name":"Aretha Franklin","songs":["Respect","Think","(You Make Me Feel Like) A Natural Woman"],"debut_year":1961,"genre":["R&B/Soul"],"decades":["60s","70s","80s"],"country":"United States","aliases":["Queen of Soul"]},{"name":"Marvin Gaye","songs":["What's Going On","Let's Get It On","Sexual Healing"],"debut_year":1961,"genre":["R&B/Soul"],"decades":["60s","70s","80s"],"country":"United States"},{"name":"Stevie Wonder","songs":["Superstition","Sir Duke","Isn't She Lovely"],"debut_year":1961,"genre":["R&B/Soul","Pop"],"decades":["60s","70s","80s","90s"],"country":"United States"},{"name":"Bob Marley","songs":["No Woman No Cry","Redemption Song","One Love"],"debut_year":1963,"genre":["R&B/Soul"],"decades":["70s"],"country":"Jamaica","aliases":["Robert Nesta Marley"]},{"name":"Alicia Keys","songs":["Fallin'","No One","If I Ain't Got You"],"debut_year":1998,"genre":["R&B/Soul","Pop"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Usher","songs":["Yeah!","Confessions Part II","My Boo"],"debut_year":1994,"genre":["R&B/Soul","Pop"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Amy Winehouse","songs":["Rehab","Valerie","Back to Black"],"debut_year":2003,"genre":["R&B/Soul"],"decades":["2000s"],"country":"United Kingdom"},{"name":"Destiny's Child","songs":["Say My Name","Survivor","Bootylicious"],"debut_year":1993,"genre":["R&B/Soul","Pop"],"decades":["90s","2000s"],"country":"United States"},{"name":"Frank Ocean","songs":["Thinking Bout You","Novacane","Chanel"],"debut_year":2011,"genre":["R&B/Soul"],"decades":["2010s","2020s"],"country":"United States"},{"name":"SZA","songs":["Kill Bill","Good Days","Snooze"],"debut_year":2012,"genre":["R&B/Soul","Pop"],"decades":["2010s","2020s"],"country":"United States"},{"name":"John Legend","songs":["All of Me","Ordinary People","Tonight (Best You Ever Had)"],"debut_year":2004,"genre":["R&B/Soul","Pop"],"decades":["2000s","2010s","2020s"],"country":"United States"},{"name":"Sam Smith","songs":["Stay with Me","I'm Not the Only One","Unholy"],"debut_year":2012,"genre":["Pop","R&B/Soul"],"decades":["2010s","2020s"],"country":"United Kingdom"},{"name":"Khalid","songs":["Young Dumb & Broke","Location","Better"],"debut_year":2017,"genre":["R&B/Soul","Pop"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Anderson .Paak","songs":["Come Down","Make It Better","Tints"],"debut_year":2012,"genre":["R&B/Soul","Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States","aliases":["Anderson Paak"]},{"name":"The Weeknd","songs":["Blinding Lights","Starboy","Can't Feel My Face"],"debut_year":2010,"genre":["R&B/Soul","Pop"],"decades":["2010s","2020s"],"country":"Canada","aliases":["Abel Tesfaye","Weeknd"]},{"name":"Daft Punk","songs":["Get Lucky","One More Time","Harder, Better, Faster, Stronger"],"debut_year":1993,"genre":["Electronic"],"decades":["90s","2000s","2010s"],"country":"France"},{"name":"Depeche Mode","songs":["Personal Jesus","Enjoy the Silence","Just Can't Get Enough"],"debut_year":1980,"genre":["Electronic"],"decades":["80s","90s","2000s"],"country":"United Kingdom"},{"name":"Donna Summer","songs":["Hot Stuff","I Feel Love","Last Dance"],"debut_year":1968,"genre":["Electronic","Pop"],"decades":["70s","80s"],"country":"United States","aliases":["Queen of Disco"]},{"name":"Calvin Harris","songs":["Summer","This Is What You Came For","Feel So Close"],"debut_year":2006,"genre":["Electronic","Pop"],"decades":["2000s","2010s","2020s"],"country":"United Kingdom"},{"name":"Avicii","songs":["Wake Me Up","Hey Brother","Levels"],"debut_year":2008,"genre":["Electronic"],"decades":["2010s"],"country":"Sweden","aliases":["Tim Bergling"]},{"name":"The Chainsmokers","songs":["Closer","Don't Let Me Down","Something Just Like This"],"debut_year":2012,"genre":["Electronic","Pop"],"decades":["2010s","2020s"],"country":"United States","aliases":["Chainsmokers"]},{"name":"Johnny Cash","songs":["Ring of Fire","Hurt","Man in Black"],"debut_year":1955,"genre":["Country"],"decades":["60s","70s","80s","90s"],"country":"United States","aliases":["The Man in Black"]},{"name":"Dolly Parton","songs":["Jolene","I Will Always Love You","9 to 5"],"debut_year":1964,"genre":["Country"],"decades":["70s","80s","90s","2000s"],"country":"United States"},{"name":"Garth Brooks","songs":["Friends in Low Places","The Dance","Unanswered Prayers"],"debut_year":1989,"genre":["Country"],"decades":["90s","2000s"],"country":"United States"},{"name":"Shania Twain","songs":["Man! I Feel Like a Woman!","You're Still the One","That Don't Impress Me Much"],"debut_year":1993,"genre":["Country","Pop"],"decades":["90s","2000s"],"country":"Canada"},{"name":"Willie Nelson","songs":["On the Road Again","Always on My Mind","Blue Eyes Crying in the Rain"],"debut_year":1956,"genre":["Country"],"decades":["70s","80s","90s"],"country":"United States"},{"name":"Morgan Wallen","songs":["Last Night","Wasted on You","More Than My Hometown"],"debut_year":2016,"genre":["Country"],"decades":["2020s"],"country":"United States"},{"name":"Chris Stapleton","songs":["Tennessee Whiskey","Broken Halos","Either Way"],"debut_year":2015,"genre":["Country"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Shakira","songs":["Hips Don't Lie","Waka Waka (This Time for Africa)","Whenever, Wherever"],"debut_year":1991,"genre":["Latin","Pop"],"decades":["90s","2000s","2010s","2020s"],"country":"Colombia"},{"name":"Bad Bunny","songs":["Dakiti","Me Porto Bonito","Tití Me Preguntó"],"debut_year":2016,"genre":["Latin"],"decades":["2010s","2020s"],"country":"Puerto Rico","aliases":["Benito"]},{"name":"Santana","songs":["Smooth","Black Magic Woman","Oye Como Va"],"debut_year":1966,"genre":["Latin","Rock"],"decades":["70s","80s","90s","2000s"],"country":"Mexico","aliases":["Carlos Santana"]},{"name":"J Balvin","songs":["Mi Gente","Reggaeton Ton (Bomba)","Con Calma"],"debut_year":2009,"genre":["Latin"],"decades":["2010s","2020s"],"country":"Colombia"},{"name":"Rosalía","songs":["DESPECHÁ","La Fama","Con Altura"],"debut_year":2017,"genre":["Latin","Pop"],"decades":["2010s","2020s"],"country":"Spain"},{"name":"Nelly","songs":["Hot in Herre","Dilemma","Just a Dream"],"debut_year":1999,"genre":["Hip-Hop/Rap","Pop"],"decades":["2000s"],"country":"United States"},{"name":"Iron Maiden","songs":["The Trooper","Run to the Hills","Fear of the Dark"],"debut_year":1975,"genre":["Metal"],"decades":["80s","90s"],"country":"United Kingdom"},{"name":"Slipknot","songs":["Psychosocial","Wait and Bleed","Duality"],"debut_year":1995,"genre":["Metal"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Ozzy Osbourne","songs":["Crazy Train","Mr. Crowley","Bark at the Moon"],"debut_year":1968,"genre":["Metal","Rock"],"decades":["80s","90s"],"country":"United Kingdom"},{"name":"Skrillex","songs":["Scary Monsters and Nice Sprites","First of the Year (Equinox)","Bangarang"],"debut_year":2010,"genre":["Electronic"],"decades":["2010s"],"country":"United States","aliases":["Sonny Moore"]},{"name":"Marshmello","songs":["Alone","Happier","Wolves"],"debut_year":2015,"genre":["Electronic","Pop"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Swedish House Mafia","songs":["Don't You Worry Child","One","Save the World"],"debut_year":2008,"genre":["Electronic"],"decades":["2010s"],"country":"Sweden"},{"name":"Enrique Iglesias","songs":["Hero","Bailando","I Like It"],"debut_year":1995,"genre":["Latin","Pop"],"decades":["90s","2000s","2010s"],"country":"Spain"},{"name":"Ozuna","songs":["Taki Taki","El Farsante","La Modelo"],"debut_year":2012,"genre":["Latin"],"decades":["2010s","2020s"],"country":"Puerto Rico"},{"name":"The Strokes","songs":["Last Nite","Reptilia","Someday"],"debut_year":1998,"genre":["Indie/Alternative","Rock"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Vampire Weekend","songs":["A-Punk","Cousins","Harmony Hall"],"debut_year":2006,"genre":["Indie/Alternative"],"decades":["2000s","2010s","2020s"],"country":"United States"},{"name":"Glass Animals","songs":["Heat Waves","Gooey","Pork Soda"],"debut_year":2012,"genre":["Indie/Alternative"],"decades":["2010s","2020s"],"country":"United Kingdom"},{"name":"The 1975","songs":["Somebody Else","Robbers","The Sound"],"debut_year":2013,"genre":["Indie/Alternative","Pop"],"decades":["2010s","2020s"],"country":"United Kingdom"},{"name":"The Who","songs":["My Generation","Baba O'Riley","Pinball Wizard"],"debut_year":1964,"genre":["Rock"],"decades":["60s","70s"],"country":"United Kingdom"},{"name":"The Kinks","songs":["You Really Got Me","Lola","Waterloo Sunset"],"debut_year":1964,"genre":["Rock"],"decades":["60s","70s"],"country":"United Kingdom"},{"name":"The Supremes","songs":["Stop! In the Name of Love","You Can't Hurry Love","Baby Love"],"debut_year":1961,"genre":["R&B/Soul","Pop"],"decades":["60s","70s"],"country":"United States"},{"name":"The Temptations","songs":["My Girl","Papa Was a Rollin' Stone","Ain't Too Proud to Beg"],"debut_year":1960,"genre":["R&B/Soul"],"decades":["60s","70s"],"country":"United States"},{"name":"James Brown","songs":["I Got You (I Feel Good)","Sex Machine","Papa's Got a Brand New Bag"],"debut_year":1956,"genre":["R&B/Soul"],"decades":["60s","70s"],"country":"United States"},{"name":"Ray Charles","songs":["Hit the Road Jack","Georgia on My Mind","What'd I Say"],"debut_year":1954,"genre":["R&B/Soul"],"decades":["60s","70s"],"country":"United States"},{"name":"Sam Cooke","songs":["A Change Is Gonna Come","You Send Me","Wonderful World"],"debut_year":1957,"genre":["R&B/Soul","Pop"],"decades":["60s"],"country":"United States"},{"name":"Otis Redding","songs":["(Sittin' On) The Dock of the Bay","Respect","Try a Little Tenderness"],"debut_year":1963,"genre":["R&B/Soul"],"decades":["60s"],"country":"United States"},{"name":"Bee Gees","songs":["Stayin' Alive","How Deep Is Your Love","Night Fever"],"debut_year":1958,"genre":["Pop","R&B/Soul"],"decades":["60s","70s","80s"],"country":"United Kingdom"},{"name":"Lynyrd Skynyrd","songs":["Sweet Home Alabama","Free Bird","Simple Man"],"debut_year":1964,"genre":["Rock"],"decades":["70s"],"country":"United States"},{"name":"Blondie","songs":["Heart of Glass","Call Me","One Way or Another"],"debut_year":1974,"genre":["Rock","Pop"],"decades":["70s","80s"],"country":"United States"},{"name":"Billy Joel","songs":["Piano Man","It's Still Rock and Roll to Me","We Didn't Start the Fire"],"debut_year":1971,"genre":["Rock","Pop"],"decades":["70s","80s"],"country":"United States"},{"name":"Dire Straits","songs":["Money for Nothing","Sultans of Swing","Romeo and Juliet"],"debut_year":1977,"genre":["Rock"],"decades":["70s","80s"],"country":"United Kingdom"},{"name":"Phil Collins","songs":["In the Air Tonight","Against All Odds","Sussudio"],"debut_year":1981,"genre":["Pop","Rock"],"decades":["80s","90s"],"country":"United Kingdom"},{"name":"The Ramones","songs":["Blitzkrieg Bop","I Wanna Be Sedated","Rock 'n' Roll High School"],"debut_year":1976,"genre":["Rock"],"decades":["70s","80s"],"country":"United States"},{"name":"The Clash","songs":["London Calling","Should I Stay or Should I Go","Rock the Casbah"],"debut_year":1976,"genre":["Rock"],"decades":["70s","80s"],"country":"United Kingdom"},{"name":"Genesis","songs":["Invisible Touch","Land of Confusion","Follow You Follow Me"],"debut_year":1967,"genre":["Rock","Pop"],"decades":["70s","80s"],"country":"United Kingdom"},{"name":"Neil Young","songs":["Heart of Gold","Rockin' in the Free World","Old Man"],"debut_year":1966,"genre":["Rock","Indie/Alternative"],"decades":["60s","70s","80s","90s"],"country":"Canada"},{"name":"Joni Mitchell","songs":["Big Yellow Taxi","Both Sides Now","River"],"debut_year":1968,"genre":["Rock","Indie/Alternative"],"decades":["60s","70s"],"country":"Canada"},{"name":"Cat Stevens","songs":["Wild World","Father and Son","Tea for the Tillerman"],"debut_year":1966,"genre":["Rock","Pop"],"decades":["60s","70s"],"country":"United Kingdom"},{"name":"Creedence Clearwater Revival","songs":["Proud Mary","Bad Moon Rising","Have You Ever Seen the Rain"],"debut_year":1967,"genre":["Rock"],"decades":["60s","70s"],"country":"United States"},{"name":"Aerosmith","songs":["Dream On","Sweet Emotion","Walk This Way"],"debut_year":1970,"genre":["Rock"],"decades":["70s","80s","90s"],"country":"United States"},{"name":"ZZ Top","songs":["Sharp Dressed Man","Legs","La Grange"],"debut_year":1969,"genre":["Rock"],"decades":["70s","80s"],"country":"United States"},{"name":"Journey","songs":["Don't Stop Believin'","Open Arms","Any Way You Want It"],"debut_year":1973,"genre":["Rock","Pop"],"decades":["70s","80s"],"country":"United States"},{"name":"Foreigner","songs":["I Want to Know What Love Is","Cold as Ice","Juke Box Hero"],"debut_year":1976,"genre":["Rock","Pop"],"decades":["70s","80s"],"country":"United States"},{"name":"Van Morrison","songs":["Brown Eyed Girl","Moondance","Into the Mystic"],"debut_year":1964,"genre":["Rock","R&B/Soul"],"decades":["60s","70s"],"country":"United Kingdom"},{"name":"Stevie Nicks","songs":["Edge of Seventeen","Stop Draggin' My Heart Around","Stand Back"],"debut_year":1981,"genre":["Rock","Pop"],"decades":["80s","90s"],"country":"United States"},{"name":"Heart","songs":["Barracuda","Crazy on You","Alone"],"debut_year":1973,"genre":["Rock"],"decades":["70s","80s"],"country":"United States"},{"name":"Hall & Oates","songs":["Maneater","Rich Girl","Sara Smile"],"debut_year":1972,"genre":["Pop","R&B/Soul"],"decades":["70s","80s"],"country":"United States"},{"name":"The Cure","songs":["Boys Don't Cry","Lovesong","Friday I'm in Love"],"debut_year":1978,"genre":["Rock","Indie/Alternative"],"decades":["80s","90s"],"country":"United Kingdom"},{"name":"New Order","songs":["Blue Monday","Bizarre Love Triangle","True Faith"],"debut_year":1980,"genre":["Electronic","Rock"],"decades":["80s","90s"],"country":"United Kingdom"},{"name":"Tears for Fears","songs":["Everybody Wants to Rule the World","Shout","Mad World"],"debut_year":1981,"genre":["Pop","Rock"],"decades":["80s"],"country":"United Kingdom"},{"name":"Eurythmics","songs":["Sweet Dreams (Are Made of This)","Here Comes the Rain Again","Would I Lie to You"],"debut_year":1980,"genre":["Pop","Electronic"],"decades":["80s"],"country":"United Kingdom"},{"name":"Janet Jackson","songs":["Nasty","That's the Way Love Goes","All for You"],"debut_year":1982,"genre":["Pop","R&B/Soul"],"decades":["80s","90s","2000s"],"country":"United States"},{"name":"Tina Turner","songs":["What's Love Got to Do with It","Private Dancer","Simply the Best"],"debut_year":1958,"genre":["Rock","R&B/Soul"],"decades":["60s","70s","80s"],"country":"United States"},{"name":"A-ha","songs":["Take On Me","The Sun Always Shines on T.V.","Hunting High and Low"],"debut_year":1982,"genre":["Pop"],"decades":["80s"],"country":"Norway"},{"name":"Wham!","songs":["Wake Me Up Before You Go-Go","Careless Whisper","Last Christmas"],"debut_year":1981,"genre":["Pop"],"decades":["80s"],"country":"United Kingdom"},{"name":"Culture Club","songs":["Karma Chameleon","Do You Really Want to Hurt Me","Church of the Poison Mind"],"debut_year":1981,"genre":["Pop"],"decades":["80s"],"country":"United Kingdom"},{"name":"Van Halen","songs":["Jump","Panama","Hot for Teacher"],"debut_year":1974,"genre":["Rock"],"decades":["80s"],"country":"United States"},{"name":"Mötley Crüe","songs":["Girls, Girls, Girls","Dr. Feelgood","Kickstart My Heart"],"debut_year":1981,"genre":["Rock","Metal"],"decades":["80s","90s"],"country":"United States"},{"name":"Peter Gabriel","songs":["Sledgehammer","In Your Eyes","Solsbury Hill"],"debut_year":1977,"genre":["Rock","Pop"],"decades":["80s","90s"],"country":"United Kingdom"},{"name":"R.E.M.","songs":["Losing My Religion","Everybody Hurts","Man on the Moon"],"debut_year":1980,"genre":["Rock","Indie/Alternative"],"decades":["80s","90s"],"country":"United States"},{"name":"Talking Heads","songs":["Psycho Killer","Burning Down the House","Once in a Lifetime"],"debut_year":1975,"genre":["Rock","Electronic"],"decades":["70s","80s"],"country":"United States"},{"name":"The Smiths","songs":["There Is a Light That Never Goes Out","How Soon Is Now?","This Charming Man"],"debut_year":1982,"genre":["Rock","Indie/Alternative"],"decades":["80s"],"country":"United Kingdom"},{"name":"Pet Shop Boys","songs":["West End Girls","It's a Sin","Always on My Mind"],"debut_year":1981,"genre":["Electronic","Pop"],"decades":["80s","90s"],"country":"United Kingdom"},{"name":"The Human League","songs":["Don't You Want Me","Fascination","Human"],"debut_year":1977,"genre":["Electronic","Pop"],"decades":["80s"],"country":"United Kingdom"},{"name":"Beastie Boys","songs":["(You Gotta) Fight for Your Right (To Party)","Sabotage","Intergalactic"],"debut_year":1981,"genre":["Hip-Hop/Rap","Rock"],"decades":["80s","90s"],"country":"United States"},{"name":"Public Enemy","songs":["Fight the Power","911 Is a Joke","Don't Believe the Hype"],"debut_year":1985,"genre":["Hip-Hop/Rap"],"decades":["80s","90s"],"country":"United States"},{"name":"Run-DMC","songs":["Walk This Way","It's Tricky","My Adidas"],"debut_year":1983,"genre":["Hip-Hop/Rap"],"decades":["80s","90s"],"country":"United States"},{"name":"Rick Astley","songs":["Never Gonna Give You Up","Together Forever","Whenever You Need Somebody"],"debut_year":1987,"genre":["Pop"],"decades":["80s"],"country":"United Kingdom"},{"name":"Salt-N-Pepa","songs":["Push It","Shoop","Whatta Man"],"debut_year":1985,"genre":["Hip-Hop/Rap"],"decades":["80s","90s"],"country":"United States"},{"name":"Backstreet Boys","songs":["I Want It That Way","Everybody (Backstreet's Back)","As Long as You Love Me"],"debut_year":1993,"genre":["Pop"],"decades":["90s","2000s"],"country":"United States"},{"name":"NSYNC","songs":["Bye Bye Bye","It's Gonna Be Me","Tearin' Up My Heart"],"debut_year":1995,"genre":["Pop"],"decades":["90s","2000s"],"country":"United States"},{"name":"Spice Girls","songs":["Wannabe","Say You'll Be There","2 Become 1"],"debut_year":1994,"genre":["Pop"],"decades":["90s"],"country":"United Kingdom"},{"name":"Pearl Jam","songs":["Alive","Black","Even Flow"],"debut_year":1990,"genre":["Rock"],"decades":["90s","2000s"],"country":"United States"},{"name":"Soundgarden","songs":["Black Hole Sun","Spoonman","Fell on Black Days"],"debut_year":1984,"genre":["Rock","Metal"],"decades":["90s"],"country":"United States"},{"name":"Alice in Chains","songs":["Would?","Rooster","Down in a Hole"],"debut_year":1987,"genre":["Rock","Metal"],"decades":["90s","2000s"],"country":"United States"},{"name":"Stone Temple Pilots","songs":["Plush","Creep","Vasoline"],"debut_year":1989,"genre":["Rock"],"decades":["90s"],"country":"United States"},{"name":"Blur","songs":["Song 2","Girls & Boys","Coffee & TV"],"debut_year":1988,"genre":["Rock","Indie/Alternative"],"decades":["90s"],"country":"United Kingdom"},{"name":"Pulp","songs":["Common People","Disco 2000","Babies"],"debut_year":1978,"genre":["Indie/Alternative","Pop"],"decades":["90s"],"country":"United Kingdom"},{"name":"Weezer","songs":["Undone – The Sweater Song","Buddy Holly","Say It Ain't So"],"debut_year":1993,"genre":["Rock","Indie/Alternative"],"decades":["90s","2000s"],"country":"United States"},{"name":"Beck","songs":["Loser","Where It's At","Devils Haircut"],"debut_year":1993,"genre":["Rock","Indie/Alternative"],"decades":["90s","2000s"],"country":"United States"},{"name":"Garbage","songs":["Stupid Girl","Only Happy When It Rains","Push It"],"debut_year":1994,"genre":["Rock","Indie/Alternative"],"decades":["90s"],"country":"United States"},{"name":"Portishead","songs":["Sour Times","Glory Box","Roads"],"debut_year":1991,"genre":["Electronic","Indie/Alternative"],"decades":["90s"],"country":"United Kingdom"},{"name":"Massive Attack","songs":["Teardrop","Angel","Unfinished Sympathy"],"debut_year":1988,"genre":["Electronic"],"decades":["90s","2000s"],"country":"United Kingdom"},{"name":"Smashing Pumpkins","songs":["1979","Tonight, Tonight","Bullet with Butterfly Wings"],"debut_year":1988,"genre":["Rock","Indie/Alternative"],"decades":["90s","2000s"],"country":"United States"},{"name":"Nine Inch Nails","songs":["Closer","Hurt","Head Like a Hole"],"debut_year":1988,"genre":["Rock","Metal","Electronic"],"decades":["90s","2000s"],"country":"United States"},{"name":"Blink-182","songs":["All the Small Things","What's My Age Again?","Dammit"],"debut_year":1992,"genre":["Rock"],"decades":["90s","2000s"],"country":"United States"},{"name":"Nas","songs":["N.Y. State of Mind","If I Ruled the World","One Love"],"debut_year":1994,"genre":["Hip-Hop/Rap"],"decades":["90s","2000s"],"country":"United States"},{"name":"Wu-Tang Clan","songs":["C.R.E.A.M.","Protect Ya Neck","Gravel Pit"],"debut_year":1993,"genre":["Hip-Hop/Rap"],"decades":["90s","2000s"],"country":"United States"},{"name":"A Tribe Called Quest","songs":["Can I Kick It?","Electric Relaxation","Award Tour"],"debut_year":1988,"genre":["Hip-Hop/Rap"],"decades":["90s"],"country":"United States"},{"name":"Missy Elliott","songs":["Work It","Get Ur Freak On","Lose Control"],"debut_year":1997,"genre":["Hip-Hop/Rap","R&B/Soul"],"decades":["90s","2000s"],"country":"United States"},{"name":"DMX","songs":["Party Up (Up in Here)","Where the Hood At","Ruff Ryders' Anthem"],"debut_year":1998,"genre":["Hip-Hop/Rap"],"decades":["90s","2000s"],"country":"United States"},{"name":"Outkast","songs":["Hey Ya!","Ms. Jackson","B.O.B."],"debut_year":1994,"genre":["Hip-Hop/Rap"],"decades":["90s","2000s"],"country":"United States"},{"name":"Snoop Dogg","songs":["Drop It Like It's Hot","Beautiful","Who Am I? (What's My Name?)"],"debut_year":1993,"genre":["Hip-Hop/Rap"],"decades":["90s","2000s","2010s"],"country":"United States"},{"name":"Fugees","songs":["Killing Me Softly","Ready or Not","Fu-Gee-La"],"debut_year":1994,"genre":["Hip-Hop/Rap","R&B/Soul"],"decades":["90s"],"country":"United States"},{"name":"TLC","songs":["Waterfalls","No Scrubs","Creep"],"debut_year":1991,"genre":["R&B/Soul","Pop"],"decades":["90s"],"country":"United States"},{"name":"Boyz II Men","songs":["End of the Road","I'll Make Love to You","On Bended Knee"],"debut_year":1988,"genre":["R&B/Soul"],"decades":["90s"],"country":"United States"},{"name":"Brandy","songs":["Have You Ever","The Boy Is Mine","I Wanna Be Down"],"debut_year":1994,"genre":["R&B/Soul","Pop"],"decades":["90s","2000s"],"country":"United States"},{"name":"My Chemical Romance","songs":["Welcome to the Black Parade","I'm Not Okay (I Promise)","Helena"],"debut_year":2001,"genre":["Rock"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Fall Out Boy","songs":["Sugar, We're Goin Down","Thnks fr th Mmrs","Dance, Dance"],"debut_year":2001,"genre":["Rock","Pop"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Paramore","songs":["Misery Business","Decode","The Only Exception"],"debut_year":2004,"genre":["Rock","Pop"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Panic! at the Disco","songs":["I Write Sins Not Tragedies","Nine in the Afternoon","High Hopes"],"debut_year":2004,"genre":["Rock","Pop"],"decades":["2000s","2010s"],"country":"United States"},{"name":"The Killers","songs":["Mr. Brightside","Somebody Told Me","Human"],"debut_year":2001,"genre":["Rock","Indie/Alternative"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Franz Ferdinand","songs":["Take Me Out","Do You Want To","This Fire"],"debut_year":2002,"genre":["Rock","Indie/Alternative"],"decades":["2000s"],"country":"United Kingdom"},{"name":"Arcade Fire","songs":["Wake Up","Rebellion (Lies)","Sprawl II (Mountains Beyond Mountains)"],"debut_year":2001,"genre":["Indie/Alternative"],"decades":["2000s","2010s"],"country":"Canada"},{"name":"Interpol","songs":["Obstacle 1","Slow Hands","Evil"],"debut_year":1997,"genre":["Rock","Indie/Alternative"],"decades":["2000s"],"country":"United States"},{"name":"Lil Wayne","songs":["A Milli","Lollipop","How to Love"],"debut_year":1995,"genre":["Hip-Hop/Rap"],"decades":["2000s","2010s"],"country":"United States"},{"name":"P!nk","songs":["So What","Just Give Me a Reason","Get the Party Started"],"debut_year":2000,"genre":["Pop","Rock"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Nelly Furtado","songs":["Maneater","Promiscuous","I'm Like a Bird"],"debut_year":2000,"genre":["Pop"],"decades":["2000s"],"country":"Canada"},{"name":"Ne-Yo","songs":["So Sick","Miss Independent","Closer"],"debut_year":2006,"genre":["R&B/Soul","Pop"],"decades":["2000s","2010s"],"country":"United States"},{"name":"T.I.","songs":["Whatever You Like","Live Your Life","Dead and Gone"],"debut_year":2001,"genre":["Hip-Hop/Rap"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Chris Brown","songs":["With You","Yeah 3x","Look at Me Now"],"debut_year":2005,"genre":["R&B/Soul","Pop"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Nickelback","songs":["How You Remind Me","Photograph","Rock Star"],"debut_year":1995,"genre":["Rock"],"decades":["2000s","2010s"],"country":"Canada"},{"name":"Avril Lavigne","songs":["Complicated","Sk8er Boi","Girlfriend"],"debut_year":2002,"genre":["Rock","Pop"],"decades":["2000s","2010s"],"country":"Canada"},{"name":"Evanescence","songs":["Bring Me to Life","My Immortal","Going Under"],"debut_year":1995,"genre":["Rock","Metal"],"decades":["2000s"],"country":"United States"},{"name":"John Mayer","songs":["Your Body Is a Wonderland","Gravity","Slow Dancing in a Burning Room"],"debut_year":2001,"genre":["Pop","Rock"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Norah Jones","songs":["Come Away with Me","Don't Know Why","Sunrise"],"debut_year":2002,"genre":["Pop","R&B/Soul"],"decades":["2000s"],"country":"United States"},{"name":"Maroon 5","songs":["Sugar","This Love","Girls Like You"],"debut_year":1994,"genre":["Pop","Rock"],"decades":["2000s","2010s"],"country":"United States"},{"name":"OneRepublic","songs":["Apologize","Counting Stars","Secrets"],"debut_year":2002,"genre":["Pop","Rock"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Kings of Leon","songs":["Use Somebody","Sex on Fire","Closer"],"debut_year":2000,"genre":["Rock","Indie/Alternative"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Snow Patrol","songs":["Chasing Cars","Run","Open Your Eyes"],"debut_year":1994,"genre":["Rock","Indie/Alternative"],"decades":["2000s","2010s"],"country":"United Kingdom"},{"name":"Keane","songs":["Somewhere Only We Know","Everybody's Changing","Bedshaped"],"debut_year":1997,"genre":["Rock","Pop"],"decades":["2000s","2010s"],"country":"United Kingdom"},{"name":"The White Stripes","songs":["Seven Nation Army","Fell in Love with a Girl","Icky Thump"],"debut_year":1997,"genre":["Rock"],"decades":["2000s"],"country":"United States"},{"name":"The Black Keys","songs":["Lonely Boy","Gold on the Ceiling","Howlin' for You"],"debut_year":2001,"genre":["Rock"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Muse","songs":["Supermassive Black Hole","Uprising","Starlight"],"debut_year":1994,"genre":["Rock","Electronic"],"decades":["2000s","2010s"],"country":"United Kingdom"},{"name":"Queens of the Stone Age","songs":["No One Knows","Little Sister","Go with the Flow"],"debut_year":1997,"genre":["Rock","Metal"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Modest Mouse","songs":["Float On","Dashboard","Dramamine"],"debut_year":1992,"genre":["Indie/Alternative"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Death Cab for Cutie","songs":["I Will Follow You into the Dark","Soul Meets Body","The Sound of Settling"],"debut_year":1997,"genre":["Indie/Alternative"],"decades":["2000s","2010s"],"country":"United States"},{"name":"BTS","songs":["Dynamite","Butter","Boy With Luv"],"debut_year":2013,"genre":["Pop"],"decades":["2010s","2020s"],"country":"South Korea"},{"name":"BLACKPINK","songs":["DDU-DU DDU-DU","Kill This Love","How You Like That"],"debut_year":2016,"genre":["Pop"],"decades":["2010s","2020s"],"country":"South Korea"},{"name":"Travis Scott","songs":["SICKO MODE","Goosebumps","Antidote"],"debut_year":2013,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Future","songs":["Mask Off","March Madness","Low Life"],"debut_year":2012,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States"},{"name":"J. Cole","songs":["No Role Modelz","Middle Child","Power Trip"],"debut_year":2011,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Macklemore","songs":["Thrift Shop","Can't Hold Us","Same Love"],"debut_year":2000,"genre":["Hip-Hop/Rap"],"decades":["2010s"],"country":"United States"},{"name":"Halsey","songs":["Without Me","Bad at Love","Nightmare"],"debut_year":2014,"genre":["Pop","Indie/Alternative"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Hozier","songs":["Take Me to Church","From Eden","Cherry Wine"],"debut_year":2013,"genre":["Indie/Alternative","Rock"],"decades":["2010s","2020s"],"country":"Ireland"},{"name":"Mumford & Sons","songs":["Little Lion Man","The Cave","I Will Wait"],"debut_year":2007,"genre":["Indie/Alternative","Rock"],"decades":["2010s"],"country":"United Kingdom"},{"name":"Florence + the Machine","songs":["Dog Days Are Over","Shake It Out","You've Got the Love"],"debut_year":2007,"genre":["Indie/Alternative","Pop"],"decades":["2000s","2010s"],"country":"United Kingdom"},{"name":"Sia","songs":["Chandelier","Cheap Thrills","Elastic Heart"],"debut_year":2000,"genre":["Pop"],"decades":["2010s"],"country":"Australia"},{"name":"Bastille","songs":["Pompeii","Good Grief","Things We Lost in the Fire"],"debut_year":2010,"genre":["Indie/Alternative","Pop"],"decades":["2010s"],"country":"United Kingdom"},{"name":"Alt-J","songs":["Something Good","Breezeblocks","Tessellate"],"debut_year":2007,"genre":["Indie/Alternative"],"decades":["2010s"],"country":"United Kingdom"},{"name":"Of Monsters and Men","songs":["Little Talks","King of Anything","Mountain Sound"],"debut_year":2010,"genre":["Indie/Alternative"],"decades":["2010s"],"country":"Iceland"},{"name":"Cage the Elephant","songs":["Shake Me Down","Ain't No Rest for the Wicked","Come a Little Closer"],"debut_year":2006,"genre":["Rock","Indie/Alternative"],"decades":["2000s","2010s"],"country":"United States"},{"name":"MGMT","songs":["Kids","Electric Feel","Time to Pretend"],"debut_year":2002,"genre":["Indie/Alternative","Electronic"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Zedd","songs":["Stay the Night","Beautiful Now","The Middle"],"debut_year":2012,"genre":["Electronic","Pop"],"decades":["2010s"],"country":"Germany"},{"name":"David Guetta","songs":["Titanium","When Love Takes Over","Without You"],"debut_year":2002,"genre":["Electronic","Pop"],"decades":["2000s","2010s"],"country":"France"},{"name":"Tiësto","songs":["The Business","Red Lights","Adagio for Strings"],"debut_year":1994,"genre":["Electronic"],"decades":["2000s","2010s","2020s"],"country":"Netherlands"},{"name":"The National","songs":["Bloodbuzz Ohio","Mr. November","Fake Empire"],"debut_year":1999,"genre":["Indie/Alternative"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Lewis Capaldi","songs":["Someone You Loved","Before You Go","Bruises"],"debut_year":2017,"genre":["Pop"],"decades":["2010s","2020s"],"country":"United Kingdom"},{"name":"Lizzo","songs":["Truth Hurts","Good as Hell","About Damn Time"],"debut_year":2012,"genre":["Pop","R&B/Soul"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Camila Cabello","songs":["Havana","Señorita","Never Be the Same"],"debut_year":2016,"genre":["Pop","Latin"],"decades":["2010s","2020s"],"country":"Cuba"},{"name":"Megan Thee Stallion","songs":["Savage","Hot Girl Summer","WAP"],"debut_year":2016,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States"},{"name":"The Script","songs":["The Man Who Can't Be Moved","Breakeven","Hall of Fame"],"debut_year":2007,"genre":["Pop","Rock"],"decades":["2000s","2010s"],"country":"Ireland"},{"name":"Passenger","songs":["Let Her Go","Things That Stop You Dreaming","Scare Away the Dark"],"debut_year":2003,"genre":["Indie/Alternative","Pop"],"decades":["2010s"],"country":"United Kingdom"},{"name":"Bon Iver","songs":["Skinny Love","Holocene","Towers"],"debut_year":2007,"genre":["Indie/Alternative"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Fleet Foxes","songs":["White Winter Hymnal","Helplessness Blues","Mykonos"],"debut_year":2006,"genre":["Indie/Alternative"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Pantera","songs":["Walk","Cowboys from Hell","Cemetery Gates"],"debut_year":1981,"genre":["Metal"],"decades":["80s","90s","2000s"],"country":"United States"},{"name":"System of a Down","songs":["Chop Suey!","B.Y.O.B.","Toxicity"],"debut_year":1994,"genre":["Metal","Rock"],"decades":["2000s"],"country":"United States"},{"name":"Tool","songs":["Schism","Sober","Forty Six & 2"],"debut_year":1990,"genre":["Metal","Rock"],"decades":["90s","2000s","2010s"],"country":"United States"},{"name":"Rammstein","songs":["Du Hast","Sonne","Feuer Frei!"],"debut_year":1994,"genre":["Metal","Rock"],"decades":["90s","2000s","2010s"],"country":"Germany"},{"name":"Korn","songs":["Freak on a Leash","Coming Undone","Here to Stay"],"debut_year":1993,"genre":["Metal","Rock"],"decades":["90s","2000s"],"country":"United States"},{"name":"Kraftwerk","songs":["Autobahn","Trans-Europe Express","The Model"],"debut_year":1969,"genre":["Electronic"],"decades":["70s","80s"],"country":"Germany"},{"name":"The Chemical Brothers","songs":["Block Rockin' Beats","Hey Boy Hey Girl","Galvanize"],"debut_year":1989,"genre":["Electronic"],"decades":["90s","2000s"],"country":"United Kingdom"},{"name":"The Prodigy","songs":["Firestarter","Breathe","Smack My Bitch Up"],"debut_year":1990,"genre":["Electronic","Rock"],"decades":["90s","2000s"],"country":"United Kingdom"},{"name":"Fatboy Slim","songs":["Praise You","Right Here, Right Now","Rockafeller Skank"],"debut_year":1996,"genre":["Electronic"],"decades":["90s","2000s"],"country":"United Kingdom"},{"name":"Moby","songs":["Porcelain","We Are All Made of Stars","Natural Blues"],"debut_year":1987,"genre":["Electronic"],"decades":["90s","2000s"],"country":"United States"},{"name":"Luke Combs","songs":["Beautiful Crazy","Beer Never Broke My Heart","Forever After All"],"debut_year":2014,"genre":["Country"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Zach Bryan","songs":["Something in the Orange","Heading South","I Remember Everything"],"debut_year":2019,"genre":["Country"],"decades":["2020s"],"country":"United States"},{"name":"Carrie Underwood","songs":["Before He Cheats","Blown Away","Jesus, Take the Wheel"],"debut_year":2005,"genre":["Country","Pop"],"decades":["2000s","2010s","2020s"],"country":"United States"},{"name":"Kenny Rogers","songs":["The Gambler","Lady","Islands in the Stream"],"debut_year":1958,"genre":["Country"],"decades":["70s","80s"],"country":"United States"},{"name":"Tim McGraw","songs":["Live Like You Were Dying","It's Your Love","Something Like That"],"debut_year":1993,"genre":["Country"],"decades":["90s","2000s","2010s"],"country":"United States"},{"name":"Brad Paisley","songs":["Online","Alcohol","Then"],"debut_year":1999,"genre":["Country"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Blake Shelton","songs":["God's Country","Austin","Ol' Red"],"debut_year":2001,"genre":["Country"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Luke Bryan","songs":["This Is How We Roll","Country Girl (Shake It for Me)","Do I"],"debut_year":2004,"genre":["Country"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Keith Urban","songs":["Blue Ain't Your Color","Better Life","Somebody Like You"],"debut_year":1991,"genre":["Country","Pop"],"decades":["2000s","2010s"],"country":"Australia"},{"name":"Alan Jackson","songs":["Chattahoochee","Remember When","It's Five O'Clock Somewhere"],"debut_year":1989,"genre":["Country"],"decades":["90s","2000s"],"country":"United States"},{"name":"Daddy Yankee","songs":["Gasolina","Con Calma","Despacito"],"debut_year":1994,"genre":["Latin"],"decades":["2000s","2010s","2020s"],"country":"Puerto Rico"},{"name":"Karol G","songs":["Tusa","Bichota","Provenza"],"debut_year":2012,"genre":["Latin"],"decades":["2010s","2020s"],"country":"Colombia"},{"name":"Peso Pluma","songs":["Ella Baila Sola","La Bebe","Chanel"],"debut_year":2020,"genre":["Latin"],"decades":["2020s"],"country":"Mexico"},{"name":"Marc Anthony","songs":["Vivir Mi Vida","I Need to Know","Valió la Pena"],"debut_year":1988,"genre":["Latin","R&B/Soul"],"decades":["90s","2000s","2010s"],"country":"United States"},{"name":"Ricky Martin","songs":["Livin' la Vida Loca","She Bangs","Shake Your Bon-Bon"],"debut_year":1984,"genre":["Latin","Pop"],"decades":["90s","2000s"],"country":"Puerto Rico"},{"name":"Pitbull","songs":["Give Me Everything","Feel This Moment","International Love"],"debut_year":2001,"genre":["Latin","Pop","Hip-Hop/Rap"],"decades":["2000s","2010s"],"country":"United States"},{"name":"Maluma","songs":["Hawái","Felices los 4","ADMV"],"debut_year":2011,"genre":["Latin"],"decades":["2010s","2020s"],"country":"Colombia"},{"name":"Lil Baby","songs":["Woah","The Bigger Picture","Sum 2 Prove"],"debut_year":2017,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Juice WRLD","songs":["Lucid Dreams","Legends","All Girls Are the Same"],"debut_year":2018,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Jack Harlow","songs":["What's Poppin","INDUSTRY BABY","Churchill Downs"],"debut_year":2018,"genre":["Hip-Hop/Rap"],"decades":["2020s"],"country":"United States"},{"name":"Giveon","songs":["Heartbreak Anniversary","For Tonight","Favorite Mistake"],"debut_year":2019,"genre":["R&B/Soul"],"decades":["2020s"],"country":"United States"},{"name":"Noah Kahan","songs":["Stick Season","Dial Drunk","She Calls Me Back"],"debut_year":2019,"genre":["Indie/Alternative","Pop"],"decades":["2020s"],"country":"United States"},{"name":"Benson Boone","songs":["Beautiful Things","Ghost Town","In the Stars"],"debut_year":2022,"genre":["Pop","Rock"],"decades":["2020s"],"country":"United States"},{"name":"Rod Wave","songs":["Heart on Ice","Richer","Girl of My Dreams"],"debut_year":2018,"genre":["Hip-Hop/Rap","R&B/Soul"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Gunna","songs":["Dollaz on My Head","Baby Birkin","Pushin P"],"debut_year":2016,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Polo G","songs":["Pop Out","Rapstar","Martin & Gina"],"debut_year":2018,"genre":["Hip-Hop/Rap"],"decades":["2010s","2020s"],"country":"United States"},{"name":"Feid","songs":["Feliz Cumpleaños Ferxxo","Normal","Hey Mor"],"debut_year":2014,"genre":["Latin"],"decades":["2010s","2020s"],"country":"Colombia"},{"name":"Rauw Alejandro","songs":["Todo de Ti","Cúrame","Tattoo"],"debut_year":2017,"genre":["Latin"],"decades":["2020s"],"country":"Puerto Rico"}];
+
+/* ---------- Utilities ---------- */
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/* ---------- Init ---------- */
+function init() {
+  const seen = new Set();
+  state.allArtists = ARTISTS_DATA.filter(a => {
+    if (seen.has(a.name)) return false;
+    seen.add(a.name);
+    return true;
+  });
+  setupEventListeners();
+  showScreen('menu');
+}
+
+/* ---------- Screens ---------- */
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(`screen-${name}`).classList.add('active');
+  if (name === 'menu')     renderMenuScreen();
+  if (name === 'category') renderCategoryScreen();
+}
+
+/* ---------- Menu Screen ---------- */
+function renderMenuScreen() {
+  const { wins, losses } = state.score;
+  const scoreEl = document.getElementById('menu-score');
+  if (wins + losses > 0) {
+    document.getElementById('menu-wins').textContent   = wins;
+    document.getElementById('menu-losses').textContent = losses;
+    document.getElementById('menu-streak').textContent = state.streak;
+    scoreEl.style.display = 'block';
+  }
+  updateDiffInfo();
+}
+
+function updateDiffInfo() {
+  document.getElementById('diff-info').textContent = DIFFICULTY_CONFIG[state.difficulty].label;
+}
+
+/* ---------- Category Screen ---------- */
+function renderCategoryScreen() {
+  const decades = ['60s','70s','80s','90s','2000s','2010s','2020s'];
+  const genres  = ['Rock','Pop','Hip-Hop/Rap','R&B/Soul','Electronic','Country','Metal','Indie/Alternative','Latin'];
+
+  const decadeGrid = document.getElementById('decade-grid');
+  const genreGrid  = document.getElementById('genre-grid');
+  decadeGrid.innerHTML = '';
+  genreGrid.innerHTML  = '';
+
+  decades.forEach(d => {
+    const count = getArtists('decade', d).length;
+    decadeGrid.appendChild(makeCategoryBtn(d, count, () => startPack('decade', d)));
+  });
+
+  genres.forEach(g => {
+    const count = getArtists('genre', g).length;
+    genreGrid.appendChild(makeCategoryBtn(g, count, () => startPack('genre', g)));
+  });
+}
+
+function makeCategoryBtn(label, count, onClick) {
+  const btn = document.createElement('button');
+  btn.className = 'category-btn';
+  btn.innerHTML = `<span class="cat-name">${label}</span><span class="cat-count">${count} artist${count !== 1 ? 's' : ''}</span>`;
+  btn.addEventListener('click', onClick);
+  return btn;
+}
+
+/* ---------- Artist Filtering ---------- */
+function getArtists(type, value) {
+  if (type === 'random') return state.allArtists;
+  if (type === 'decade') return state.allArtists.filter(a => a.decades.includes(value));
+  if (type === 'genre')  return state.allArtists.filter(a =>
+    a.genre.some(g => g.toLowerCase() === value.toLowerCase())
+  );
+  return state.allArtists;
+}
+
+/* ---------- Pack: Start ---------- */
+function startPack(type, value) {
+  state.categoryType    = type;
+  state.currentCategory = value;
+  state.score           = { wins: 0, losses: 0 };
+  state.streak          = 0;
+
+  let pool = getArtists(type, value);
+  if (pool.length === 0) { alert('No artists in this category!'); return; }
+
+  // Random = 20 shuffled from whole pool
+  if (type === 'random') {
+    pool = shuffle([...pool]).slice(0, 20);
+  } else {
+    pool = shuffle([...pool]);
+  }
+
+  pack.artists = pool;
+  pack.index   = 0;
+  pack.active  = true;
+  pack.stats   = { correct: 0, guessesOnWins: 0, longestStreak: 0, currentStreak: 0 };
+
+  startPackRound();
+}
+
+/* ---------- Pack: Start a single round ---------- */
+function startPackRound() {
+  const artist = pack.artists[pack.index];
+  const cfg    = DIFFICULTY_CONFIG[state.difficulty];
+
+  state.currentArtist    = artist;
+  state.maxGuesses       = cfg.guesses;
+  state.guessesRemaining = cfg.guesses;
+  state.songsShown       = cfg.songs;
+  state.hintsRevealed    = 0;
+  state.revealedSongs    = new Set();
+  state.songRevealedPos  = [new Set(), new Set(), new Set()];
+  state.gameOver         = false;
+  state.won              = false;
+
+  buildGameScreen();
+  showScreen('game');
+}
+
+/* ---------- Build Game Screen ---------- */
+function buildGameScreen() {
+  // Category tag
+  document.getElementById('game-category-tag').textContent = state.currentCategory || 'Random';
+
+  // Show/hide 3rd song row
+  document.getElementById('song-row-2').style.display = state.songsShown >= 3 ? '' : 'none';
+
+  // Pack progress bar
+  const packProg = document.getElementById('pack-progress');
+  if (pack.active) {
+    packProg.style.display = '';
+    updatePackProgress();
+    document.getElementById('btn-quit-pack').style.display = '';
+  } else {
+    packProg.style.display = 'none';
+    document.getElementById('btn-quit-pack').style.display = 'none';
+  }
+
+  // Clear feedback & inputs
+  const fb = document.getElementById('feedback');
+  fb.className = 'feedback';
+  fb.textContent = '';
+  document.getElementById('guess-input').value = '';
+  document.getElementById('song-guess-input').value = '';
+
+  renderArtistBlank();
+  for (let i = 0; i < state.songsShown; i++) renderSongBlank(i);
+  updateGuessCounter();
+  renderHints();
+}
+
+/* ---------- Pack: Progress Bar ---------- */
+function updatePackProgress() {
+  const total   = pack.artists.length;
+  const current = pack.index + 1;
+  const pct     = (pack.index / total) * 100;
+
+  document.getElementById('pack-progress-text').textContent = `Artist ${current} / ${total}`;
+  document.getElementById('pack-progress-fill').style.width = `${pct}%`;
+  document.getElementById('pack-score-display').innerHTML =
+    `✓ ${pack.stats.correct} &nbsp;✗ ${pack.index - pack.stats.correct}`;
+}
+
+/* ---------- Character Helpers ---------- */
+function charType(ch) {
+  if (/[a-zA-Z]/.test(ch)) return 'letter';
+  if (ch === ' ')           return 'space';
+  return 'punct';
+}
+
+function makeCharEl(ch, type, revealed, newlyRevealed) {
+  const el = document.createElement('span');
+  if (type === 'letter') {
+    const cls = ['char', 'letter', revealed ? 'revealed' : 'unrevealed'];
+    if (newlyRevealed) cls.push('newly-revealed');
+    el.className = cls.join(' ');
+    el.textContent = revealed ? ch.toUpperCase() : '_';
+  } else if (type === 'punct') {
+    el.className = 'char punct';
+    el.textContent = ch;
+  }
+  return el;
+}
+
+function renderTextAsBlank(text, revealedPositions, fullyRevealed, container) {
+  container.innerHTML = '';
+  let wordEl = null;
+
+  for (let i = 0; i < text.length; i++) {
+    const ch   = text[i];
+    const type = charType(ch);
+
+    if (type === 'space') {
+      if (wordEl) { container.appendChild(wordEl); wordEl = null; }
+      const gap = document.createElement('span');
+      gap.className = 'word-gap';
+      container.appendChild(gap);
+      continue;
+    }
+
+    if (!wordEl) {
+      wordEl = document.createElement('span');
+      wordEl.className = 'word-group';
+    }
+
+    const revealed = fullyRevealed || (type === 'letter' && revealedPositions.has(i));
+    wordEl.appendChild(makeCharEl(ch, type, revealed, false));
+  }
+  if (wordEl) container.appendChild(wordEl);
+}
+
+/* ---------- Render Artist Blank ---------- */
+function renderArtistBlank(fullyReveal = false) {
+  const container = document.getElementById('artist-name-blank');
+  renderTextAsBlank(state.currentArtist.name, new Set(), fullyReveal, container);
+}
+
+/* ---------- Render Song Blank ---------- */
+function renderSongBlank(idx, highlightNewPositions = null) {
+  const song      = state.currentArtist.songs[idx];
+  const container = document.getElementById(`song-${idx}`);
+  const fullyRevealed = state.revealedSongs.has(idx);
+  const positions = state.songRevealedPos[idx];
+
+  container.innerHTML = '';
+  container.className = `song-blank${fullyRevealed ? ' fully-revealed' : ''}`;
+
+  let wordEl = null;
+  for (let i = 0; i < song.length; i++) {
+    const ch   = song[i];
+    const type = charType(ch);
+
+    if (type === 'space') {
+      if (wordEl) { container.appendChild(wordEl); wordEl = null; }
+      const gap = document.createElement('span');
+      gap.className = 'word-gap';
+      container.appendChild(gap);
+      continue;
+    }
+
+    if (!wordEl) {
+      wordEl = document.createElement('span');
+      wordEl.className = 'word-group';
+    }
+
+    const revealed     = fullyRevealed || (type === 'letter' && positions.has(i));
+    const isNew        = highlightNewPositions && highlightNewPositions.has(i);
+    wordEl.appendChild(makeCharEl(ch, type, revealed, isNew));
+  }
+  if (wordEl) container.appendChild(wordEl);
+}
+
+/* ---------- Guess Counter ---------- */
+function updateGuessCounter() {
+  const container = document.getElementById('guess-counter');
+  container.innerHTML = '';
+  for (let i = 0; i < state.maxGuesses; i++) {
+    const icon = document.createElement('span');
+    icon.className = `guess-icon ${i < state.guessesRemaining ? 'active' : 'used'}`;
+    icon.textContent = '♪';
+    container.appendChild(icon);
+  }
+  const s = state.guessesRemaining !== 1 ? 'es' : '';
+  document.getElementById('guess-count-text').textContent =
+    `${state.guessesRemaining} guess${s} remaining`;
+}
+
+/* ---------- Hints ---------- */
+const HINT_MESSAGES = [
+  () => `<strong>Hint 1:</strong> A letter has been revealed in each song title`,
+  () => `<strong>Debut Year:</strong> ${state.currentArtist.debut_year}`,
+  () => `<strong>Genre:</strong> ${state.currentArtist.genre.join(' / ')}`,
+  () => `<strong>Country:</strong> ${state.currentArtist.country} &nbsp;+&nbsp; more letters revealed`,
+];
+
+function renderHints() {
+  const list = document.getElementById('hints-list');
+  document.getElementById('hints-count').textContent = `${state.hintsRevealed} / 4`;
+
+  if (state.hintsRevealed === 0) {
+    list.innerHTML = '<p class="no-hints">Make a wrong artist guess to unlock hints…</p>';
+    return;
+  }
+
+  list.innerHTML = '';
+  for (let i = 0; i < state.hintsRevealed; i++) {
+    const item = document.createElement('div');
+    item.className = `hint-item${i === state.hintsRevealed - 1 ? ' animate-in' : ''}`;
+    item.innerHTML = `<span style="color:var(--amber)">●</span> ${HINT_MESSAGES[i]()}`;
+    list.appendChild(item);
+  }
+}
+
+/* ---------- Letter Revelation ---------- */
+const CONSONANTS = new Set('bcdfghjklmnpqrstvwxyz');
+
+function pickRevealPosition(song, revealedPositions) {
+  const letters = [];
+  for (let i = 0; i < song.length; i++) {
+    if (/[a-zA-Z]/.test(song[i]) && !revealedPositions.has(i)) letters.push(i);
+  }
+  if (letters.length === 0) return -1;
+
+  // Prefer consonants for better gameplay feel
+  const consonantPositions = letters.filter(i => CONSONANTS.has(song[i].toLowerCase()));
+  const pool = consonantPositions.length > 0 ? consonantPositions : letters;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+function revealLetterInAllSongs() {
+  for (let i = 0; i < state.songsShown; i++) {
+    if (state.revealedSongs.has(i)) continue;
+    const pos = pickRevealPosition(state.currentArtist.songs[i], state.songRevealedPos[i]);
+    if (pos !== -1) {
+      state.songRevealedPos[i].add(pos);
+      renderSongBlank(i, new Set([pos]));
+      // Brief highlight animation
+      const song = state.currentArtist.songs[i];
+      setTimeout(() => renderSongBlank(i), 400);
+    }
+  }
+}
+
+/* ---------- Fuzzy Matching ---------- */
+function normalize(str) {
+  return (str || '')
+    .toLowerCase()
+    .replace(/^the\s+/i, '')
+    .replace(/[^\w\s]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function fuzzyMatch(guess, answer, aliases) {
+  const g = normalize(guess);
+  if (g === normalize(answer)) return true;
+  for (const alias of (aliases || [])) {
+    if (g === normalize(alias)) return true;
+  }
+  return false;
+}
+
+function songMatch(guess, song) {
+  return normalize(guess) === normalize(song);
+}
+
+/* ---------- Handle Artist Guess ---------- */
+function handleArtistGuess() {
+  if (state.gameOver) return;
+  const input = document.getElementById('guess-input');
+  const guess = input.value.trim();
+  if (!guess) return;
+  input.value = '';
+
+  const { currentArtist } = state;
+
+  if (fuzzyMatch(guess, currentArtist.name, currentArtist.aliases)) {
+    onWin();
+  } else {
+    onWrongArtistGuess();
+  }
+}
+
+function onWin() {
+  state.gameOver = true;
+  state.won      = true;
+  state.score.wins++;
+  state.streak++;
+
+  if (pack.active) {
+    pack.stats.correct++;
+    pack.stats.currentStreak++;
+    pack.stats.guessesOnWins += (state.maxGuesses - state.guessesRemaining + 1);
+    if (pack.stats.currentStreak > pack.stats.longestStreak)
+      pack.stats.longestStreak = pack.stats.currentStreak;
+  }
+
+  showFeedback('🎉 Correct!', 'correct');
+  flashCard('flash-win');
+  renderArtistBlank(true);
+  for (let i = 0; i < state.songsShown; i++) {
+    state.revealedSongs.add(i);
+    renderSongBlank(i);
+  }
+  setTimeout(() => showResultScreen(), 1200);
+}
+
+function onWrongArtistGuess() {
+  state.guessesRemaining--;
+  const wrongNum = state.maxGuesses - state.guessesRemaining;
+
+  if (wrongNum === 1 || wrongNum === 4) revealLetterInAllSongs();
+  if (wrongNum <= 4) state.hintsRevealed = wrongNum;
+
+  showFeedback('Wrong — try again!', 'wrong');
+  flashCard('shake');
+  flashCard('flash-wrong');
+  updateGuessCounter();
+  renderHints();
+
+  if (state.guessesRemaining <= 0) onLose();
+}
+
+function onLose() {
+  state.gameOver = true;
+  state.won      = false;
+  state.score.losses++;
+  state.streak   = 0;
+
+  if (pack.active) pack.stats.currentStreak = 0;
+
+  showFeedback('Game over!', 'wrong');
+  renderArtistBlank(true);
+  for (let i = 0; i < state.songsShown; i++) {
+    state.revealedSongs.add(i);
+    renderSongBlank(i);
+  }
+  setTimeout(() => showResultScreen(), 1400);
+}
+
+/* ---------- Handle Song Guess ---------- */
+function handleSongGuess() {
+  if (state.gameOver) return;
+  const input = document.getElementById('song-guess-input');
+  const guess = input.value.trim();
+  if (!guess) return;
+  input.value = '';
+
+  const { currentArtist, songsShown } = state;
+  let matched = false;
+
+  for (let i = 0; i < songsShown; i++) {
+    if (!state.revealedSongs.has(i) && songMatch(guess, currentArtist.songs[i])) {
+      state.revealedSongs.add(i);
+      renderSongBlank(i);
+      const el = document.getElementById(`song-${i}`);
+      el.classList.add('song-revealed-anim');
+      setTimeout(() => el.classList.remove('song-revealed-anim'), 700);
+      showFeedback('🎵 Song revealed!', 'correct');
+      matched = true;
+      break;
+    }
+  }
+
+  if (!matched) {
+    showFeedback('Not a match — no penalty though!', 'info');
+  }
+}
+
+/* ---------- Give Up / Quit Pack ---------- */
+function giveUp() {
+  if (state.gameOver) return;
+  onLose();
+}
+
+function quitPack() {
+  if (!pack.active) return;
+  // Record current artist as a loss if round is still in progress
+  if (!state.gameOver) {
+    state.gameOver = true;
+    state.won      = false;
+    state.score.losses++;
+    pack.stats.currentStreak = 0;
+    renderArtistBlank(true);
+    for (let i = 0; i < state.songsShown; i++) {
+      state.revealedSongs.add(i);
+      renderSongBlank(i);
+    }
+  }
+  pack.index++; // count current artist as done
+  showPackSummary();
+}
+
+/* ---------- Animations / Feedback ---------- */
+function flashCard(cls) {
+  const card = document.getElementById('game-card');
+  card.classList.add(cls);
+  setTimeout(() => card.classList.remove(cls), 500);
+}
+
+let feedbackTimer;
+function showFeedback(msg, type) {
+  clearTimeout(feedbackTimer);
+  const el = document.getElementById('feedback');
+  el.textContent = msg;
+  el.className   = `feedback ${type} visible`;
+  feedbackTimer = setTimeout(() => el.classList.remove('visible'), 2200);
+}
+
+/* ---------- Result Screen ---------- */
+let countdownTimer = null;
+
+function showResultScreen() {
+  clearCountdown();
+
+  const { won, currentArtist, maxGuesses, guessesRemaining, score, streak } = state;
+  const guessesUsed = maxGuesses - guessesRemaining + (won ? 1 : 0);
+  const isLastArtist = pack.active && pack.index >= pack.artists.length - 1;
+
+  document.getElementById('result-icon').textContent   = won ? '🎉' : '😔';
+  document.getElementById('result-title').textContent  = won ? 'You Got It!' : 'Better Luck Next Time!';
+  document.getElementById('result-artist').textContent = currentArtist.name;
+
+  document.getElementById('result-songs').innerHTML = currentArtist.songs
+    .slice(0, state.songsShown).map(s => `<li>${s}</li>`).join('');
+
+  document.getElementById('result-stat').textContent = won
+    ? `Guessed in ${guessesUsed} guess${guessesUsed !== 1 ? 'es' : ''}`
+    : 'The artist was revealed';
+
+  document.getElementById('result-score').textContent =
+    `Score: ${score.wins}W / ${score.losses}L  ·  🔥 Streak: ${streak}`;
+
+  // Button visibility
+  const btnNext    = document.getElementById('btn-next-artist');
+  const btnSummary = document.getElementById('btn-pack-summary');
+  const btnAgain   = document.getElementById('btn-play-again');
+
+  if (pack.active && !isLastArtist) {
+    btnNext.style.display    = '';
+    btnSummary.style.display = 'none';
+    btnAgain.style.display   = 'none';
+  } else if (pack.active && isLastArtist) {
+    btnNext.style.display    = 'none';
+    btnSummary.style.display = '';
+    btnAgain.style.display   = 'none';
+  } else {
+    btnNext.style.display    = 'none';
+    btnSummary.style.display = 'none';
+    btnAgain.style.display   = '';
+  }
+
+  // Pack progress badge
+  const badge = document.getElementById('pack-result-badge');
+  if (pack.active) {
+    badge.style.display = '';
+    document.getElementById('pack-result-progress').textContent =
+      `Artist ${pack.index + 1} / ${pack.artists.length}`;
+    document.getElementById('pack-result-score').textContent =
+      `✓ ${pack.stats.correct}  ✗ ${(pack.index + 1) - pack.stats.correct - (won ? 0 : 0)}`;
+  } else {
+    badge.style.display = 'none';
+  }
+
+  showScreen('result');
+
+  // Auto-advance countdown (3 s) for mid-pack rounds
+  if (pack.active && !isLastArtist) startCountdown(3, advancePackRound);
+}
+
+function startCountdown(seconds, callback) {
+  const bar   = document.getElementById('countdown-bar');
+  const fill  = document.getElementById('countdown-fill');
+  const label = document.getElementById('countdown-label');
+
+  bar.style.display = '';
+  let remaining = seconds;
+
+  label.textContent = `(${remaining})`;
+  fill.style.transition = 'none';
+  fill.style.width = '100%';
+
+  // Force reflow then animate
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      fill.style.transition = `width ${seconds}s linear`;
+      fill.style.width = '0%';
+    });
+  });
+
+  countdownTimer = setInterval(() => {
+    remaining--;
+    label.textContent = remaining > 0 ? `(${remaining})` : '';
+    if (remaining <= 0) {
+      clearCountdown();
+      callback();
+    }
+  }, 1000);
+}
+
+function clearCountdown() {
+  if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
+  const bar = document.getElementById('countdown-bar');
+  if (bar) bar.style.display = 'none';
+  const label = document.getElementById('countdown-label');
+  if (label) label.textContent = '';
+}
+
+/* ---------- Pack: Advance / Summary ---------- */
+function advancePackRound() {
+  clearCountdown();
+  pack.index++;
+  if (pack.index >= pack.artists.length) {
+    showPackSummary();
+  } else {
+    startPackRound();
+  }
+}
+
+function calcGrade(pct) {
+  if (pct >= 90) return 'A+';
+  if (pct >= 80) return 'A';
+  if (pct >= 70) return 'B';
+  if (pct >= 60) return 'C';
+  if (pct >= 50) return 'D';
+  return 'F';
+}
+
+function showPackSummary() {
+  clearCountdown();
+  pack.active = false;
+
+  const total   = pack.index; // artists played
+  const correct = pack.stats.correct;
+  const pct     = total > 0 ? Math.round((correct / total) * 100) : 0;
+  const avg     = correct > 0 ? (pack.stats.guessesOnWins / correct).toFixed(1) : '—';
+  const grade   = calcGrade(pct);
+
+  document.getElementById('summary-grade').textContent    = grade;
+  document.getElementById('summary-correct').textContent  = `${correct} / ${total}`;
+  document.getElementById('summary-pct').textContent      = `${pct}%`;
+  document.getElementById('summary-avg').textContent      = avg;
+  document.getElementById('summary-streak').textContent   = pack.stats.longestStreak;
+  document.getElementById('summary-category').textContent =
+    (state.currentCategory || 'Random') + ' · ' + total + ' artist' + (total !== 1 ? 's' : '');
+
+  showScreen('pack-summary');
+}
+
+/* ---------- Event Listeners ---------- */
+function setupEventListeners() {
+  // Menu
+  document.getElementById('btn-start').addEventListener('click', () => showScreen('category'));
+
+  // Difficulty
+  document.querySelectorAll('.diff-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.diff-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.difficulty = btn.dataset.difficulty;
+      updateDiffInfo();
+    });
+  });
+
+  // Category
+  document.getElementById('btn-category-back').addEventListener('click', () => showScreen('menu'));
+  document.getElementById('btn-random').addEventListener('click', () => startPack('random', null));
+
+  // Game — artist guess
+  document.getElementById('btn-guess-artist').addEventListener('click', handleArtistGuess);
+  document.getElementById('guess-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') handleArtistGuess();
+    if (e.key === 'Tab') { e.preventDefault(); document.getElementById('song-guess-input').focus(); }
+  });
+
+  // Game — song guess
+  document.getElementById('btn-guess-song').addEventListener('click', handleSongGuess);
+  document.getElementById('song-guess-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') handleSongGuess();
+    if (e.key === 'Tab') { e.preventDefault(); document.getElementById('guess-input').focus(); }
+  });
+
+  // Game — give up
+  document.getElementById('btn-give-up').addEventListener('click', () => {
+    if (!state.gameOver && confirm('Are you sure you want to give up?')) giveUp();
+  });
+
+  // Game — quit pack
+  document.getElementById('btn-quit-pack').addEventListener('click', () => {
+    if (confirm('Quit pack? Your results so far will be shown.')) quitPack();
+  });
+
+  // Game — back to menu/category
+  document.getElementById('btn-game-menu').addEventListener('click', () => {
+    const msg = pack.active
+      ? 'Return to menu? Your pack progress will be lost.'
+      : 'Return to menu? Your progress will be lost.';
+    if (state.gameOver || confirm(msg)) {
+      clearCountdown();
+      pack.active = false;
+      showScreen('category');
+    }
+  });
+
+  // Result — next artist (mid-pack)
+  document.getElementById('btn-next-artist').addEventListener('click', () => advancePackRound());
+
+  // Result — view pack summary (last artist)
+  document.getElementById('btn-pack-summary').addEventListener('click', () => {
+    pack.index++;
+    showPackSummary();
+  });
+
+  // Result — play again (single-play)
+  document.getElementById('btn-play-again').addEventListener('click', () =>
+    startPack(state.categoryType, state.currentCategory)
+  );
+
+  // Result — change category / main menu
+  document.getElementById('btn-change-category').addEventListener('click', () => {
+    clearCountdown(); pack.active = false; showScreen('category');
+  });
+  document.getElementById('btn-main-menu').addEventListener('click', () => {
+    clearCountdown(); pack.active = false; showScreen('menu');
+  });
+
+  // Pack summary buttons
+  document.getElementById('btn-replay-pack').addEventListener('click', () =>
+    startPack(state.categoryType, state.currentCategory)
+  );
+  document.getElementById('btn-summary-new-category').addEventListener('click', () =>
+    showScreen('category')
+  );
+  document.getElementById('btn-summary-menu').addEventListener('click', () =>
+    showScreen('menu')
+  );
+}
+
+/* ---------- Boot ---------- */
+init();
+
+</script>
+</body>
+</html>

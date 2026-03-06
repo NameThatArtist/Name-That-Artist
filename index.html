@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Name That Artist 🎵</title>
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+  <!-- Open Graph / link preview -->
+  <meta property="og:title" content="Name That Artist 🎵" />
+  <meta property="og:description" content="Can you guess the artist from their biggest hits? Pick a decade or genre and test your music knowledge!" />
+  <meta property="og:type" content="website" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Name That Artist 🎵" />
+  <meta name="twitter:description" content="Can you guess the artist from their biggest hits? Pick a decade or genre and test your music knowledge!" />
+  <meta name="description" content="Can you guess the artist from their biggest hits? Pick a decade or genre and test your music knowledge — 304 artists across every decade and genre." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- ===== SCREEN: MENU ===== -->
+    <div id="screen-menu" class="screen active">
+      <div class="vinyl-bg"></div>
+      <div class="menu-content">
+        <div class="logo">
+          <span class="logo-note">♪</span>
+          <h1 class="logo-title">Name That<br/>Artist</h1>
+          <span class="logo-note">♫</span>
+        </div>
+        <p class="tagline">Can you guess the artist from their biggest hits?</p>
+
+        <div class="score-display" id="menu-score" style="display:none">
+          <span id="menu-wins">0</span> wins &nbsp;·&nbsp;
+          <span id="menu-losses">0</span> losses &nbsp;·&nbsp;
+          🔥 <span id="menu-streak">0</span> streak
+        </div>
+
+        <button class="btn btn-primary btn-xl" id="btn-start">Play Now</button>
+
+        <div class="difficulty-row">
+          <span class="diff-label">Difficulty:</span>
+          <button class="diff-btn active" data-difficulty="normal">Normal</button>
+          <button class="diff-btn" data-difficulty="easy">Easy</button>
+          <button class="diff-btn" data-difficulty="hard">Hard</button>
+        </div>
+
+        <div class="diff-info" id="diff-info">5 guesses · 3 songs shown</div>
+
+        <footer class="footer-note">
+          This game runs entirely in your browser. No data is collected or sent anywhere.
+        </footer>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: CATEGORY ===== -->
+    <div id="screen-category" class="screen">
+      <div class="screen-header">
+        <button class="btn btn-ghost btn-back" id="btn-category-back">← Back</button>
+        <h2 class="screen-title">Choose a Category</h2>
+      </div>
+
+      <div class="category-section">
+        <h3 class="section-label">By Decade</h3>
+        <div class="category-grid" id="decade-grid"></div>
+      </div>
+
+      <div class="category-section">
+        <h3 class="section-label">By Genre</h3>
+        <div class="category-grid" id="genre-grid"></div>
+      </div>
+
+      <div class="category-section">
+        <button class="btn btn-accent btn-wide" id="btn-random">🎲 Random (20 artists)</button>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: GAME ===== -->
+    <div id="screen-game" class="screen">
+
+      <!-- Pack progress bar (hidden in single-play mode) -->
+      <div id="pack-progress" class="pack-progress" style="display:none">
+        <div class="pack-progress-header">
+          <span id="pack-progress-text">Artist 1 / 10</span>
+          <span id="pack-score-display">✓ 0 &nbsp;✗ 0</span>
+        </div>
+        <div class="pack-progress-track">
+          <div class="pack-progress-fill" id="pack-progress-fill"></div>
+        </div>
+      </div>
+
+      <div id="game-card">
+        <!-- Top bar -->
+        <div class="game-topbar">
+          <button class="btn btn-ghost btn-sm" id="btn-game-menu">≡ Menu</button>
+          <div class="game-category-tag" id="game-category-tag"></div>
+          <div class="guess-icons" id="guess-counter"></div>
+        </div>
+
+        <!-- Artist blank -->
+        <div class="game-section">
+          <div class="section-subtitle">ARTIST</div>
+          <div class="name-blank" id="artist-name-blank"></div>
+        </div>
+
+        <!-- Songs -->
+        <div class="game-section">
+          <div class="section-subtitle">TOP SONGS</div>
+          <div class="songs-area">
+            <div class="song-row">
+              <span class="song-num">1.</span>
+              <div class="song-blank" id="song-0"></div>
+            </div>
+            <div class="song-row">
+              <span class="song-num">2.</span>
+              <div class="song-blank" id="song-1"></div>
+            </div>
+            <div class="song-row" id="song-row-2">
+              <span class="song-num">3.</span>
+              <div class="song-blank" id="song-2"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback toast -->
+        <div class="feedback" id="feedback"></div>
+
+        <!-- Guess inputs -->
+        <div class="guess-area">
+          <div class="input-group">
+            <input type="text" id="guess-input" class="guess-input" placeholder="Type artist name…" autocomplete="off" spellcheck="false" />
+            <button class="btn btn-primary" id="btn-guess-artist">Guess Artist</button>
+          </div>
+          <div class="input-group">
+            <input type="text" id="song-guess-input" class="guess-input song-input" placeholder="Guess a song (free — no penalty)…" autocomplete="off" spellcheck="false" />
+            <button class="btn btn-secondary" id="btn-guess-song">Guess Song</button>
+          </div>
+        </div>
+
+        <!-- Hints panel -->
+        <div class="hints-panel">
+          <div class="hints-header">
+            <span class="hints-title">💡 Hints</span>
+            <span class="hints-count" id="hints-count">0 / 4</span>
+          </div>
+          <div class="hints-list" id="hints-list">
+            <p class="no-hints">Make a wrong artist guess to unlock hints…</p>
+          </div>
+        </div>
+
+        <!-- Bottom row -->
+        <div class="give-up-row">
+          <span class="guesses-text" id="guess-count-text">5 guesses remaining</span>
+          <div class="give-up-buttons">
+            <button class="btn btn-ghost btn-sm btn-danger" id="btn-quit-pack" style="display:none">Quit Pack</button>
+            <button class="btn btn-ghost btn-sm btn-danger" id="btn-give-up">I Give Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: RESULT (single round or mid-pack) ===== -->
+    <div id="screen-result" class="screen">
+      <div class="result-card">
+        <!-- Pack progress badge (hidden in single-play) -->
+        <div class="pack-result-badge" id="pack-result-badge" style="display:none">
+          <span id="pack-result-progress"></span>
+          <span id="pack-result-score"></span>
+        </div>
+
+        <div class="result-icon" id="result-icon">🎉</div>
+        <h2 class="result-title" id="result-title">You Got It!</h2>
+        <div class="result-artist" id="result-artist"></div>
+        <div class="result-songs-label">Top Songs:</div>
+        <ol class="result-songs" id="result-songs"></ol>
+        <div class="result-stat" id="result-stat"></div>
+        <div class="result-score" id="result-score"></div>
+
+        <!-- Countdown bar (shown during pack auto-advance) -->
+        <div class="countdown-bar" id="countdown-bar" style="display:none">
+          <div class="countdown-fill" id="countdown-fill"></div>
+        </div>
+
+        <div class="result-buttons">
+          <!-- Pack primary action -->
+          <button class="btn btn-primary btn-wide" id="btn-next-artist" style="display:none">
+            Next Artist → <span class="countdown-label" id="countdown-label"></span>
+          </button>
+          <!-- Single-play / pack-last primary -->
+          <button class="btn btn-primary btn-wide" id="btn-pack-summary" style="display:none">View Pack Results</button>
+          <button class="btn btn-primary btn-wide" id="btn-play-again" style="display:none">Play Again</button>
+          <button class="btn btn-secondary btn-wide" id="btn-change-category">Change Category</button>
+          <button class="btn btn-ghost btn-wide" id="btn-main-menu">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: PACK SUMMARY ===== -->
+    <div id="screen-pack-summary" class="screen">
+      <div class="result-card pack-summary-card">
+        <div class="pack-complete-header">Pack Complete! 🎵</div>
+        <div class="pack-category-label" id="summary-category"></div>
+
+        <div class="grade-circle" id="summary-grade">A+</div>
+
+        <div class="summary-stats-grid">
+          <div class="summary-stat">
+            <div class="stat-value" id="summary-correct"></div>
+            <div class="stat-label">Correct</div>
+          </div>
+          <div class="summary-stat">
+            <div class="stat-value" id="summary-pct"></div>
+            <div class="stat-label">Score</div>
+          </div>
+          <div class="summary-stat">
+            <div class="stat-value" id="summary-avg"></div>
+            <div class="stat-label">Avg Guesses</div>
+          </div>
+          <div class="summary-stat">
+            <div class="stat-value" id="summary-streak"></div>
+            <div class="stat-label">Best Streak</div>
+          </div>
+        </div>
+
+        <div class="result-buttons">
+          <button class="btn btn-primary btn-wide" id="btn-replay-pack">Play Pack Again</button>
+          <button class="btn btn-secondary btn-wide" id="btn-summary-new-category">New Category</button>
+          <button class="btn btn-ghost btn-wide" id="btn-summary-menu">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- #app -->
+
+  <script src="game.js"></script>
+</body>
+</html>
