@@ -14,7 +14,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Name That Artist 🎵" />
   <meta name="twitter:description" content="Can you guess the artist from their biggest hits? Pick a decade or genre and test your music knowledge!" />
-  <meta name="description" content="Can you guess the artist from their biggest hits? Pick a decade or genre and test your music knowledge — 304 artists across every decade and genre." />
+  <meta name="description" content="Can you guess the artist from their biggest hits? Pick a decade or genre and test your music knowledge — 334 artists across every decade and genre." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -51,9 +51,42 @@
 
         <div class="diff-info" id="diff-info">5 guesses · 3 songs shown</div>
 
+        <div id="ls-unavailable-note" class="ls-note" style="display:none">
+          Progress saving unavailable in private browsing mode
+        </div>
+
+        <button class="btn btn-ghost btn-sm btn-sound" id="btn-sound-toggle">🔇</button>
+
         <footer class="footer-note">
           This game runs entirely in your browser. No data is collected or sent anywhere.
         </footer>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: MODE SELECT ===== -->
+    <div id="screen-mode-select" class="screen">
+      <div class="screen-header">
+        <button class="btn btn-ghost btn-back" id="btn-mode-back">← Back</button>
+        <h2 class="screen-title">Choose a Mode</h2>
+      </div>
+
+      <div class="mode-grid">
+        <div class="mode-card" id="btn-mode-pack">
+          <div class="mode-icon">🎵</div>
+          <div class="mode-name">Classic Pack</div>
+          <div class="mode-desc">Play through a full category. Score tracked, final grade at the end.</div>
+        </div>
+        <div class="mode-card mode-card-streak" id="btn-mode-streak">
+          <div class="mode-icon">🔥</div>
+          <div class="mode-name">Streak Mode</div>
+          <div class="mode-desc">Build the longest streak you can. One wrong guess ends your run!</div>
+          <div class="mode-best" id="streak-personal-best"></div>
+        </div>
+        <div class="mode-card mode-card-story" id="btn-mode-story">
+          <div class="mode-icon">📖</div>
+          <div class="mode-name">Story Mode</div>
+          <div class="mode-desc">6 levels of increasing difficulty. Earn stars and unlock new levels.</div>
+        </div>
       </div>
     </div>
 
@@ -79,8 +112,31 @@
       </div>
     </div>
 
+    <!-- ===== SCREEN: STORY MODE LEVEL MAP ===== -->
+    <div id="screen-story" class="screen">
+      <div class="screen-header">
+        <button class="btn btn-ghost btn-back" id="btn-story-back">← Back</button>
+        <h2 class="screen-title">📖 Story Mode</h2>
+      </div>
+      <p class="story-subtitle">Complete each level to unlock the next. Earn up to 3 stars per level.</p>
+      <div class="story-level-grid" id="story-level-grid"></div>
+      <div class="story-footer">
+        <button class="btn btn-ghost btn-sm btn-danger" id="btn-story-reset">Reset Progress</button>
+      </div>
+    </div>
+
     <!-- ===== SCREEN: GAME ===== -->
     <div id="screen-game" class="screen">
+
+      <!-- Streak counter (hidden unless streak mode) -->
+      <div id="streak-counter" class="streak-counter" style="display:none">
+        <div class="streak-row">
+          <span class="streak-label">🔥 Streak</span>
+          <span class="streak-num" id="streak-num">0</span>
+          <span class="streak-skips" id="streak-skips">⏭ 3 skips</span>
+        </div>
+        <div class="streak-milestone" id="streak-milestone"></div>
+      </div>
 
       <!-- Pack progress bar (hidden in single-play mode) -->
       <div id="pack-progress" class="pack-progress" style="display:none">
@@ -156,6 +212,7 @@
         <div class="give-up-row">
           <span class="guesses-text" id="guess-count-text">5 guesses remaining</span>
           <div class="give-up-buttons">
+            <button class="btn btn-ghost btn-sm btn-accent" id="btn-skip-streak" style="display:none">⏭ Skip</button>
             <button class="btn btn-ghost btn-sm btn-danger" id="btn-quit-pack" style="display:none">Quit Pack</button>
             <button class="btn btn-ghost btn-sm btn-danger" id="btn-give-up">I Give Up</button>
           </div>
@@ -163,10 +220,10 @@
       </div>
     </div>
 
-    <!-- ===== SCREEN: RESULT (single round or mid-pack) ===== -->
+    <!-- ===== SCREEN: RESULT ===== -->
     <div id="screen-result" class="screen">
       <div class="result-card">
-        <!-- Pack progress badge (hidden in single-play) -->
+        <!-- Pack progress badge -->
         <div class="pack-result-badge" id="pack-result-badge" style="display:none">
           <span id="pack-result-progress"></span>
           <span id="pack-result-score"></span>
@@ -180,17 +237,21 @@
         <div class="result-stat" id="result-stat"></div>
         <div class="result-score" id="result-score"></div>
 
-        <!-- Countdown bar (shown during pack auto-advance) -->
+        <!-- Fun fact -->
+        <div class="result-fun-fact" id="result-fun-fact" style="display:none"></div>
+
+        <!-- Listen links -->
+        <div class="result-listen" id="result-listen"></div>
+
+        <!-- Countdown bar -->
         <div class="countdown-bar" id="countdown-bar" style="display:none">
           <div class="countdown-fill" id="countdown-fill"></div>
         </div>
 
         <div class="result-buttons">
-          <!-- Pack primary action -->
           <button class="btn btn-primary btn-wide" id="btn-next-artist" style="display:none">
             Next Artist → <span class="countdown-label" id="countdown-label"></span>
           </button>
-          <!-- Single-play / pack-last primary -->
           <button class="btn btn-primary btn-wide" id="btn-pack-summary" style="display:none">View Pack Results</button>
           <button class="btn btn-primary btn-wide" id="btn-play-again" style="display:none">Play Again</button>
           <button class="btn btn-secondary btn-wide" id="btn-change-category">Change Category</button>
@@ -204,32 +265,49 @@
       <div class="result-card pack-summary-card">
         <div class="pack-complete-header">Pack Complete! 🎵</div>
         <div class="pack-category-label" id="summary-category"></div>
-
         <div class="grade-circle" id="summary-grade">A+</div>
-
         <div class="summary-stats-grid">
-          <div class="summary-stat">
-            <div class="stat-value" id="summary-correct"></div>
-            <div class="stat-label">Correct</div>
-          </div>
-          <div class="summary-stat">
-            <div class="stat-value" id="summary-pct"></div>
-            <div class="stat-label">Score</div>
-          </div>
-          <div class="summary-stat">
-            <div class="stat-value" id="summary-avg"></div>
-            <div class="stat-label">Avg Guesses</div>
-          </div>
-          <div class="summary-stat">
-            <div class="stat-value" id="summary-streak"></div>
-            <div class="stat-label">Best Streak</div>
-          </div>
+          <div class="summary-stat"><div class="stat-value" id="summary-correct"></div><div class="stat-label">Correct</div></div>
+          <div class="summary-stat"><div class="stat-value" id="summary-pct"></div><div class="stat-label">Score</div></div>
+          <div class="summary-stat"><div class="stat-value" id="summary-avg"></div><div class="stat-label">Avg Guesses</div></div>
+          <div class="summary-stat"><div class="stat-value" id="summary-streak"></div><div class="stat-label">Best Streak</div></div>
         </div>
-
         <div class="result-buttons">
           <button class="btn btn-primary btn-wide" id="btn-replay-pack">Play Pack Again</button>
           <button class="btn btn-secondary btn-wide" id="btn-summary-new-category">New Category</button>
           <button class="btn btn-ghost btn-wide" id="btn-summary-menu">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: STREAK BROKEN ===== -->
+    <div id="screen-streak-broken" class="screen">
+      <div class="result-card streak-broken-card">
+        <div class="streak-broken-header">💔 Streak Broken!</div>
+        <div class="streak-broken-num" id="streak-broken-num">0</div>
+        <div class="streak-broken-label">artists in a row</div>
+        <div class="streak-broken-best" id="streak-broken-best"></div>
+        <div class="streak-broken-total" id="streak-broken-total"></div>
+        <div class="result-buttons">
+          <button class="btn btn-primary btn-wide" id="btn-streak-tryagain">🔥 Try Again</button>
+          <button class="btn btn-secondary btn-wide" id="btn-streak-category">Change Category</button>
+          <button class="btn btn-ghost btn-wide" id="btn-streak-menu">Main Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SCREEN: STORY SUMMARY ===== -->
+    <div id="screen-story-summary" class="screen">
+      <div class="result-card story-summary-card">
+        <div class="pack-complete-header" id="story-summary-level">Level 1: Opening Act</div>
+        <div class="story-stars-lg" id="story-summary-stars"></div>
+        <div class="story-result-badge" id="story-summary-result"></div>
+        <div class="story-summary-score" id="story-summary-score"></div>
+        <div class="result-buttons">
+          <button class="btn btn-primary btn-wide" id="btn-story-next-level" style="display:none">Next Level →</button>
+          <button class="btn btn-secondary btn-wide" id="btn-story-retry">Retry Level</button>
+          <button class="btn btn-secondary btn-wide" id="btn-story-summary-map">Level Map</button>
+          <button class="btn btn-ghost btn-wide" id="btn-story-summary-menu">Main Menu</button>
         </div>
       </div>
     </div>

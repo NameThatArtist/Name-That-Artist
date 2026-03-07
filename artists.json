@@ -18,7 +18,11 @@
       "country": "United Kingdom",
       "aliases": [
         "Beatles"
-      ]
+      ],
+      "members": 4,
+      "difficulty": "easy",
+      "fun_fact": "The Beatles hold the record for the most number-one hits on the US Billboard Hot 100 with 20.",
+      "spotify_ids": []
     },
     {
       "name": "The Rolling Stones",
@@ -42,7 +46,11 @@
       "country": "United Kingdom",
       "aliases": [
         "Rolling Stones"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Despite being in their 80s, The Rolling Stones continue to sell out stadiums worldwide.",
+      "spotify_ids": []
     },
     {
       "name": "Led Zeppelin",
@@ -59,7 +67,11 @@
       "decades": [
         "70s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "easy",
+      "fun_fact": "Stairway to Heaven was never released as a single, yet became the most-requested song in radio history.",
+      "spotify_ids": []
     },
     {
       "name": "Jimi Hendrix",
@@ -78,7 +90,10 @@
       "country": "United States",
       "aliases": [
         "Hendrix"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "The Doors",
@@ -98,7 +113,10 @@
       "country": "United States",
       "aliases": [
         "Doors"
-      ]
+      ],
+      "members": 4,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Pink Floyd",
@@ -115,7 +133,11 @@
         "70s",
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "easy",
+      "fun_fact": "The Dark Side of the Moon spent an astonishing 937 weeks on the Billboard 200 chart.",
+      "spotify_ids": []
     },
     {
       "name": "Queen",
@@ -132,7 +154,11 @@
         "70s",
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "easy",
+      "fun_fact": "Bohemian Rhapsody was considered too long for radio play but became one of the best-selling singles of all time.",
+      "spotify_ids": []
     },
     {
       "name": "David Bowie",
@@ -155,7 +181,11 @@
       "country": "United Kingdom",
       "aliases": [
         "Ziggy Stardust"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Bowie had two different-colored eyes from a schoolyard fight at age 15 that permanently dilated his left pupil.",
+      "spotify_ids": []
     },
     {
       "name": "Fleetwood Mac",
@@ -172,7 +202,11 @@
         "70s",
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 5,
+      "difficulty": "medium",
+      "fun_fact": "Rumours was recorded while all four core members were simultaneously going through breakups with each other.",
+      "spotify_ids": []
     },
     {
       "name": "Eagles",
@@ -194,7 +228,11 @@
       "country": "United States",
       "aliases": [
         "The Eagles"
-      ]
+      ],
+      "members": 5,
+      "difficulty": "easy",
+      "fun_fact": "Hotel California's iconic dual guitar solo was reportedly performed live on the very first take.",
+      "spotify_ids": []
     },
     {
       "name": "Elton John",
@@ -214,7 +252,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Bruce Springsteen",
@@ -234,7 +275,10 @@
       "country": "United States",
       "aliases": [
         "The Boss"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Tom Petty",
@@ -251,7 +295,10 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Police",
@@ -270,7 +317,10 @@
       "country": "United Kingdom",
       "aliases": [
         "Police"
-      ]
+      ],
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Bon Jovi",
@@ -288,7 +338,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "U2",
@@ -307,7 +360,11 @@
         "2000s",
         "2010s"
       ],
-      "country": "Ireland"
+      "country": "Ireland",
+      "members": 4,
+      "difficulty": "easy",
+      "fun_fact": "Bono is the only person ever nominated for a Grammy, Oscar, Golden Globe, and Nobel Peace Prize.",
+      "spotify_ids": []
     },
     {
       "name": "AC/DC",
@@ -325,7 +382,11 @@
         "80s",
         "90s"
       ],
-      "country": "Australia"
+      "country": "Australia",
+      "members": 5,
+      "difficulty": "easy",
+      "fun_fact": "AC/DC's Back in Black is the second best-selling album of all time, behind only Thriller.",
+      "spotify_ids": []
     },
     {
       "name": "Bob Dylan",
@@ -344,7 +405,11 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Bob Dylan is the only rock musician to have won the Nobel Prize in Literature, awarded in 2016.",
+      "spotify_ids": []
     },
     {
       "name": "Simon & Garfunkel",
@@ -364,7 +429,10 @@
       "country": "United States",
       "aliases": [
         "Simon and Garfunkel"
-      ]
+      ],
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Beach Boys",
@@ -385,7 +453,10 @@
       "country": "United States",
       "aliases": [
         "Beach Boys"
-      ]
+      ],
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Nirvana",
@@ -401,7 +472,11 @@
       "decades": [
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "easy",
+      "fun_fact": "Kurt Cobain was left-handed and played guitar left-handed, but wrote and drew right-handed.",
+      "spotify_ids": []
     },
     {
       "name": "Oasis",
@@ -418,7 +493,11 @@
         "90s",
         "2000s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Liam and Noel Gallagher haven't spoken since their bitter on-stage split in Paris in 2009.",
+      "spotify_ids": []
     },
     {
       "name": "Radiohead",
@@ -436,7 +515,11 @@
         "2000s",
         "2010s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 5,
+      "difficulty": "medium",
+      "fun_fact": "Radiohead titled OK Computer after a hitchhiker's line in Douglas Adams' The Hitchhiker's Guide to the Galaxy.",
+      "spotify_ids": []
     },
     {
       "name": "Green Day",
@@ -454,7 +537,11 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "easy",
+      "fun_fact": "Green Day wrote American Idiot after their previous album's master recordings were stolen from a studio.",
+      "spotify_ids": []
     },
     {
       "name": "Foo Fighters",
@@ -473,7 +560,11 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 6,
+      "difficulty": "medium",
+      "fun_fact": "Dave Grohl played every single instrument on the Foo Fighters' entire debut album entirely by himself.",
+      "spotify_ids": []
     },
     {
       "name": "Red Hot Chili Peppers",
@@ -493,7 +584,10 @@
       "country": "United States",
       "aliases": [
         "RHCP"
-      ]
+      ],
+      "members": 4,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Alanis Morissette",
@@ -511,7 +605,10 @@
         "90s",
         "2000s"
       ],
-      "country": "Canada"
+      "country": "Canada",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Arctic Monkeys",
@@ -530,7 +627,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Coldplay",
@@ -548,7 +648,11 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "easy",
+      "fun_fact": "Coldplay was originally called Starfish before changing their name in 1998.",
+      "spotify_ids": []
     },
     {
       "name": "Gorillaz",
@@ -567,7 +671,11 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 2,
+      "difficulty": "medium",
+      "fun_fact": "Gorillaz holds the Guinness World Record as the most commercially successful virtual band of all time.",
+      "spotify_ids": []
     },
     {
       "name": "Tame Impala",
@@ -584,7 +692,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Australia"
+      "country": "Australia",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Lorde",
@@ -605,7 +716,10 @@
       "country": "New Zealand",
       "aliases": [
         "Ella Yelich-O'Connor"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Twenty One Pilots",
@@ -622,7 +736,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Imagine Dragons",
@@ -640,7 +757,11 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "fun_fact": "Imagine Dragons is the most-streamed rock band in Spotify history.",
+      "spotify_ids": []
     },
     {
       "name": "Lana Del Rey",
@@ -658,7 +779,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Metallica",
@@ -677,7 +801,11 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "easy",
+      "fun_fact": "Metallica is the only band to have performed on all 7 continents, including a concert in Antarctica in 2013.",
+      "spotify_ids": []
     },
     {
       "name": "Guns N' Roses",
@@ -699,7 +827,11 @@
       "aliases": [
         "GNR",
         "Guns and Roses"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Appetite for Destruction is the best-selling debut album of all time in the United States.",
+      "spotify_ids": []
     },
     {
       "name": "Def Leppard",
@@ -717,7 +849,10 @@
         "80s",
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Linkin Park",
@@ -735,7 +870,11 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 6,
+      "difficulty": "medium",
+      "fun_fact": "Linkin Park's debut Hybrid Theory was rejected by every major label before eventually being signed.",
+      "spotify_ids": []
     },
     {
       "name": "Black Sabbath",
@@ -753,7 +892,11 @@
         "70s",
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "fun_fact": "Tony Iommi lost the fingertips of two fingers in a factory accident and learned to play anyway, defining heavy metal.",
+      "spotify_ids": []
     },
     {
       "name": "Michael Jackson",
@@ -775,7 +918,11 @@
       "aliases": [
         "MJ",
         "King of Pop"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Michael Jackson's Thriller is the best-selling album of all time with over 66 million copies sold.",
+      "spotify_ids": []
     },
     {
       "name": "Madonna",
@@ -796,7 +943,11 @@
       "country": "United States",
       "aliases": [
         "Queen of Pop"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Madonna holds the record for the highest-grossing concert tour by a solo female artist.",
+      "spotify_ids": []
     },
     {
       "name": "Prince",
@@ -814,7 +965,10 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Whitney Houston",
@@ -832,7 +986,10 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Mariah Carey",
@@ -851,7 +1008,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Cyndi Lauper",
@@ -867,7 +1027,10 @@
       "decades": [
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "George Michael",
@@ -885,7 +1048,10 @@
         "80s",
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "ABBA",
@@ -901,7 +1067,11 @@
       "decades": [
         "70s"
       ],
-      "country": "Sweden"
+      "country": "Sweden",
+      "members": 4,
+      "difficulty": "easy",
+      "fun_fact": "ABBA was reportedly offered $1 billion to reunite for a world tour in 2000, but turned it down.",
+      "spotify_ids": []
     },
     {
       "name": "Duran Duran",
@@ -919,7 +1089,10 @@
         "80s",
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Taylor Swift",
@@ -938,7 +1111,11 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Taylor Swift re-recorded her first 6 albums to reclaim full ownership of her masters after a dispute.",
+      "spotify_ids": []
     },
     {
       "name": "Katy Perry",
@@ -955,7 +1132,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Lady Gaga",
@@ -974,7 +1154,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Rihanna",
@@ -993,7 +1176,11 @@
         "2010s",
         "2020s"
       ],
-      "country": "Barbados"
+      "country": "Barbados",
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Rihanna performed the Super Bowl LVII Halftime Show while reportedly pregnant with her second child.",
+      "spotify_ids": []
     },
     {
       "name": "Justin Timberlake",
@@ -1015,7 +1202,10 @@
       "country": "United States",
       "aliases": [
         "JT"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Beyoncé",
@@ -1038,7 +1228,11 @@
       "aliases": [
         "Bey",
         "Queen Bey"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Beyoncé became the most Grammy-awarded artist in history, surpassing 32 total wins.",
+      "spotify_ids": []
     },
     {
       "name": "Adele",
@@ -1057,7 +1251,11 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Adele's album 21 was the best-selling album of both 2011 and 2012 worldwide.",
+      "spotify_ids": []
     },
     {
       "name": "Ed Sheeran",
@@ -1074,7 +1272,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Bruno Mars",
@@ -1092,7 +1293,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Ariana Grande",
@@ -1113,7 +1317,10 @@
       "country": "United States",
       "aliases": [
         "Ari"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Dua Lipa",
@@ -1131,7 +1338,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Harry Styles",
@@ -1149,7 +1359,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Billie Eilish",
@@ -1167,7 +1380,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Olivia Rodrigo",
@@ -1184,7 +1400,10 @@
       "decades": [
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Sabrina Carpenter",
@@ -1201,7 +1420,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Selena Gomez",
@@ -1218,7 +1440,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Justin Bieber",
@@ -1238,7 +1463,10 @@
       "country": "Canada",
       "aliases": [
         "Biebs"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Eminem",
@@ -1260,7 +1488,11 @@
       "aliases": [
         "Slim Shady",
         "Marshall Mathers"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Eminem memorizes the dictionary to find new rhyming combinations and has one of hip-hop's largest vocabularies.",
+      "spotify_ids": []
     },
     {
       "name": "2Pac",
@@ -1281,7 +1513,10 @@
         "Tupac",
         "Tupac Shakur",
         "Makaveli"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "The Notorious B.I.G.",
@@ -1303,7 +1538,10 @@
         "Biggie Smalls",
         "Notorious BIG",
         "Christopher Wallace"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Jay-Z",
@@ -1325,7 +1563,10 @@
       "aliases": [
         "Hov",
         "Shawn Carter"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Kanye West",
@@ -1348,7 +1589,11 @@
       "aliases": [
         "Ye",
         "Yeezy"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Kanye recorded his debut single with his jaw wired shut after a near-fatal car accident in 2002.",
+      "spotify_ids": []
     },
     {
       "name": "Nicki Minaj",
@@ -1369,7 +1614,10 @@
       "country": "Trinidad and Tobago",
       "aliases": [
         "Nicki"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Drake",
@@ -1392,7 +1640,11 @@
       "aliases": [
         "Drizzy",
         "Champagne Papi"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Drake appeared as wheelchair-bound Jimmy Brooks on the Canadian teen drama Degrassi before becoming a rapper.",
+      "spotify_ids": []
     },
     {
       "name": "Kendrick Lamar",
@@ -1413,7 +1665,10 @@
       "aliases": [
         "K-Dot",
         "Kdot"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Post Malone",
@@ -1434,7 +1689,10 @@
       "country": "United States",
       "aliases": [
         "Posty"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Cardi B",
@@ -1451,7 +1709,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Tyler the Creator",
@@ -1471,7 +1732,10 @@
       "country": "United States",
       "aliases": [
         "Tyler"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Lil Nas X",
@@ -1489,7 +1753,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "50 Cent",
@@ -1509,7 +1776,10 @@
       "aliases": [
         "Fifty Cent",
         "Curtis Jackson"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Black Eyed Peas",
@@ -1530,7 +1800,10 @@
       "country": "United States",
       "aliases": [
         "Black Eyed Peas"
-      ]
+      ],
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Childish Gambino",
@@ -1551,7 +1824,10 @@
       "country": "United States",
       "aliases": [
         "Donald Glover"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Doja Cat",
@@ -1570,7 +1846,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Lauryn Hill",
@@ -1587,7 +1866,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Aretha Franklin",
@@ -1608,7 +1890,10 @@
       "country": "United States",
       "aliases": [
         "Queen of Soul"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Marvin Gaye",
@@ -1626,7 +1911,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Stevie Wonder",
@@ -1646,7 +1934,10 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Bob Marley",
@@ -1665,7 +1956,11 @@
       "country": "Jamaica",
       "aliases": [
         "Robert Nesta Marley"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Bob Marley's Legend is the best-selling reggae album of all time with over 28 million copies sold.",
+      "spotify_ids": []
     },
     {
       "name": "Alicia Keys",
@@ -1683,7 +1978,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Usher",
@@ -1701,7 +1999,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Amy Winehouse",
@@ -1717,7 +2018,11 @@
       "decades": [
         "2000s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Amy Winehouse won 5 Grammy Awards in a single night in 2008 — the most ever by a British female artist.",
+      "spotify_ids": []
     },
     {
       "name": "Destiny's Child",
@@ -1735,7 +2040,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Frank Ocean",
@@ -1752,7 +2060,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "SZA",
@@ -1770,7 +2081,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "John Legend",
@@ -1789,7 +2103,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Sam Smith",
@@ -1807,7 +2124,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Khalid",
@@ -1825,7 +2145,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Anderson .Paak",
@@ -1846,7 +2169,10 @@
       "country": "United States",
       "aliases": [
         "Anderson Paak"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "The Weeknd",
@@ -1868,7 +2194,10 @@
       "aliases": [
         "Abel Tesfaye",
         "Weeknd"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Daft Punk",
@@ -1886,7 +2215,11 @@
         "2000s",
         "2010s"
       ],
-      "country": "France"
+      "country": "France",
+      "members": 2,
+      "difficulty": "medium",
+      "fun_fact": "Daft Punk never appeared publicly without their robot helmets after adopting the personas in 1999.",
+      "spotify_ids": []
     },
     {
       "name": "Depeche Mode",
@@ -1904,7 +2237,11 @@
         "90s",
         "2000s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 3,
+      "difficulty": "medium",
+      "fun_fact": "Depeche Mode has sold over 100 million records, making them one of the most successful electronic acts ever.",
+      "spotify_ids": []
     },
     {
       "name": "Donna Summer",
@@ -1925,7 +2262,10 @@
       "country": "United States",
       "aliases": [
         "Queen of Disco"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Calvin Harris",
@@ -1944,7 +2284,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Avicii",
@@ -1963,7 +2306,10 @@
       "country": "Sweden",
       "aliases": [
         "Tim Bergling"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Chainsmokers",
@@ -1984,7 +2330,10 @@
       "country": "United States",
       "aliases": [
         "Chainsmokers"
-      ]
+      ],
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Johnny Cash",
@@ -2006,7 +2355,10 @@
       "country": "United States",
       "aliases": [
         "The Man in Black"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Dolly Parton",
@@ -2025,7 +2377,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Garth Brooks",
@@ -2042,7 +2397,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Shania Twain",
@@ -2060,7 +2418,10 @@
         "90s",
         "2000s"
       ],
-      "country": "Canada"
+      "country": "Canada",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Willie Nelson",
@@ -2078,7 +2439,10 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Morgan Wallen",
@@ -2094,7 +2458,10 @@
       "decades": [
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Chris Stapleton",
@@ -2111,7 +2478,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Shakira",
@@ -2131,7 +2501,11 @@
         "2010s",
         "2020s"
       ],
-      "country": "Colombia"
+      "country": "Colombia",
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Shakira speaks 6 languages fluently: Spanish, English, Italian, Portuguese, Arabic, and French.",
+      "spotify_ids": []
     },
     {
       "name": "Bad Bunny",
@@ -2151,7 +2525,11 @@
       "country": "Puerto Rico",
       "aliases": [
         "Benito"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Bad Bunny was Spotify's most-streamed artist 3 years running (2020, 2021, 2022).",
+      "spotify_ids": []
     },
     {
       "name": "Santana",
@@ -2174,7 +2552,10 @@
       "country": "Mexico",
       "aliases": [
         "Carlos Santana"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "J Balvin",
@@ -2191,7 +2572,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Colombia"
+      "country": "Colombia",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Rosalía",
@@ -2209,7 +2593,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Spain"
+      "country": "Spain",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Nelly",
@@ -2226,7 +2613,10 @@
       "decades": [
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Iron Maiden",
@@ -2243,7 +2633,10 @@
         "80s",
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 6,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Slipknot",
@@ -2260,7 +2653,11 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 9,
+      "difficulty": "medium",
+      "fun_fact": "Slipknot has 9 members and each member is traditionally known by a number (0 through 8).",
+      "spotify_ids": []
     },
     {
       "name": "Ozzy Osbourne",
@@ -2278,7 +2675,10 @@
         "80s",
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Skrillex",
@@ -2297,7 +2697,10 @@
       "country": "United States",
       "aliases": [
         "Sonny Moore"
-      ]
+      ],
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Marshmello",
@@ -2315,7 +2718,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Swedish House Mafia",
@@ -2331,7 +2737,10 @@
       "decades": [
         "2010s"
       ],
-      "country": "Sweden"
+      "country": "Sweden",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Enrique Iglesias",
@@ -2350,7 +2759,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "Spain"
+      "country": "Spain",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Ozuna",
@@ -2367,7 +2779,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Puerto Rico"
+      "country": "Puerto Rico",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Strokes",
@@ -2385,7 +2800,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Vampire Weekend",
@@ -2403,7 +2821,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Glass Animals",
@@ -2420,7 +2841,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The 1975",
@@ -2438,7 +2862,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Who",
@@ -2455,7 +2882,11 @@
         "60s",
         "70s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Pete Townshend invented the guitar smash after accidentally breaking his guitar on a low ceiling at a show.",
+      "spotify_ids": []
     },
     {
       "name": "The Kinks",
@@ -2472,7 +2903,10 @@
         "60s",
         "70s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Supremes",
@@ -2490,7 +2924,10 @@
         "60s",
         "70s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Temptations",
@@ -2507,7 +2944,10 @@
         "60s",
         "70s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "James Brown",
@@ -2524,7 +2964,10 @@
         "60s",
         "70s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Ray Charles",
@@ -2541,7 +2984,10 @@
         "60s",
         "70s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Sam Cooke",
@@ -2558,7 +3004,10 @@
       "decades": [
         "60s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Otis Redding",
@@ -2574,7 +3023,10 @@
       "decades": [
         "60s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Bee Gees",
@@ -2593,7 +3045,10 @@
         "70s",
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Lynyrd Skynyrd",
@@ -2609,7 +3064,10 @@
       "decades": [
         "70s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 6,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Blondie",
@@ -2627,7 +3085,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 6,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Billy Joel",
@@ -2645,7 +3106,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Dire Straits",
@@ -2662,7 +3126,10 @@
         "70s",
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Phil Collins",
@@ -2680,7 +3147,10 @@
         "80s",
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Ramones",
@@ -2697,7 +3167,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Clash",
@@ -2714,7 +3187,10 @@
         "70s",
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Genesis",
@@ -2732,7 +3208,10 @@
         "70s",
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Neil Young",
@@ -2752,7 +3231,10 @@
         "80s",
         "90s"
       ],
-      "country": "Canada"
+      "country": "Canada",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Joni Mitchell",
@@ -2770,7 +3252,10 @@
         "60s",
         "70s"
       ],
-      "country": "Canada"
+      "country": "Canada",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Cat Stevens",
@@ -2788,7 +3273,10 @@
         "60s",
         "70s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Creedence Clearwater Revival",
@@ -2805,7 +3293,10 @@
         "60s",
         "70s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Aerosmith",
@@ -2823,7 +3314,11 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "medium",
+      "fun_fact": "Aerosmith is the highest-grossing American rock band of all time, earning over $1 billion in touring revenue.",
+      "spotify_ids": []
     },
     {
       "name": "ZZ Top",
@@ -2840,7 +3335,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Journey",
@@ -2858,7 +3356,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Foreigner",
@@ -2876,7 +3377,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Van Morrison",
@@ -2894,7 +3398,10 @@
         "60s",
         "70s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Stevie Nicks",
@@ -2912,7 +3419,10 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Heart",
@@ -2929,7 +3439,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Hall & Oates",
@@ -2947,7 +3460,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Cure",
@@ -2965,7 +3481,11 @@
         "80s",
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Robert Smith has worn the same smeared red lipstick and black eyeliner on stage for over 40 years.",
+      "spotify_ids": []
     },
     {
       "name": "New Order",
@@ -2983,7 +3503,10 @@
         "80s",
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Tears for Fears",
@@ -3000,7 +3523,10 @@
       "decades": [
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Eurythmics",
@@ -3017,7 +3543,10 @@
       "decades": [
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Janet Jackson",
@@ -3036,7 +3565,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Tina Turner",
@@ -3055,7 +3587,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "A-ha",
@@ -3071,7 +3606,10 @@
       "decades": [
         "80s"
       ],
-      "country": "Norway"
+      "country": "Norway",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Wham!",
@@ -3087,7 +3625,10 @@
       "decades": [
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Culture Club",
@@ -3103,7 +3644,10 @@
       "decades": [
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Van Halen",
@@ -3119,7 +3663,11 @@
       "decades": [
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "fun_fact": "Eddie Van Halen revolutionized rock guitar with his two-handed tapping technique showcased on 'Eruption.'",
+      "spotify_ids": []
     },
     {
       "name": "Mötley Crüe",
@@ -3137,7 +3685,10 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Peter Gabriel",
@@ -3155,7 +3706,10 @@
         "80s",
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "R.E.M.",
@@ -3173,7 +3727,10 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Talking Heads",
@@ -3191,7 +3748,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Smiths",
@@ -3208,7 +3768,10 @@
       "decades": [
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Pet Shop Boys",
@@ -3226,7 +3789,10 @@
         "80s",
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Human League",
@@ -3243,7 +3809,10 @@
       "decades": [
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 3,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Beastie Boys",
@@ -3261,7 +3830,11 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "medium",
+      "fun_fact": "The Beastie Boys were originally a hardcore punk band before pivoting to hip-hop in 1983.",
+      "spotify_ids": []
     },
     {
       "name": "Public Enemy",
@@ -3278,7 +3851,10 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Run-DMC",
@@ -3295,7 +3871,11 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Run-DMC's 'Walk This Way' collaboration with Aerosmith is credited with bringing hip-hop to mainstream rock audiences.",
+      "spotify_ids": []
     },
     {
       "name": "Rick Astley",
@@ -3311,7 +3891,10 @@
       "decades": [
         "80s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Salt-N-Pepa",
@@ -3328,7 +3911,10 @@
         "80s",
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Backstreet Boys",
@@ -3345,7 +3931,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "NSYNC",
@@ -3362,7 +3951,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Spice Girls",
@@ -3378,7 +3970,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 5,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Pearl Jam",
@@ -3395,7 +3990,11 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "medium",
+      "fun_fact": "Pearl Jam fought Ticketmaster in 1994 over service fees and testified before the US Congress about it.",
+      "spotify_ids": []
     },
     {
       "name": "Soundgarden",
@@ -3412,7 +4011,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Alice in Chains",
@@ -3430,7 +4032,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Stone Temple Pilots",
@@ -3446,7 +4051,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Blur",
@@ -3463,7 +4071,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Pulp",
@@ -3480,7 +4091,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 5,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Weezer",
@@ -3498,7 +4112,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Beck",
@@ -3516,7 +4133,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Garbage",
@@ -3533,7 +4153,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Portishead",
@@ -3550,7 +4173,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 3,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Massive Attack",
@@ -3567,7 +4193,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 3,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Smashing Pumpkins",
@@ -3585,7 +4214,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Nine Inch Nails",
@@ -3604,7 +4236,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Blink-182",
@@ -3621,7 +4256,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Nas",
@@ -3638,7 +4276,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Wu-Tang Clan",
@@ -3655,7 +4296,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 9,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "A Tribe Called Quest",
@@ -3671,7 +4315,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Missy Elliott",
@@ -3689,7 +4336,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "DMX",
@@ -3706,7 +4356,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Outkast",
@@ -3723,7 +4376,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Snoop Dogg",
@@ -3741,7 +4397,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Fugees",
@@ -3758,7 +4417,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "TLC",
@@ -3775,7 +4437,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "easy",
+      "spotify_ids": []
     },
     {
       "name": "Boyz II Men",
@@ -3791,7 +4456,10 @@
       "decades": [
         "90s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Brandy",
@@ -3809,7 +4477,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "My Chemical Romance",
@@ -3826,7 +4497,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Fall Out Boy",
@@ -3844,7 +4518,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Paramore",
@@ -3862,7 +4539,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Panic! at the Disco",
@@ -3880,7 +4560,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Killers",
@@ -3898,7 +4581,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Franz Ferdinand",
@@ -3915,7 +4601,10 @@
       "decades": [
         "2000s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Arcade Fire",
@@ -3932,7 +4621,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "Canada"
+      "country": "Canada",
+      "members": 8,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Interpol",
@@ -3949,7 +4641,10 @@
       "decades": [
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Lil Wayne",
@@ -3966,7 +4661,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "P!nk",
@@ -3984,7 +4682,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Nelly Furtado",
@@ -4000,7 +4701,10 @@
       "decades": [
         "2000s"
       ],
-      "country": "Canada"
+      "country": "Canada",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Ne-Yo",
@@ -4018,7 +4722,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "T.I.",
@@ -4035,7 +4742,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Chris Brown",
@@ -4053,7 +4763,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Nickelback",
@@ -4070,7 +4783,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "Canada"
+      "country": "Canada",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Avril Lavigne",
@@ -4088,7 +4804,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "Canada"
+      "country": "Canada",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Evanescence",
@@ -4105,7 +4824,10 @@
       "decades": [
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "John Mayer",
@@ -4123,7 +4845,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Norah Jones",
@@ -4140,7 +4865,10 @@
       "decades": [
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Maroon 5",
@@ -4158,7 +4886,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "OneRepublic",
@@ -4176,7 +4907,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Kings of Leon",
@@ -4194,7 +4928,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Snow Patrol",
@@ -4212,7 +4949,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Keane",
@@ -4230,7 +4970,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The White Stripes",
@@ -4246,7 +4989,10 @@
       "decades": [
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Black Keys",
@@ -4263,7 +5009,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 2,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Muse",
@@ -4281,7 +5030,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Queens of the Stone Age",
@@ -4299,7 +5051,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Modest Mouse",
@@ -4316,7 +5071,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Death Cab for Cutie",
@@ -4333,7 +5091,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "BTS",
@@ -4350,7 +5111,11 @@
         "2010s",
         "2020s"
       ],
-      "country": "South Korea"
+      "country": "South Korea",
+      "members": 7,
+      "difficulty": "easy",
+      "fun_fact": "BTS is the first K-pop group to address the United Nations General Assembly, speaking in 2021.",
+      "spotify_ids": []
     },
     {
       "name": "BLACKPINK",
@@ -4367,7 +5132,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "South Korea"
+      "country": "South Korea",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Travis Scott",
@@ -4384,7 +5152,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Future",
@@ -4401,7 +5172,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "J. Cole",
@@ -4418,7 +5192,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Macklemore",
@@ -4434,7 +5211,10 @@
       "decades": [
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Halsey",
@@ -4452,7 +5232,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Hozier",
@@ -4470,7 +5253,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Ireland"
+      "country": "Ireland",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Mumford & Sons",
@@ -4487,7 +5273,10 @@
       "decades": [
         "2010s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Florence + the Machine",
@@ -4505,7 +5294,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Sia",
@@ -4521,7 +5313,10 @@
       "decades": [
         "2010s"
       ],
-      "country": "Australia"
+      "country": "Australia",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Bastille",
@@ -4538,7 +5333,10 @@
       "decades": [
         "2010s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 4,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Alt-J",
@@ -4554,7 +5352,10 @@
       "decades": [
         "2010s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 3,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Of Monsters and Men",
@@ -4570,7 +5371,10 @@
       "decades": [
         "2010s"
       ],
-      "country": "Iceland"
+      "country": "Iceland",
+      "members": 6,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Cage the Elephant",
@@ -4588,7 +5392,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "MGMT",
@@ -4606,7 +5413,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 2,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Zedd",
@@ -4623,7 +5433,10 @@
       "decades": [
         "2010s"
       ],
-      "country": "Germany"
+      "country": "Germany",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "David Guetta",
@@ -4641,7 +5454,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "France"
+      "country": "France",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Tiësto",
@@ -4659,7 +5475,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Netherlands"
+      "country": "Netherlands",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "The National",
@@ -4676,7 +5495,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Lewis Capaldi",
@@ -4693,7 +5515,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Lizzo",
@@ -4711,7 +5536,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Camila Cabello",
@@ -4729,7 +5557,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Cuba"
+      "country": "Cuba",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Megan Thee Stallion",
@@ -4746,7 +5577,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "The Script",
@@ -4764,7 +5598,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "Ireland"
+      "country": "Ireland",
+      "members": 3,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Passenger",
@@ -4781,7 +5618,10 @@
       "decades": [
         "2010s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Bon Iver",
@@ -4798,7 +5638,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Fleet Foxes",
@@ -4815,7 +5658,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 6,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Pantera",
@@ -4833,7 +5679,11 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "hard",
+      "fun_fact": "Pantera's guitarist Dimebag Darrell was tragically shot and killed on stage in Columbus, Ohio, in 2004.",
+      "spotify_ids": []
     },
     {
       "name": "System of a Down",
@@ -4850,7 +5700,11 @@
       "decades": [
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "medium",
+      "fun_fact": "All four members of System of a Down are of Armenian descent and advocate for Armenian recognition.",
+      "spotify_ids": []
     },
     {
       "name": "Tool",
@@ -4869,7 +5723,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 4,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Rammstein",
@@ -4888,7 +5745,11 @@
         "2000s",
         "2010s"
       ],
-      "country": "Germany"
+      "country": "Germany",
+      "members": 6,
+      "difficulty": "medium",
+      "fun_fact": "Rammstein's name references the 1988 Ramstein Air Base airshow disaster in Germany.",
+      "spotify_ids": []
     },
     {
       "name": "Korn",
@@ -4906,7 +5767,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 5,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Kraftwerk",
@@ -4923,7 +5787,10 @@
         "70s",
         "80s"
       ],
-      "country": "Germany"
+      "country": "Germany",
+      "members": 4,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "The Chemical Brothers",
@@ -4940,7 +5807,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 2,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "The Prodigy",
@@ -4958,7 +5828,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 2,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Fatboy Slim",
@@ -4975,7 +5848,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Moby",
@@ -4992,7 +5868,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Luke Combs",
@@ -5009,7 +5888,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Zach Bryan",
@@ -5025,7 +5907,10 @@
       "decades": [
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Carrie Underwood",
@@ -5044,7 +5929,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Kenny Rogers",
@@ -5061,7 +5949,10 @@
         "70s",
         "80s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Tim McGraw",
@@ -5079,7 +5970,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Brad Paisley",
@@ -5096,7 +5990,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Blake Shelton",
@@ -5113,7 +6010,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Luke Bryan",
@@ -5130,7 +6030,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Keith Urban",
@@ -5148,7 +6051,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "Australia"
+      "country": "Australia",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Alan Jackson",
@@ -5165,7 +6071,10 @@
         "90s",
         "2000s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Daddy Yankee",
@@ -5183,7 +6092,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Puerto Rico"
+      "country": "Puerto Rico",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Karol G",
@@ -5200,7 +6112,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Colombia"
+      "country": "Colombia",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Peso Pluma",
@@ -5216,7 +6131,10 @@
       "decades": [
         "2020s"
       ],
-      "country": "Mexico"
+      "country": "Mexico",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Marc Anthony",
@@ -5235,7 +6153,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Ricky Martin",
@@ -5253,7 +6174,10 @@
         "90s",
         "2000s"
       ],
-      "country": "Puerto Rico"
+      "country": "Puerto Rico",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Pitbull",
@@ -5272,7 +6196,10 @@
         "2000s",
         "2010s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Maluma",
@@ -5289,7 +6216,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Colombia"
+      "country": "Colombia",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Lil Baby",
@@ -5306,7 +6236,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Juice WRLD",
@@ -5323,7 +6256,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "medium",
+      "spotify_ids": []
     },
     {
       "name": "Jack Harlow",
@@ -5339,7 +6275,10 @@
       "decades": [
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Giveon",
@@ -5355,7 +6294,10 @@
       "decades": [
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Noah Kahan",
@@ -5372,7 +6314,10 @@
       "decades": [
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Benson Boone",
@@ -5389,7 +6334,10 @@
       "decades": [
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Rod Wave",
@@ -5407,7 +6355,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Gunna",
@@ -5424,7 +6375,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Polo G",
@@ -5441,7 +6395,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "United States"
+      "country": "United States",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Feid",
@@ -5458,7 +6415,10 @@
         "2010s",
         "2020s"
       ],
-      "country": "Colombia"
+      "country": "Colombia",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
     },
     {
       "name": "Rauw Alejandro",
@@ -5474,7 +6434,831 @@
       "decades": [
         "2020s"
       ],
-      "country": "Puerto Rico"
+      "country": "Puerto Rico",
+      "members": 1,
+      "difficulty": "hard",
+      "spotify_ids": []
+    },
+    {
+      "name": "אריק איינשטיין",
+      "aliases": [
+        "Arik Einstein",
+        "אריק"
+      ],
+      "songs": [
+        "אני ואתה",
+        "עוף גוזל",
+        "יורד הגשם"
+      ],
+      "debut_year": 1961,
+      "genre": [
+        "Israeli",
+        "Rock",
+        "Pop"
+      ],
+      "decades": [
+        "60s",
+        "70s",
+        "80s",
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Arik Einstein is considered the greatest and most beloved Israeli rock artist of all time.",
+      "spotify_ids": []
+    },
+    {
+      "name": "שלמה ארצי",
+      "aliases": [
+        "Shlomo Artzi",
+        "שלמה"
+      ],
+      "songs": [
+        "פרפר נחמד",
+        "נוגה",
+        "אינסוף"
+      ],
+      "debut_year": 1973,
+      "genre": [
+        "Israeli",
+        "Pop",
+        "Rock"
+      ],
+      "decades": [
+        "70s",
+        "80s",
+        "90s",
+        "2000s",
+        "2010s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Shlomo Artzi has sold more concert tickets in Israel than any other artist in history.",
+      "spotify_ids": []
+    },
+    {
+      "name": "כוורת",
+      "aliases": [
+        "Kaveret",
+        "Poogy"
+      ],
+      "songs": [
+        "פרג מלבין",
+        "יונה",
+        "נסייר בכיפה"
+      ],
+      "debut_year": 1973,
+      "genre": [
+        "Israeli",
+        "Rock",
+        "Pop"
+      ],
+      "decades": [
+        "70s",
+        "80s"
+      ],
+      "country": "Israel",
+      "members": 6,
+      "difficulty": "medium",
+      "fun_fact": "Kaveret (The Beehive) is considered Israel's most iconic rock band of the 1970s.",
+      "spotify_ids": []
+    },
+    {
+      "name": "שלום חנוך",
+      "aliases": [
+        "Shalom Hanoch",
+        "Shalom Chanoch"
+      ],
+      "songs": [
+        "מחכים למשיח",
+        "לב האבן",
+        "נחשים"
+      ],
+      "debut_year": 1967,
+      "genre": [
+        "Israeli",
+        "Rock"
+      ],
+      "decades": [
+        "60s",
+        "70s",
+        "80s",
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Shalom Hanoch was the first Israeli artist to incorporate electric rock into mainstream Israeli music.",
+      "spotify_ids": []
+    },
+    {
+      "name": "יהודית רביץ",
+      "aliases": [
+        "Yehudit Ravitz",
+        "Judith Ravitz"
+      ],
+      "songs": [
+        "הלוואי",
+        "כמה שאני אוהבת אותך",
+        "מה יש לי"
+      ],
+      "debut_year": 1982,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "80s",
+        "90s",
+        "2000s",
+        "2010s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Yehudit Ravitz is one of the most successful and influential female artists in Israeli pop history.",
+      "spotify_ids": []
+    },
+    {
+      "name": "מתי כספי",
+      "aliases": [
+        "Matti Caspi",
+        "Mati Kaspi"
+      ],
+      "songs": [
+        "מלכת יופי",
+        "שיר השירים",
+        "אנה לי ילדה"
+      ],
+      "debut_year": 1969,
+      "genre": [
+        "Israeli",
+        "Pop",
+        "Rock"
+      ],
+      "decades": [
+        "70s",
+        "80s",
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "hard",
+      "fun_fact": "Matti Caspi is known for his sophisticated harmonic arrangements and is considered one of Israel's greatest musical composers.",
+      "spotify_ids": []
+    },
+    {
+      "name": "חוה אלברשטיין",
+      "aliases": [
+        "Chava Alberstein",
+        "Hava Alberstein"
+      ],
+      "songs": [
+        "לו יהי",
+        "מה ידעתי",
+        "כשהגשם בא"
+      ],
+      "debut_year": 1964,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "60s",
+        "70s",
+        "80s",
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Chava Alberstein has recorded over 50 albums and is known as Israel's greatest folk and protest singer.",
+      "spotify_ids": []
+    },
+    {
+      "name": "אהוד בנאי",
+      "aliases": [
+        "Ehud Banai",
+        "Ehud Banay"
+      ],
+      "songs": [
+        "מאה שנות בדידות",
+        "ירושלים שלי",
+        "הבאר"
+      ],
+      "debut_year": 1984,
+      "genre": [
+        "Israeli",
+        "Rock"
+      ],
+      "decades": [
+        "80s",
+        "90s",
+        "2000s",
+        "2010s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Ehud Banai comes from one of Israel's most famous musical families and is known for his poetic rock lyrics.",
+      "spotify_ids": []
+    },
+    {
+      "name": "גידי גוב",
+      "aliases": [
+        "Gidi Gov",
+        "Gideon Gov"
+      ],
+      "songs": [
+        "ג'ינג'י",
+        "אין לי בעיה",
+        "כמה שאני אוהב"
+      ],
+      "debut_year": 1972,
+      "genre": [
+        "Israeli",
+        "Rock",
+        "Pop"
+      ],
+      "decades": [
+        "70s",
+        "80s",
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Gidi Gov was a founding member of Kaveret and later became one of Israel's most beloved solo performers.",
+      "spotify_ids": []
+    },
+    {
+      "name": "יהורם גאון",
+      "aliases": [
+        "Yehoram Gaon",
+        "Yoram Gaon"
+      ],
+      "songs": [
+        "ירושלים שלי",
+        "ואני חוזר הביתה",
+        "אבי אבי"
+      ],
+      "debut_year": 1960,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "60s",
+        "70s",
+        "80s",
+        "90s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "hard",
+      "fun_fact": "Yehoram Gaon is famous for his role in the Israeli musical film Kazablan and is an icon of classic Israeli entertainment.",
+      "spotify_ids": []
+    },
+    {
+      "name": "עברי לידר",
+      "aliases": [
+        "Ivri Lider",
+        "Ibri Lider"
+      ],
+      "songs": [
+        "אני לא מקשיב",
+        "קצת קר",
+        "אולי בגלל הגשם"
+      ],
+      "debut_year": 1997,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "90s",
+        "2000s",
+        "2010s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Ivri Lider was one of the first Israeli celebrities to publicly come out as gay, becoming an LGBTQ icon.",
+      "spotify_ids": []
+    },
+    {
+      "name": "אביב גפן",
+      "aliases": [
+        "Aviv Geffen",
+        "Aviv Gifen"
+      ],
+      "songs": [
+        "נחמה",
+        "זמן",
+        "להיות ילד"
+      ],
+      "debut_year": 1991,
+      "genre": [
+        "Israeli",
+        "Rock"
+      ],
+      "decades": [
+        "90s",
+        "2000s",
+        "2010s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Aviv Geffen sang 'Shir LaShalom' at the peace rally where Prime Minister Yitzhak Rabin was assassinated in 1995.",
+      "spotify_ids": []
+    },
+    {
+      "name": "ריטה",
+      "aliases": [
+        "Rita",
+        "ריטה יהוד"
+      ],
+      "songs": [
+        "שנינו",
+        "הרוח שלך",
+        "כמה זמן"
+      ],
+      "debut_year": 1985,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "80s",
+        "90s",
+        "2000s",
+        "2010s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Rita is one of Israel's most successful pop artists and is also known for her albums of Persian/Mizrahi music.",
+      "spotify_ids": []
+    },
+    {
+      "name": "דנה אינטרנשיונל",
+      "aliases": [
+        "Dana International",
+        "דנה"
+      ],
+      "songs": [
+        "Diva",
+        "Cinderella",
+        "לאלה"
+      ],
+      "debut_year": 1993,
+      "genre": [
+        "Israeli",
+        "Pop",
+        "Electronic"
+      ],
+      "decades": [
+        "90s",
+        "2000s",
+        "2010s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Dana International won the 1998 Eurovision Song Contest with 'Diva', becoming an LGBTQ icon worldwide.",
+      "spotify_ids": []
+    },
+    {
+      "name": "משינה",
+      "aliases": [
+        "Mashina"
+      ],
+      "songs": [
+        "קולות",
+        "תנו לי לחיות",
+        "מה קורה גבר"
+      ],
+      "debut_year": 1985,
+      "genre": [
+        "Israeli",
+        "Rock"
+      ],
+      "decades": [
+        "80s",
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 4,
+      "difficulty": "medium",
+      "fun_fact": "Mashina was one of Israel's biggest rock bands of the late 1980s and 1990s with a gritty urban sound.",
+      "spotify_ids": []
+    },
+    {
+      "name": "אתניקס",
+      "aliases": [
+        "Ethnix"
+      ],
+      "songs": [
+        "יש לי תפוז",
+        "כמה חדשים",
+        "גם ככה"
+      ],
+      "debut_year": 1985,
+      "genre": [
+        "Israeli",
+        "Pop",
+        "Rock"
+      ],
+      "decades": [
+        "80s",
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 5,
+      "difficulty": "medium",
+      "fun_fact": "Ethnix was one of the defining Israeli bands of the 1980s, blending pop and rock with Hebrew lyrics.",
+      "spotify_ids": []
+    },
+    {
+      "name": "כנסיית השכל",
+      "aliases": [
+        "Knesiyat HaSekhel",
+        "Church of Mind"
+      ],
+      "songs": [
+        "בסוף של ספטמבר",
+        "בגוף ראשון",
+        "כוח"
+      ],
+      "debut_year": 1995,
+      "genre": [
+        "Israeli",
+        "Rock",
+        "Indie/Alternative"
+      ],
+      "decades": [
+        "90s",
+        "2000s",
+        "2010s"
+      ],
+      "country": "Israel",
+      "members": 4,
+      "difficulty": "hard",
+      "fun_fact": "Knesiyat HaSekhel is considered one of Israel's most important alternative rock bands with deeply philosophical lyrics.",
+      "spotify_ids": []
+    },
+    {
+      "name": "היהודים",
+      "aliases": [
+        "HaYehudim",
+        "The Jews"
+      ],
+      "songs": [
+        "אהבה בלי גבולות",
+        "יורדי הים",
+        "צריך לנסוע"
+      ],
+      "debut_year": 1994,
+      "genre": [
+        "Israeli",
+        "Rock",
+        "Pop"
+      ],
+      "decades": [
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 4,
+      "difficulty": "hard",
+      "fun_fact": "HaYehudim were known for their energetic live shows and became one of Israel's biggest bands of the 1990s.",
+      "spotify_ids": []
+    },
+    {
+      "name": "טיפקס",
+      "aliases": [
+        "Tipex",
+        "Tip-Ex"
+      ],
+      "songs": [
+        "תמשיך לרוץ",
+        "חוגג",
+        "יאללה"
+      ],
+      "debut_year": 1993,
+      "genre": [
+        "Israeli",
+        "Rock"
+      ],
+      "decades": [
+        "90s",
+        "2000s",
+        "2010s"
+      ],
+      "country": "Israel",
+      "members": 5,
+      "difficulty": "hard",
+      "fun_fact": "Tipex blended ska, reggae, and rock into a uniquely Israeli sound and are known for energetic high-energy performances.",
+      "spotify_ids": []
+    },
+    {
+      "name": "שב\"ק ס'",
+      "aliases": [
+        "Shabak Samech",
+        "Shabaks"
+      ],
+      "songs": [
+        "תל אביב",
+        "פה",
+        "אנחנו"
+      ],
+      "debut_year": 1994,
+      "genre": [
+        "Israeli",
+        "Rock"
+      ],
+      "decades": [
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 4,
+      "difficulty": "hard",
+      "fun_fact": "Shabak Samech pioneered Israeli punk and alternative rock in the 1990s.",
+      "spotify_ids": []
+    },
+    {
+      "name": "מוניקה סקס",
+      "aliases": [
+        "Monica Sex"
+      ],
+      "songs": [
+        "מוניקה",
+        "תל אביב שלי",
+        "נשיקה"
+      ],
+      "debut_year": 1996,
+      "genre": [
+        "Israeli",
+        "Rock",
+        "Pop"
+      ],
+      "decades": [
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 3,
+      "difficulty": "hard",
+      "fun_fact": "Monica Sex were a provocative Israeli alternative rock band known for their frank and urban lyrics.",
+      "spotify_ids": []
+    },
+    {
+      "name": "זהבה בן",
+      "aliases": [
+        "Zehava Ben",
+        "Zahava Ben"
+      ],
+      "songs": [
+        "טיפה מרה",
+        "הגברת",
+        "שיר שמחה"
+      ],
+      "debut_year": 1988,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "80s",
+        "90s",
+        "2000s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Zehava Ben bridged Mizrahi music and mainstream Israeli pop and became one of the top-selling Israeli artists.",
+      "spotify_ids": []
+    },
+    {
+      "name": "שרית חדד",
+      "aliases": [
+        "Sarit Hadad"
+      ],
+      "songs": [
+        "כמעט גן עדן",
+        "שלי",
+        "מחכה לך"
+      ],
+      "debut_year": 2000,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "2000s",
+        "2010s",
+        "2020s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Sarit Hadad represented Israel in Eurovision 2002 and has sold millions of albums in Israel.",
+      "spotify_ids": []
+    },
+    {
+      "name": "קובי פרץ",
+      "aliases": [
+        "Kobi Peretz",
+        "Kobi"
+      ],
+      "songs": [
+        "בובה שלי",
+        "אחד אחד",
+        "מיליון"
+      ],
+      "debut_year": 2006,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "2000s",
+        "2010s",
+        "2020s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Kobi Peretz is one of Israel's biggest Mizrahi pop stars, with a devoted fanbase across generations.",
+      "spotify_ids": []
+    },
+    {
+      "name": "עידן רייכל",
+      "aliases": [
+        "Idan Raichel",
+        "idan raichel project"
+      ],
+      "songs": [
+        "בוא אלי",
+        "מים",
+        "הם"
+      ],
+      "debut_year": 2002,
+      "genre": [
+        "Israeli",
+        "Electronic",
+        "Pop"
+      ],
+      "decades": [
+        "2000s",
+        "2010s",
+        "2020s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Idan Raichel's project combines Israeli, Ethiopian, and world music, and has performed at Carnegie Hall.",
+      "spotify_ids": []
+    },
+    {
+      "name": "נועה קירל",
+      "aliases": [
+        "Noa Kirel"
+      ],
+      "songs": [
+        "Unicorn",
+        "Boy",
+        "מדברים עליי"
+      ],
+      "debut_year": 2017,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "2010s",
+        "2020s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "easy",
+      "fun_fact": "Noa Kirel represented Israel at Eurovision 2023 with 'Unicorn' and finished 3rd place.",
+      "spotify_ids": []
+    },
+    {
+      "name": "אומר אדם",
+      "aliases": [
+        "Omer Adam"
+      ],
+      "songs": [
+        "אני שב",
+        "מחכה לך",
+        "תגיד לי"
+      ],
+      "debut_year": 2012,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "2010s",
+        "2020s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Omer Adam is one of the most-streamed Israeli artists on Spotify and has broken multiple records in Israel.",
+      "spotify_ids": []
+    },
+    {
+      "name": "עדן בן זקן",
+      "aliases": [
+        "Eden Ben Zaken"
+      ],
+      "songs": [
+        "הכי טוב",
+        "שירה",
+        "לך תחפש"
+      ],
+      "debut_year": 2016,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "2010s",
+        "2020s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "medium",
+      "fun_fact": "Eden Ben Zaken broke Israel's Spotify streaming record and became the most-streamed Israeli female artist.",
+      "spotify_ids": []
+    },
+    {
+      "name": "סטטיק ובן אל תבורי",
+      "aliases": [
+        "Static & Ben El",
+        "Static and Ben El Tavori",
+        "Static Ben El"
+      ],
+      "songs": [
+        "Call This Love",
+        "Taste",
+        "לאן שאת הולכת"
+      ],
+      "debut_year": 2012,
+      "genre": [
+        "Israeli",
+        "Pop",
+        "R&B/Soul"
+      ],
+      "decades": [
+        "2010s",
+        "2020s"
+      ],
+      "country": "Israel",
+      "members": 2,
+      "difficulty": "medium",
+      "fun_fact": "Static & Ben El Tavori are the most internationally recognized Israeli pop duo, with hits in multiple languages.",
+      "spotify_ids": []
+    },
+    {
+      "name": "ישי ריבו",
+      "aliases": [
+        "Ishay Ribo",
+        "Ishai Ribo"
+      ],
+      "songs": [
+        "כי אשמרה שבת",
+        "הניגון שבלב",
+        "זה הזמן"
+      ],
+      "debut_year": 2014,
+      "genre": [
+        "Israeli",
+        "Pop"
+      ],
+      "decades": [
+        "2010s",
+        "2020s"
+      ],
+      "country": "Israel",
+      "members": 1,
+      "difficulty": "hard",
+      "fun_fact": "Ishay Ribo is a religious singer whose music bridges the gap between traditional Jewish themes and contemporary pop.",
+      "spotify_ids": []
     }
   ]
 }

@@ -873,3 +873,266 @@ html, body {
   .name-blank .char.letter { font-size: 1.1rem; width: 16px; }
   .summary-stats-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* ============================================================
+   NEW FEATURES STYLES
+   ============================================================ */
+
+/* ---------- Pre-revealed letters ---------- */
+.char.letter.pre-revealed {
+  color: var(--amber);
+  opacity: .7;
+  text-shadow: 0 0 6px rgba(255,184,0,.4);
+}
+
+/* ---------- Hebrew / RTL support ---------- */
+[dir="rtl"].name-blank,
+[dir="rtl"].song-blank {
+  direction: rtl;
+  font-family: var(--font-body), 'Arial', 'Segoe UI', sans-serif;
+}
+[dir="rtl"] .word-group { unicode-bidi: embed; }
+
+/* ---------- Sound toggle ---------- */
+.btn-sound {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: .9rem;
+  padding: 4px 10px;
+}
+
+/* ---------- localStorage note ---------- */
+.ls-note {
+  font-size: .75rem;
+  color: var(--amber);
+  opacity: .7;
+  text-align: center;
+}
+
+/* ============================================================
+   MODE SELECT SCREEN
+   ============================================================ */
+.mode-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding: 8px 0;
+}
+@media (min-width: 500px) { .mode-grid { grid-template-columns: 1fr 1fr; } }
+
+.mode-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  cursor: pointer;
+  transition: transform .15s, border-color .15s, box-shadow .15s;
+  text-align: center;
+}
+.mode-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--cyan);
+  box-shadow: 0 4px 20px rgba(0,245,255,.15);
+}
+.mode-card-streak { grid-column: 1 / -1; }
+.mode-card-story  { grid-column: 1 / -1; }
+@media (min-width: 500px) {
+  .mode-card-streak { grid-column: auto; }
+  .mode-card-story  { grid-column: auto; }
+}
+.mode-icon  { font-size: 2.2rem; margin-bottom: 8px; }
+.mode-name  { font-family: var(--font-head); font-size: 1.2rem; color: var(--cyan); margin-bottom: 6px; }
+.mode-desc  { font-size: .82rem; color: var(--text-muted); line-height: 1.4; }
+.mode-best  { margin-top: 8px; font-size: .8rem; color: var(--amber); font-weight: 600; }
+
+/* ============================================================
+   STREAK COUNTER (in-game)
+   ============================================================ */
+.streak-counter {
+  background: rgba(255,45,120,.08);
+  border: 1px solid rgba(255,45,120,.25);
+  border-radius: var(--radius);
+  padding: 10px 16px;
+  margin-bottom: 4px;
+}
+.streak-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.streak-label { font-size: .85rem; color: var(--text-muted); }
+.streak-num {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  color: var(--pink);
+  text-shadow: var(--glow-pink);
+  min-width: 40px;
+  text-align: center;
+}
+.streak-skips {
+  margin-left: auto;
+  font-size: .78rem;
+  color: var(--text-muted);
+}
+.streak-milestone {
+  min-height: 20px;
+  font-size: .9rem;
+  color: var(--amber);
+  font-weight: 600;
+  text-align: center;
+}
+@keyframes milestonePop {
+  0%   { transform: scale(0.8); opacity: 0; }
+  60%  { transform: scale(1.2); }
+  100% { transform: scale(1);   opacity: 1; }
+}
+.milestone-pop { animation: milestonePop .4s ease; }
+
+/* ============================================================
+   STREAK BROKEN SCREEN
+   ============================================================ */
+.streak-broken-card {
+  text-align: center;
+}
+.streak-broken-header {
+  font-family: var(--font-head);
+  font-size: 1.6rem;
+  color: var(--pink);
+  text-shadow: var(--glow-pink);
+  margin-bottom: 12px;
+}
+.streak-broken-num {
+  font-family: var(--font-head);
+  font-size: 5rem;
+  color: var(--amber);
+  text-shadow: var(--glow-amber);
+  line-height: 1;
+  margin: 8px 0;
+}
+.streak-broken-label { font-size: .9rem; color: var(--text-muted); margin-bottom: 16px; }
+.streak-broken-best  { font-size: 1rem; color: var(--cyan); font-weight: 600; margin-bottom: 6px; }
+.streak-broken-total { font-size: .85rem; color: var(--text-muted); margin-bottom: 20px; }
+
+/* ============================================================
+   STORY MODE — LEVEL MAP
+   ============================================================ */
+.story-subtitle {
+  font-size: .85rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 0 16px;
+}
+.story-level-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 8px 0;
+}
+@media (min-width: 540px) { .story-level-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.story-level-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  cursor: pointer;
+  transition: transform .15s, border-color .15s;
+  text-align: center;
+}
+.story-level-card:hover:not(.locked) {
+  transform: translateY(-2px);
+  border-color: var(--amber);
+}
+.story-level-card.locked { opacity: .45; cursor: default; }
+.story-level-card.completed { border-color: rgba(255,184,0,.35); }
+.story-level-num  { font-size: .7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; }
+.story-level-name { font-weight: 600; font-size: .95rem; color: var(--text); margin: 4px 0; }
+.story-level-info { font-size: .72rem; color: var(--text-muted); margin-top: 6px; }
+.story-stars { display: flex; justify-content: center; gap: 4px; margin: 4px 0; }
+.story-star  { font-size: 1rem; color: var(--text-muted); }
+.story-star.filled { color: var(--amber); text-shadow: 0 0 6px rgba(255,184,0,.6); }
+
+.story-footer {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 16px;
+}
+
+/* ============================================================
+   STORY SUMMARY SCREEN
+   ============================================================ */
+.story-summary-card { text-align: center; }
+.story-stars-lg {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+.story-stars-lg .story-star { font-size: 2.4rem; }
+.story-result-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 99px;
+  font-weight: 700;
+  font-size: .95rem;
+  margin: 8px 0;
+}
+.story-result-badge.passed { background: rgba(0,255,135,.12); color: var(--green); }
+.story-result-badge.failed { background: rgba(255,45,120,.12); color: var(--pink); }
+.story-summary-score { font-size: .9rem; color: var(--text-muted); margin-bottom: 16px; }
+
+/* ============================================================
+   RESULT SCREEN ADDITIONS
+   ============================================================ */
+.result-fun-fact {
+  font-size: .82rem;
+  color: var(--text-muted);
+  background: rgba(255,184,0,.06);
+  border: 1px solid rgba(255,184,0,.2);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.result-listen {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  background: rgba(255,255,255,.03);
+}
+.listen-header {
+  font-size: .78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.listen-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: .82rem;
+}
+.listen-song-name { color: var(--text); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.listen-link {
+  color: var(--cyan);
+  text-decoration: none;
+  font-size: .75rem;
+  padding: 3px 8px;
+  border: 1px solid rgba(0,245,255,.3);
+  border-radius: 99px;
+  white-space: nowrap;
+  transition: background .15s;
+}
+.listen-link:hover { background: rgba(0,245,255,.1); }
+
+/* ============================================================
+   SKIP BUTTON (Streak Mode)
+   ============================================================ */
+.btn-accent { color: var(--amber); border-color: rgba(255,184,0,.3); }
+.btn-accent:hover { background: rgba(255,184,0,.1); }
