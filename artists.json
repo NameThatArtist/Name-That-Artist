@@ -22,7 +22,8 @@
       "members": 4,
       "difficulty": "easy",
       "fun_fact": "The Beatles hold the record for the most number-one hits on the US Billboard Hot 100 with 20.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Rolling Stones",
@@ -50,7 +51,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Despite being in their 80s, The Rolling Stones continue to sell out stadiums worldwide.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Led Zeppelin",
@@ -71,7 +73,8 @@
       "members": 4,
       "difficulty": "easy",
       "fun_fact": "Stairway to Heaven was never released as a single, yet became the most-requested song in radio history.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Jimi Hendrix",
@@ -93,7 +96,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "The Doors",
@@ -116,7 +120,8 @@
       ],
       "members": 4,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Pink Floyd",
@@ -137,7 +142,8 @@
       "members": 4,
       "difficulty": "easy",
       "fun_fact": "The Dark Side of the Moon spent an astonishing 937 weeks on the Billboard 200 chart.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Queen",
@@ -158,7 +164,8 @@
       "members": 4,
       "difficulty": "easy",
       "fun_fact": "Bohemian Rhapsody was considered too long for radio play but became one of the best-selling singles of all time.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "David Bowie",
@@ -185,7 +192,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Bowie had two different-colored eyes from a schoolyard fight at age 15 that permanently dilated his left pupil.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Fleetwood Mac",
@@ -206,7 +214,8 @@
       "members": 5,
       "difficulty": "medium",
       "fun_fact": "Rumours was recorded while all four core members were simultaneously going through breakups with each other.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Eagles",
@@ -232,7 +241,8 @@
       "members": 5,
       "difficulty": "easy",
       "fun_fact": "Hotel California's iconic dual guitar solo was reportedly performed live on the very first take.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Elton John",
@@ -255,7 +265,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Bruce Springsteen",
@@ -278,7 +289,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Tom Petty",
@@ -298,7 +310,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "The Police",
@@ -320,7 +333,8 @@
       ],
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Bon Jovi",
@@ -341,7 +355,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "U2",
@@ -364,7 +379,8 @@
       "members": 4,
       "difficulty": "easy",
       "fun_fact": "Bono is the only person ever nominated for a Grammy, Oscar, Golden Globe, and Nobel Peace Prize.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "AC/DC",
@@ -386,7 +402,8 @@
       "members": 5,
       "difficulty": "easy",
       "fun_fact": "AC/DC's Back in Black is the second best-selling album of all time, behind only Thriller.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Bob Dylan",
@@ -409,7 +426,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Bob Dylan is the only rock musician to have won the Nobel Prize in Literature, awarded in 2016.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Simon & Garfunkel",
@@ -432,7 +450,8 @@
       ],
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Beach Boys",
@@ -456,7 +475,8 @@
       ],
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Nirvana",
@@ -476,7 +496,8 @@
       "members": 3,
       "difficulty": "easy",
       "fun_fact": "Kurt Cobain was left-handed and played guitar left-handed, but wrote and drew right-handed.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Oasis",
@@ -497,7 +518,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Liam and Noel Gallagher haven't spoken since their bitter on-stage split in Paris in 2009.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Radiohead",
@@ -519,7 +541,8 @@
       "members": 5,
       "difficulty": "medium",
       "fun_fact": "Radiohead titled OK Computer after a hitchhiker's line in Douglas Adams' The Hitchhiker's Guide to the Galaxy.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Green Day",
@@ -541,7 +564,8 @@
       "members": 3,
       "difficulty": "easy",
       "fun_fact": "Green Day wrote American Idiot after their previous album's master recordings were stolen from a studio.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Foo Fighters",
@@ -564,7 +588,8 @@
       "members": 6,
       "difficulty": "medium",
       "fun_fact": "Dave Grohl played every single instrument on the Foo Fighters' entire debut album entirely by himself.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Red Hot Chili Peppers",
@@ -587,7 +612,8 @@
       ],
       "members": 4,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Alanis Morissette",
@@ -608,7 +634,8 @@
       "country": "Canada",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Arctic Monkeys",
@@ -630,7 +657,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Coldplay",
@@ -652,7 +680,8 @@
       "members": 4,
       "difficulty": "easy",
       "fun_fact": "Coldplay was originally called Starfish before changing their name in 1998.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Gorillaz",
@@ -675,7 +704,8 @@
       "members": 2,
       "difficulty": "medium",
       "fun_fact": "Gorillaz holds the Guinness World Record as the most commercially successful virtual band of all time.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Tame Impala",
@@ -695,7 +725,8 @@
       "country": "Australia",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Lorde",
@@ -719,7 +750,8 @@
       ],
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Twenty One Pilots",
@@ -739,7 +771,8 @@
       "country": "United States",
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Imagine Dragons",
@@ -761,7 +794,8 @@
       "members": 4,
       "difficulty": "medium",
       "fun_fact": "Imagine Dragons is the most-streamed rock band in Spotify history.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Lana Del Rey",
@@ -782,7 +816,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Metallica",
@@ -805,7 +840,8 @@
       "members": 4,
       "difficulty": "easy",
       "fun_fact": "Metallica is the only band to have performed on all 7 continents, including a concert in Antarctica in 2013.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Guns N' Roses",
@@ -831,7 +867,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Appetite for Destruction is the best-selling debut album of all time in the United States.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Def Leppard",
@@ -852,7 +889,8 @@
       "country": "United Kingdom",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Linkin Park",
@@ -874,7 +912,8 @@
       "members": 6,
       "difficulty": "medium",
       "fun_fact": "Linkin Park's debut Hybrid Theory was rejected by every major label before eventually being signed.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Black Sabbath",
@@ -896,7 +935,8 @@
       "members": 4,
       "difficulty": "medium",
       "fun_fact": "Tony Iommi lost the fingertips of two fingers in a factory accident and learned to play anyway, defining heavy metal.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Michael Jackson",
@@ -922,7 +962,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Michael Jackson's Thriller is the best-selling album of all time with over 66 million copies sold.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Madonna",
@@ -947,7 +988,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Madonna holds the record for the highest-grossing concert tour by a solo female artist.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Prince",
@@ -968,7 +1010,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Whitney Houston",
@@ -989,7 +1032,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Mariah Carey",
@@ -1011,7 +1055,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Cyndi Lauper",
@@ -1030,7 +1075,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "George Michael",
@@ -1051,7 +1097,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "ABBA",
@@ -1071,7 +1118,8 @@
       "members": 4,
       "difficulty": "easy",
       "fun_fact": "ABBA was reportedly offered $1 billion to reunite for a world tour in 2000, but turned it down.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Duran Duran",
@@ -1092,7 +1140,8 @@
       "country": "United Kingdom",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Taylor Swift",
@@ -1115,7 +1164,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Taylor Swift re-recorded her first 6 albums to reclaim full ownership of her masters after a dispute.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Katy Perry",
@@ -1135,7 +1185,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Lady Gaga",
@@ -1157,7 +1208,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Rihanna",
@@ -1180,7 +1232,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Rihanna performed the Super Bowl LVII Halftime Show while reportedly pregnant with her second child.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Justin Timberlake",
@@ -1205,7 +1258,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Beyoncé",
@@ -1232,7 +1286,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Beyoncé became the most Grammy-awarded artist in history, surpassing 32 total wins.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Adele",
@@ -1255,7 +1310,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Adele's album 21 was the best-selling album of both 2011 and 2012 worldwide.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Ed Sheeran",
@@ -1275,7 +1331,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Bruno Mars",
@@ -1296,7 +1353,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Ariana Grande",
@@ -1320,7 +1378,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Dua Lipa",
@@ -1341,7 +1400,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Harry Styles",
@@ -1362,7 +1422,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Billie Eilish",
@@ -1383,7 +1444,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Olivia Rodrigo",
@@ -1403,7 +1465,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Sabrina Carpenter",
@@ -1423,7 +1486,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Selena Gomez",
@@ -1443,7 +1507,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Justin Bieber",
@@ -1466,7 +1531,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Eminem",
@@ -1492,7 +1558,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Eminem memorizes the dictionary to find new rhyming combinations and has one of hip-hop's largest vocabularies.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "2Pac",
@@ -1516,7 +1583,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "The Notorious B.I.G.",
@@ -1541,7 +1609,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Jay-Z",
@@ -1566,7 +1635,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Kanye West",
@@ -1593,7 +1663,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Kanye recorded his debut single with his jaw wired shut after a near-fatal car accident in 2002.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Nicki Minaj",
@@ -1617,7 +1688,8 @@
       ],
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Drake",
@@ -1644,7 +1716,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Drake appeared as wheelchair-bound Jimmy Brooks on the Canadian teen drama Degrassi before becoming a rapper.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Kendrick Lamar",
@@ -1668,7 +1741,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Post Malone",
@@ -1692,7 +1766,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Cardi B",
@@ -1712,7 +1787,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Tyler the Creator",
@@ -1735,7 +1811,8 @@
       ],
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Lil Nas X",
@@ -1756,7 +1833,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "50 Cent",
@@ -1779,7 +1857,8 @@
       ],
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "The Black Eyed Peas",
@@ -1803,7 +1882,8 @@
       ],
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Childish Gambino",
@@ -1827,7 +1907,8 @@
       ],
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Doja Cat",
@@ -1849,7 +1930,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Lauryn Hill",
@@ -1869,7 +1951,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Aretha Franklin",
@@ -1893,7 +1976,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Marvin Gaye",
@@ -1914,7 +1998,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Stevie Wonder",
@@ -1937,7 +2022,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Bob Marley",
@@ -1960,7 +2046,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Bob Marley's Legend is the best-selling reggae album of all time with over 28 million copies sold.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Alicia Keys",
@@ -1981,7 +2068,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Usher",
@@ -2002,7 +2090,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Amy Winehouse",
@@ -2022,7 +2111,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Amy Winehouse won 5 Grammy Awards in a single night in 2008 — the most ever by a British female artist.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Destiny's Child",
@@ -2043,7 +2133,8 @@
       "country": "United States",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Frank Ocean",
@@ -2063,7 +2154,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "SZA",
@@ -2084,7 +2176,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "John Legend",
@@ -2106,7 +2199,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Sam Smith",
@@ -2127,7 +2221,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Khalid",
@@ -2148,7 +2243,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Anderson .Paak",
@@ -2172,7 +2268,8 @@
       ],
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "The Weeknd",
@@ -2197,7 +2294,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Daft Punk",
@@ -2219,7 +2317,8 @@
       "members": 2,
       "difficulty": "medium",
       "fun_fact": "Daft Punk never appeared publicly without their robot helmets after adopting the personas in 1999.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Depeche Mode",
@@ -2241,7 +2340,8 @@
       "members": 3,
       "difficulty": "medium",
       "fun_fact": "Depeche Mode has sold over 100 million records, making them one of the most successful electronic acts ever.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Donna Summer",
@@ -2265,7 +2365,8 @@
       ],
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Calvin Harris",
@@ -2287,7 +2388,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Avicii",
@@ -2309,7 +2411,8 @@
       ],
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "The Chainsmokers",
@@ -2333,7 +2436,8 @@
       ],
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Johnny Cash",
@@ -2358,7 +2462,8 @@
       ],
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Dolly Parton",
@@ -2380,7 +2485,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Garth Brooks",
@@ -2400,7 +2506,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Shania Twain",
@@ -2421,7 +2528,8 @@
       "country": "Canada",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Willie Nelson",
@@ -2442,7 +2550,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Morgan Wallen",
@@ -2461,7 +2570,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Chris Stapleton",
@@ -2481,7 +2591,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Shakira",
@@ -2505,7 +2616,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Shakira speaks 6 languages fluently: Spanish, English, Italian, Portuguese, Arabic, and French.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Bad Bunny",
@@ -2529,7 +2641,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Bad Bunny was Spotify's most-streamed artist 3 years running (2020, 2021, 2022).",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Santana",
@@ -2555,7 +2668,8 @@
       ],
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "J Balvin",
@@ -2575,7 +2689,8 @@
       "country": "Colombia",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Rosalía",
@@ -2596,7 +2711,8 @@
       "country": "Spain",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Nelly",
@@ -2616,7 +2732,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Iron Maiden",
@@ -2636,7 +2753,8 @@
       "country": "United Kingdom",
       "members": 6,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Slipknot",
@@ -2657,7 +2775,8 @@
       "members": 9,
       "difficulty": "medium",
       "fun_fact": "Slipknot has 9 members and each member is traditionally known by a number (0 through 8).",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Ozzy Osbourne",
@@ -2678,7 +2797,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Skrillex",
@@ -2700,7 +2820,8 @@
       ],
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Marshmello",
@@ -2721,7 +2842,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Swedish House Mafia",
@@ -2740,7 +2862,8 @@
       "country": "Sweden",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Enrique Iglesias",
@@ -2762,7 +2885,8 @@
       "country": "Spain",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Ozuna",
@@ -2782,7 +2906,8 @@
       "country": "Puerto Rico",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "The Strokes",
@@ -2803,7 +2928,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Vampire Weekend",
@@ -2824,7 +2950,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Glass Animals",
@@ -2844,7 +2971,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The 1975",
@@ -2865,7 +2993,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Who",
@@ -2886,7 +3015,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Pete Townshend invented the guitar smash after accidentally breaking his guitar on a low ceiling at a show.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Kinks",
@@ -2906,7 +3036,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Supremes",
@@ -2927,7 +3058,8 @@
       "country": "United States",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Temptations",
@@ -2947,7 +3079,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "James Brown",
@@ -2967,7 +3100,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Ray Charles",
@@ -2987,7 +3121,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Sam Cooke",
@@ -3007,7 +3142,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Otis Redding",
@@ -3026,7 +3162,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Bee Gees",
@@ -3048,7 +3185,8 @@
       "country": "United Kingdom",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Lynyrd Skynyrd",
@@ -3067,7 +3205,8 @@
       "country": "United States",
       "members": 6,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Blondie",
@@ -3088,7 +3227,8 @@
       "country": "United States",
       "members": 6,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Billy Joel",
@@ -3109,7 +3249,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Dire Straits",
@@ -3129,7 +3270,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Phil Collins",
@@ -3150,7 +3292,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "The Ramones",
@@ -3170,7 +3313,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Clash",
@@ -3190,7 +3334,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Genesis",
@@ -3211,7 +3356,8 @@
       "country": "United Kingdom",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Neil Young",
@@ -3234,7 +3380,8 @@
       "country": "Canada",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Joni Mitchell",
@@ -3255,7 +3402,8 @@
       "country": "Canada",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Cat Stevens",
@@ -3276,7 +3424,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Creedence Clearwater Revival",
@@ -3296,7 +3445,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Aerosmith",
@@ -3318,7 +3468,8 @@
       "members": 5,
       "difficulty": "medium",
       "fun_fact": "Aerosmith is the highest-grossing American rock band of all time, earning over $1 billion in touring revenue.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "ZZ Top",
@@ -3338,7 +3489,8 @@
       "country": "United States",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Journey",
@@ -3359,7 +3511,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Foreigner",
@@ -3380,7 +3533,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Van Morrison",
@@ -3401,7 +3555,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Stevie Nicks",
@@ -3422,7 +3577,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Heart",
@@ -3442,7 +3598,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Hall & Oates",
@@ -3463,7 +3620,8 @@
       "country": "United States",
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Cure",
@@ -3485,7 +3643,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Robert Smith has worn the same smeared red lipstick and black eyeliner on stage for over 40 years.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "New Order",
@@ -3506,7 +3665,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Tears for Fears",
@@ -3526,7 +3686,8 @@
       "country": "United Kingdom",
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Eurythmics",
@@ -3546,7 +3707,8 @@
       "country": "United Kingdom",
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Janet Jackson",
@@ -3568,7 +3730,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Tina Turner",
@@ -3590,7 +3753,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "A-ha",
@@ -3609,7 +3773,8 @@
       "country": "Norway",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Wham!",
@@ -3628,7 +3793,8 @@
       "country": "United Kingdom",
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Culture Club",
@@ -3647,7 +3813,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Van Halen",
@@ -3667,7 +3834,8 @@
       "members": 4,
       "difficulty": "medium",
       "fun_fact": "Eddie Van Halen revolutionized rock guitar with his two-handed tapping technique showcased on 'Eruption.'",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Mötley Crüe",
@@ -3688,7 +3856,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Peter Gabriel",
@@ -3709,7 +3878,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "R.E.M.",
@@ -3730,7 +3900,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Talking Heads",
@@ -3751,7 +3922,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Smiths",
@@ -3771,7 +3943,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Pet Shop Boys",
@@ -3792,7 +3965,8 @@
       "country": "United Kingdom",
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Human League",
@@ -3812,7 +3986,8 @@
       "country": "United Kingdom",
       "members": 3,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Beastie Boys",
@@ -3834,7 +4009,8 @@
       "members": 3,
       "difficulty": "medium",
       "fun_fact": "The Beastie Boys were originally a hardcore punk band before pivoting to hip-hop in 1983.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Public Enemy",
@@ -3854,7 +4030,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Run-DMC",
@@ -3875,7 +4052,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Run-DMC's 'Walk This Way' collaboration with Aerosmith is credited with bringing hip-hop to mainstream rock audiences.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Rick Astley",
@@ -3894,7 +4072,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Salt-N-Pepa",
@@ -3914,7 +4093,8 @@
       "country": "United States",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Backstreet Boys",
@@ -3934,7 +4114,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "NSYNC",
@@ -3954,7 +4135,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Spice Girls",
@@ -3973,7 +4155,8 @@
       "country": "United Kingdom",
       "members": 5,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Pearl Jam",
@@ -3994,7 +4177,8 @@
       "members": 5,
       "difficulty": "medium",
       "fun_fact": "Pearl Jam fought Ticketmaster in 1994 over service fees and testified before the US Congress about it.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Soundgarden",
@@ -4014,7 +4198,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Alice in Chains",
@@ -4035,7 +4220,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Stone Temple Pilots",
@@ -4054,7 +4240,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Blur",
@@ -4074,7 +4261,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Pulp",
@@ -4094,7 +4282,8 @@
       "country": "United Kingdom",
       "members": 5,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Weezer",
@@ -4115,7 +4304,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Beck",
@@ -4136,7 +4326,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Garbage",
@@ -4156,7 +4347,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Portishead",
@@ -4176,7 +4368,8 @@
       "country": "United Kingdom",
       "members": 3,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Massive Attack",
@@ -4196,7 +4389,8 @@
       "country": "United Kingdom",
       "members": 3,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Smashing Pumpkins",
@@ -4217,7 +4411,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Nine Inch Nails",
@@ -4239,7 +4434,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Blink-182",
@@ -4259,7 +4455,8 @@
       "country": "United States",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Nas",
@@ -4279,7 +4476,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Wu-Tang Clan",
@@ -4299,7 +4497,8 @@
       "country": "United States",
       "members": 9,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "A Tribe Called Quest",
@@ -4318,7 +4517,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Missy Elliott",
@@ -4339,7 +4539,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "DMX",
@@ -4359,7 +4560,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Outkast",
@@ -4379,7 +4581,8 @@
       "country": "United States",
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Snoop Dogg",
@@ -4400,7 +4603,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Fugees",
@@ -4420,7 +4624,8 @@
       "country": "United States",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "TLC",
@@ -4440,7 +4645,8 @@
       "country": "United States",
       "members": 3,
       "difficulty": "easy",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Boyz II Men",
@@ -4459,7 +4665,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Brandy",
@@ -4480,7 +4687,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "My Chemical Romance",
@@ -4500,7 +4708,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Fall Out Boy",
@@ -4521,7 +4730,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Paramore",
@@ -4542,7 +4752,8 @@
       "country": "United States",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Panic! at the Disco",
@@ -4563,7 +4774,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Killers",
@@ -4584,7 +4796,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Franz Ferdinand",
@@ -4604,7 +4817,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Arcade Fire",
@@ -4624,7 +4838,8 @@
       "country": "Canada",
       "members": 8,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Interpol",
@@ -4644,7 +4859,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Lil Wayne",
@@ -4664,7 +4880,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "P!nk",
@@ -4685,7 +4902,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Nelly Furtado",
@@ -4704,7 +4922,8 @@
       "country": "Canada",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Ne-Yo",
@@ -4725,7 +4944,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "T.I.",
@@ -4745,7 +4965,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Chris Brown",
@@ -4766,7 +4987,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Nickelback",
@@ -4786,7 +5008,8 @@
       "country": "Canada",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Avril Lavigne",
@@ -4807,7 +5030,8 @@
       "country": "Canada",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Evanescence",
@@ -4827,7 +5051,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "John Mayer",
@@ -4848,7 +5073,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Norah Jones",
@@ -4868,7 +5094,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Maroon 5",
@@ -4889,7 +5116,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "OneRepublic",
@@ -4910,7 +5138,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Kings of Leon",
@@ -4931,7 +5160,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Snow Patrol",
@@ -4952,7 +5182,8 @@
       "country": "United Kingdom",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Keane",
@@ -4973,7 +5204,8 @@
       "country": "United Kingdom",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The White Stripes",
@@ -4992,7 +5224,8 @@
       "country": "United States",
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Black Keys",
@@ -5012,7 +5245,8 @@
       "country": "United States",
       "members": 2,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Muse",
@@ -5033,7 +5267,8 @@
       "country": "United Kingdom",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Queens of the Stone Age",
@@ -5054,7 +5289,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Modest Mouse",
@@ -5074,7 +5310,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Death Cab for Cutie",
@@ -5094,7 +5331,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "BTS",
@@ -5115,7 +5353,8 @@
       "members": 7,
       "difficulty": "easy",
       "fun_fact": "BTS is the first K-pop group to address the United Nations General Assembly, speaking in 2021.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "BLACKPINK",
@@ -5135,7 +5374,8 @@
       "country": "South Korea",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Travis Scott",
@@ -5155,7 +5395,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Future",
@@ -5175,7 +5416,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "J. Cole",
@@ -5195,7 +5437,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Macklemore",
@@ -5214,7 +5457,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Halsey",
@@ -5235,7 +5479,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Hozier",
@@ -5256,7 +5501,8 @@
       "country": "Ireland",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Mumford & Sons",
@@ -5276,7 +5522,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Florence + the Machine",
@@ -5297,7 +5544,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Sia",
@@ -5316,7 +5564,8 @@
       "country": "Australia",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Bastille",
@@ -5336,7 +5585,8 @@
       "country": "United Kingdom",
       "members": 4,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Alt-J",
@@ -5355,7 +5605,8 @@
       "country": "United Kingdom",
       "members": 3,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Of Monsters and Men",
@@ -5374,7 +5625,8 @@
       "country": "Iceland",
       "members": 6,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Cage the Elephant",
@@ -5395,7 +5647,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "MGMT",
@@ -5416,7 +5669,8 @@
       "country": "United States",
       "members": 2,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Zedd",
@@ -5436,7 +5690,8 @@
       "country": "Germany",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "David Guetta",
@@ -5457,7 +5712,8 @@
       "country": "France",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Tiësto",
@@ -5478,7 +5734,8 @@
       "country": "Netherlands",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "The National",
@@ -5498,7 +5755,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Lewis Capaldi",
@@ -5518,7 +5776,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Lizzo",
@@ -5539,7 +5798,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Camila Cabello",
@@ -5560,7 +5820,8 @@
       "country": "Cuba",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Megan Thee Stallion",
@@ -5580,7 +5841,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "The Script",
@@ -5601,7 +5863,8 @@
       "country": "Ireland",
       "members": 3,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Passenger",
@@ -5621,7 +5884,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Bon Iver",
@@ -5641,7 +5905,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Fleet Foxes",
@@ -5661,7 +5926,8 @@
       "country": "United States",
       "members": 6,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Pantera",
@@ -5683,7 +5949,8 @@
       "members": 4,
       "difficulty": "hard",
       "fun_fact": "Pantera's guitarist Dimebag Darrell was tragically shot and killed on stage in Columbus, Ohio, in 2004.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "System of a Down",
@@ -5704,7 +5971,8 @@
       "members": 4,
       "difficulty": "medium",
       "fun_fact": "All four members of System of a Down are of Armenian descent and advocate for Armenian recognition.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Tool",
@@ -5726,7 +5994,8 @@
       "country": "United States",
       "members": 4,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Rammstein",
@@ -5749,7 +6018,8 @@
       "members": 6,
       "difficulty": "medium",
       "fun_fact": "Rammstein's name references the 1988 Ramstein Air Base airshow disaster in Germany.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Korn",
@@ -5770,7 +6040,8 @@
       "country": "United States",
       "members": 5,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Kraftwerk",
@@ -5790,7 +6061,8 @@
       "country": "Germany",
       "members": 4,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Chemical Brothers",
@@ -5810,7 +6082,8 @@
       "country": "United Kingdom",
       "members": 2,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "The Prodigy",
@@ -5831,7 +6104,8 @@
       "country": "United Kingdom",
       "members": 2,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "Fatboy Slim",
@@ -5851,7 +6125,8 @@
       "country": "United Kingdom",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Moby",
@@ -5871,7 +6146,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Luke Combs",
@@ -5891,7 +6167,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Zach Bryan",
@@ -5910,7 +6187,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Carrie Underwood",
@@ -5932,7 +6210,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Kenny Rogers",
@@ -5952,7 +6231,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Tim McGraw",
@@ -5973,7 +6253,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Brad Paisley",
@@ -5993,7 +6274,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Blake Shelton",
@@ -6013,7 +6295,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Luke Bryan",
@@ -6033,7 +6316,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Keith Urban",
@@ -6054,7 +6338,8 @@
       "country": "Australia",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Alan Jackson",
@@ -6074,7 +6359,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Daddy Yankee",
@@ -6095,7 +6381,8 @@
       "country": "Puerto Rico",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Karol G",
@@ -6115,7 +6402,8 @@
       "country": "Colombia",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "Peso Pluma",
@@ -6134,7 +6422,8 @@
       "country": "Mexico",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Marc Anthony",
@@ -6156,7 +6445,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Ricky Martin",
@@ -6177,7 +6467,8 @@
       "country": "Puerto Rico",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Pitbull",
@@ -6199,7 +6490,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Maluma",
@@ -6219,7 +6511,8 @@
       "country": "Colombia",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Lil Baby",
@@ -6239,7 +6532,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Juice WRLD",
@@ -6259,7 +6553,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "medium",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Jack Harlow",
@@ -6278,7 +6573,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Giveon",
@@ -6297,7 +6593,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Noah Kahan",
@@ -6317,7 +6614,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Benson Boone",
@@ -6337,7 +6635,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Rod Wave",
@@ -6358,7 +6657,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Gunna",
@@ -6378,7 +6678,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Polo G",
@@ -6398,7 +6699,8 @@
       "country": "United States",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Feid",
@@ -6418,7 +6720,8 @@
       "country": "Colombia",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "Rauw Alejandro",
@@ -6437,7 +6740,8 @@
       "country": "Puerto Rico",
       "members": 1,
       "difficulty": "hard",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "אריק איינשטיין",
@@ -6467,7 +6771,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Arik Einstein is considered the greatest and most beloved Israeli rock artist of all time.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "שלמה ארצי",
@@ -6497,7 +6802,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Shlomo Artzi has sold more concert tickets in Israel than any other artist in history.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "כוורת",
@@ -6524,7 +6830,8 @@
       "members": 6,
       "difficulty": "medium",
       "fun_fact": "Kaveret (The Beehive) is considered Israel's most iconic rock band of the 1970s.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "שלום חנוך",
@@ -6553,7 +6860,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Shalom Hanoch was the first Israeli artist to incorporate electric rock into mainstream Israeli music.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "יהודית רביץ",
@@ -6581,7 +6889,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Yehudit Ravitz is one of the most successful and influential female artists in Israeli pop history.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "מתי כספי",
@@ -6610,7 +6919,8 @@
       "members": 1,
       "difficulty": "hard",
       "fun_fact": "Matti Caspi is known for his sophisticated harmonic arrangements and is considered one of Israel's greatest musical composers.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "חוה אלברשטיין",
@@ -6639,7 +6949,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Chava Alberstein has recorded over 50 albums and is known as Israel's greatest folk and protest singer.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "אהוד בנאי",
@@ -6667,7 +6978,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Ehud Banai comes from one of Israel's most famous musical families and is known for his poetic rock lyrics.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "גידי גוב",
@@ -6696,7 +7008,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Gidi Gov was a founding member of Kaveret and later became one of Israel's most beloved solo performers.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "יהורם גאון",
@@ -6724,7 +7037,8 @@
       "members": 1,
       "difficulty": "hard",
       "fun_fact": "Yehoram Gaon is famous for his role in the Israeli musical film Kazablan and is an icon of classic Israeli entertainment.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "עברי לידר",
@@ -6751,7 +7065,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Ivri Lider was one of the first Israeli celebrities to publicly come out as gay, becoming an LGBTQ icon.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "אביב גפן",
@@ -6778,7 +7093,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Aviv Geffen sang 'Shir LaShalom' at the peace rally where Prime Minister Yitzhak Rabin was assassinated in 1995.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "ריטה",
@@ -6806,7 +7122,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Rita is one of Israel's most successful pop artists and is also known for her albums of Persian/Mizrahi music.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "דנה אינטרנשיונל",
@@ -6834,7 +7151,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Dana International won the 1998 Eurovision Song Contest with 'Diva', becoming an LGBTQ icon worldwide.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "משינה",
@@ -6860,7 +7178,8 @@
       "members": 4,
       "difficulty": "medium",
       "fun_fact": "Mashina was one of Israel's biggest rock bands of the late 1980s and 1990s with a gritty urban sound.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "אתניקס",
@@ -6887,7 +7206,8 @@
       "members": 5,
       "difficulty": "medium",
       "fun_fact": "Ethnix was one of the defining Israeli bands of the 1980s, blending pop and rock with Hebrew lyrics.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "כנסיית השכל",
@@ -6915,7 +7235,8 @@
       "members": 4,
       "difficulty": "hard",
       "fun_fact": "Knesiyat HaSekhel is considered one of Israel's most important alternative rock bands with deeply philosophical lyrics.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "היהודים",
@@ -6942,7 +7263,8 @@
       "members": 4,
       "difficulty": "hard",
       "fun_fact": "HaYehudim were known for their energetic live shows and became one of Israel's biggest bands of the 1990s.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "טיפקס",
@@ -6969,7 +7291,8 @@
       "members": 5,
       "difficulty": "hard",
       "fun_fact": "Tipex blended ska, reggae, and rock into a uniquely Israeli sound and are known for energetic high-energy performances.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "שב\"ק ס'",
@@ -6995,7 +7318,8 @@
       "members": 4,
       "difficulty": "hard",
       "fun_fact": "Shabak Samech pioneered Israeli punk and alternative rock in the 1990s.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "מוניקה סקס",
@@ -7021,7 +7345,8 @@
       "members": 3,
       "difficulty": "hard",
       "fun_fact": "Monica Sex were a provocative Israeli alternative rock band known for their frank and urban lyrics.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "זהבה בן",
@@ -7048,7 +7373,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Zehava Ben bridged Mizrahi music and mainstream Israeli pop and became one of the top-selling Israeli artists.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "שרית חדד",
@@ -7074,7 +7400,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Sarit Hadad represented Israel in Eurovision 2002 and has sold millions of albums in Israel.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "קובי פרץ",
@@ -7101,7 +7428,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Kobi Peretz is one of Israel's biggest Mizrahi pop stars, with a devoted fanbase across generations.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "עידן רייכל",
@@ -7129,7 +7457,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Idan Raichel's project combines Israeli, Ethiopian, and world music, and has performed at Carnegie Hall.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "נועה קירל",
@@ -7154,7 +7483,8 @@
       "members": 1,
       "difficulty": "easy",
       "fun_fact": "Noa Kirel represented Israel at Eurovision 2023 with 'Unicorn' and finished 3rd place.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "אומר אדם",
@@ -7179,7 +7509,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Omer Adam is one of the most-streamed Israeli artists on Spotify and has broken multiple records in Israel.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     },
     {
       "name": "עדן בן זקן",
@@ -7204,7 +7535,8 @@
       "members": 1,
       "difficulty": "medium",
       "fun_fact": "Eden Ben Zaken broke Israel's Spotify streaming record and became the most-streamed Israeli female artist.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_female"
     },
     {
       "name": "סטטיק ובן אל תבורי",
@@ -7232,7 +7564,8 @@
       "members": 2,
       "difficulty": "medium",
       "fun_fact": "Static & Ben El Tavori are the most internationally recognized Israeli pop duo, with hits in multiple languages.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "band"
     },
     {
       "name": "ישי ריבו",
@@ -7258,7 +7591,8 @@
       "members": 1,
       "difficulty": "hard",
       "fun_fact": "Ishay Ribo is a religious singer whose music bridges the gap between traditional Jewish themes and contemporary pop.",
-      "spotify_ids": []
+      "spotify_ids": [],
+      "type": "solo_male"
     }
   ]
 }
